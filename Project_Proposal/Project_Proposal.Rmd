@@ -1,0 +1,17 @@
+---
+title: "Writing Project Proposal"
+author: "Meaghan Winder"
+date: "10/11/2019"
+header-includes:
+    - \usepackage{setspace}\doublespacing
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Zebra mussels are a highly invasive species that have several negative impacts, both ecologically and economically, as they suffocate native mussels and cost millions of dollars to remove from man-made structures such as power plants (USGS). Zebra mussels have been established in the United States since the 1980s, and since then "they have spread rapidly throughout the Great Lakes region and into the large rivers of the eastern Mississippi drainage. They have also been found in Texas, Colorado, Utah, Nevada, and California" (USGS). As the threat of zebra mussels spreading into the northwestern United States grows, one concern is that the detection method used to find zebra mussels is not highly effective. The current method of sampling are plankton tows, which are essentially large nets with fine mesh, that are towed behind boats to capture zebra mussel veligers (larvael stage of zebra mussels); this method only works to capture veligers because once the zebra mussels mature, they attach to substrate and are no longer able to be captured by the tows. Researchers typically go to several sites on a given day within a waterbody and take multiple plankton tows (usually 5). The contents of the tows is aggregated for each site, then taken to a lab, where scientists use a microscope to examine the contents for presence (sometimes counts) of zebra mussel veligers, if the veligers are not detected with the microscope, the scientists use Polymerase chain reaction (PCR) to  test for presence of zebra mussels veligers. A large problem with this method, is that there is a non-zero probability that the zebra mussels are in the waterbody and not captured with the tows, or in the tows and not identified with the microscope or with PCR. The goal is to work with Andy and the United States Geological Survey (USGS) to fit a Bayesian multi-scale occupancy model to a subset (and maybe eventually all) of the data collected by the United States Bureau of Reclamation in an attempt to improve the current process. Andy and I are currently working with Adam Sepulveda at USGS to better understand the process of the data collection and will meet with him soon to discuss concrete goals.
+
+USGS: https://www.usgs.gov/faqs/what-are-zebra-mussels-and-why-should-we-care-about-them?qt-news_science_products=0#qt-news_science_products

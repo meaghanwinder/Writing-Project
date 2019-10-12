@@ -9,3 +9,13 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+write out an occupancy model and simulate data with various parameters to understand the process
+
+```{r}
+
+```
+
+
+
+
+
