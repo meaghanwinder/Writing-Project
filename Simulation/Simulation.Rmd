@@ -9,10 +9,21 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-write out an occupancy model and simulate data with various parameters to understand the process
+GOAL: write out an occupancy model and simulate data with various parameters to understand the process
+
+$M$ sites sampled $J$ times
+for now, assume $p$ is constant
+observations $y_{i,j}$, $i = 1, 2, \dots, M$, $j =  1, 2, \dots, J$
 
 ```{r}
+set.seed(10152019)
+p <- 0.6
+psi <- 0.6
+M <- 10 #number of sites
+J <- 8 #number of samples per site... this does not need to be the same for all sites
 
+z <- rbinom(M, 1, psi) #site occupancy, can include covariates at this level if they impact the probability of occupancy of a site, here psi is constant for all sites
+y <- rbinom(M, J, p*z)
 ```
 
 
