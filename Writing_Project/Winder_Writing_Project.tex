@@ -1,0 +1,238 @@
+\documentclass[12pt]{article}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+\let\hlipl\hlkwb
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+%\usepackage{cite}
+\usepackage{url}
+\usepackage{caption}
+\usepackage{setspace}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\usepackage{listings}
+\usepackage{amsthm}
+\usepackage[linewidth=1pt]{mdframed}
+\usepackage{lipsum}
+%\usepackage{natbib}
+%\usepackage[round]{natbib} 
+\usepackage{apalike}
+\lstset{
+	language=R,
+	basicstyle=\ttfamily
+}
+\usepackage{epsfig} % eps graphics
+%authoryear,open={(},close={)}}
+
+\begin{document}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+ 
+%----------------------------------------------------------------------------------------
+%   HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\LARGE Montana State University}\\[0.5cm] % Name of your university/college
+\textsc{\Large Department of Mathematical Sciences}\\[0.5cm] % Major heading such as course name
+\textsc{\large Writing Project}\\[.75cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%   TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \huge \bfseries TITLE }\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+ 
+%----------------------------------------------------------------------------------------
+%   AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} 
+\large
+\emph{Author:} \\
+Meaghan \textsc{Winder} \\
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} 
+\large
+\emph{Supervisor:} \\
+Dr. Andrew \textsc{Hoegh} 
+\end{flushright}
+\end{minipage}\\[1.5cm]
+
+%----------------------------------------------------------------------------------------
+%   DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large Spring 2020}\\[1.5cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%   LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+\includegraphics[width=5cm]{msulogo} % Include a department/university logo - this will require the graphicx package
+ 
+%----------------------------------------------------------------------------------------
+
+A writing project submitted in partial fulfillment\\
+of the requirements for the degree\\[.25in]
+Master's of Science in Statistics
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+\begin{titlepage}
+\null
+\begin{center}
+{\bf\huge APPROVAL}\\[1.0 in]
+of a writing project submitted by\\[.25 in]
+Meaghan Winder \\[0.5 in]
+\end{center}
+
+\noindent
+This writing project has been read by the writing project advisor and
+has been found to be satisfactory regarding content, English usage,
+format, citations, bibliographic style, and consistency, and is ready
+for submission to the Statistics Faculty.
+
+\vspace{.3in}
+\begin{center}
+\begin{tabular}{ll}
+\rule{2.75in}{.03in} & \rule{2.75in}{.03in} \\
+Date& Andrew Hoegh \\
+& Writing Project Advisor \\
+\end{tabular}
+\end{center}
+
+\vspace{1cm}
+
+\begin{center}
+\begin{tabular}{ll}
+\rule{2.75in}{.03in} & \rule{2.75in}{.03in} \\
+Date& Mark C. Greenwood \\
+& Writing Projects Coordinator \\
+\end{tabular}
+\end{center}
+
+\end{titlepage}
+
+\newpage
+\tableofcontents
+\newpage
+
+\begin{abstract}
+\noindent abstract text here 
+\end{abstract}
+
+\doublespacing
+
+\section{Introduction}
+
+introduction text
+
+\section{Background Modeling Techniques}
+
+text
+  
+\section{Methods}
+
+text
+
+
+\section{Zebra Mussel Analysis}
+
+text
+
+\section{Conclusion}
+
+text
+
+\newpage
+\section{References}
+\begingroup
+\renewcommand{\section}[2]{}%
+\begin{flushleft}
+\bibliographystyle{apalike}
+%\bibliographystyle{acm}
+%\bibliographystyle{abbrvnat}
+%\bibliographystyle{unsrtnat}
+%\bibliographystyle{ACM-Reference-Format}
+\bibliography{bibliography}
+\end{flushleft}
+\endgroup
+
+\newpage
+\section{Appendix - R Code}
+
+A script containing all code used for this analysis is available at \\
+\centering{\textit{github link here or all R code}} 
+
+\lstset{
+	basicstyle=\ttfamily\scriptsize,
+	columns=fullflexible,
+	frame=single,
+	breaklines=true,
+	postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+	keepspaces = TRUE,
+}
+%\begin{lstlisting}
+%\end{lstlisting}
+\end{document}
+              
