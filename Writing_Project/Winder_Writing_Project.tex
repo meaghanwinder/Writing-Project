@@ -183,26 +183,39 @@ Date& Mark C. Greenwood \\
 
 \doublespacing
 
+\section{free write... I don't know where to put all this yet... this is messy}
+
+Occupancy is the presence of a particular species on a given site, this may not be the first choice of state variables to ecologists but occupancy studies are useful when there is a large spatial scale or the study is conducted over many years, when abundance or vital rates are hard to measure. Occupancy studies are also useful over  capture-recapture methods when individuals cannot be marked or uniquely identified. However, sometimes patterns of species occurrence are of interest, this happens when researchers are interested in the range of a species or the spread of invasion. The sampling units for occupancy studies are called 'sites'. We can learn about detection probabilities when multiple site visits are used. Also, when using occupancy models we need to account for imperfect detection because it is possible that the researchers could miss the species even if it is present at the site. $\psi$ represents the occupancy probability, $p_i$ represents the probability of detecting the species on survey $i$ given that the species occupies the site, and $p^* = 1- \prod_{i = 1}^{t} (1-p_i)$ is the probability of detecting the species at least one time given the species occupies the site. 
+
+The assumptions are: 
+\begin{itemize}
+\item The occupancy state of sites is constant during a single season. 
+\item The occupancy probability is constant across sites, or is modeled appropriately using site-level covariates. 
+\item The probability of detection given occupancy status is constant across sites, or modeled appropriately using site-level covariates. 
+\item The species is not misidentified, no false positives. 
+\end{itemize}
+
+As suggested above, site-level covariates can be used to model the occupancy probabilities and the detection probabilities. 
+
+In WILD 502 when talking about multi-season occupancy models, we talked about extirpation and colonization rates, but I think that these could be modeled with a latent variable(s)? I don't think they are of particular interest here. 
+
 \section{Introduction}
 
-introduction text
+
+\section{Data}
+
 
 \section{Background Modeling Techniques}
 
-text
   
 \section{Methods}
-
-text
 
 
 \section{Zebra Mussel Analysis}
 
-text
 
 \section{Conclusion}
 
-text
 
 \newpage
 \section{References}
