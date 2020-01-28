@@ -183,9 +183,13 @@ Date& Mark C. Greenwood \\
 
 \doublespacing
 
-\section{free write... I don't know where to put all this yet... this is messy}
+\section{free write... this is very messy, basically just word vomit}
 
-Occupancy is the presence of a particular species on a given site, this may not be the first choice of state variables to ecologists but occupancy studies are useful when there is a large spatial scale or the study is conducted over many years, when abundance or vital rates are hard to measure. Occupancy studies are also useful over  capture-recapture methods when individuals cannot be marked or uniquely identified. However, sometimes patterns of species occurrence are of interest, this happens when researchers are interested in the range of a species or the spread of invasion. The sampling units for occupancy studies are called 'sites'. We can learn about detection probabilities when multiple site visits are used. Also, when using occupancy models we need to account for imperfect detection because it is possible that the researchers could miss the species even if it is present at the site. $\psi$ represents the occupancy probability, $p_i$ represents the probability of detecting the species on survey $i$ given that the species occupies the site, and $p^* = 1- \prod_{i = 1}^{t} (1-p_i)$ is the probability of detecting the species at least one time given the species occupies the site. 
+THIS INFORMATION ALL CAME FROM WILD 502 NOTES AND WHAT I LEARNED FROM THAT CLASS
+
+Occupancy is the presence of a particular species on a given site, this may not be the first choice of state variables to ecologists but occupancy studies are useful when there is a large spatial scale or the study is conducted over many years, when abundance or vital rates are hard to measure. Occupancy studies are also useful over capture-recapture methods when individuals cannot be marked or uniquely identified. However, sometimes patterns of species occurrence are of interest, this happens when researchers are interested in the range of a species or the spread of invasion. 
+
+The sampling units for occupancy studies are called 'sites'. We can learn about detection probabilities when multiple site visits are used. Also, when using occupancy models we need to account for imperfect detection because it is possible that the researchers could miss the species even if it is present at the site. $\psi$ represents the occupancy probability, $p_i$ represents the probability of detecting the species on survey $i$ given that the species occupies the site, and $p^* = 1- \prod_{i = 1}^{t} (1-p_i)$ is the probability of detecting the species at least one time given the species occupies the site. 
 
 The assumptions are: 
 \begin{itemize}
@@ -198,6 +202,20 @@ The assumptions are:
 As suggested above, site-level covariates can be used to model the occupancy probabilities and the detection probabilities. 
 
 In WILD 502 when talking about multi-season occupancy models, we talked about extirpation and colonization rates, but I think that these could be modeled with a latent variable(s)? I don't think they are of particular interest here. 
+
+In this case, if we consider site to be the lake then we have replication at the site level, but if each site is the sample location within the lake then there is replication for some (very few) on different dates. 
+
+THIS WAS THE INFORMATION I USED FOR MY WRITING PROJECT PROPOSAL
+
+Zebra mussels are a highly invasive species that have several negative impacts, both ecologically and economically, as they suffocate native mussels and cost millions of dollars to remove from man-made structures such as power plants (USGS). Zebra mussels have been established in the United States since the 1980s, and since then "they have spread rapidly throughout the Great Lakes region and into the large rivers of the eastern Mississippi drainage. They have also been found in Texas, Colorado, Utah, Nevada, and California" (USGS). As the threat of zebra mussels spreading into the northwestern United States grows, one concern is that the detection method used to find zebra mussels is not highly effective. The current method of sampling are plankton tows, which are essentially large nets with fine mesh, that are towed behind boats to capture zebra mussel veligers (larval stage of zebra mussels); this method only works to capture veligers because once the zebra mussels mature, they attach to substrate and are no longer able to be captured by the tows. Researchers typically go to several sites on a given day within a water body and take multiple plankton tows (usually 5). The contents of the tows is aggregated for each site, then taken to a lab, where scientists use a microscope to examine the contents for presence (sometimes counts) of zebra mussel veligers, if the veligers are not detected with the microscope, the scientists use Polymerase chain reaction (PCR) to  test for presence of zebra mussels veligers. A large problem with this method, is that there is a non-zero probability that the zebra mussels are in the water body and not captured with the tows, or in the tows and not identified with the microscope or with PCR. 
+
+I HAVE ALSO BEEN WORKING ON FITTING MODELS TO SIMULATED DATA 
+
+\begin{itemize}
+\item constant $\psi$ and constant $p$ with constant J samples per M sites 
+\item constant $\psi$ and constant $p$ with 
+\end{itemize}
+
 
 \section{Introduction}
 
@@ -235,7 +253,7 @@ In WILD 502 when talking about multi-season occupancy models, we talked about ex
 \section{Appendix - R Code}
 
 A script containing all code used for this analysis is available at \\
-\centering{\textit{github link here or all R code}} 
+\centering{\textit{github link here(?)... either that or include all code here}} 
 
 \lstset{
 	basicstyle=\ttfamily\scriptsize,

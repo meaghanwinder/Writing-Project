@@ -1,0 +1,197 @@
+---
+title: "Writing Project"
+author: "Meaghan Winder"
+date: "1/21/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Read in the data
+
+```{r}
+library(readxl)
+USBR.login <- read_excel("USBR_2018_data_sample.xlsx", sheet = 1)
+USBR.sampleprep <- read_excel("USBR_2018_data_sample.xlsx", sheet = 2)
+USBR.microscopy <- read_excel("USBR_2018_data_sample.xlsx", sheet = 3)
+USBR.PCR <- read_excel("USBR_2018_data_sample.xlsx", sheet = 4)
+
+unique(USBR.sampleprep$`Water Name`) # number of lakes (sites) in the 2018 sample data
+```
+
+# Occupancy Models
+
+$y_{i,j} = \{0, 1\}$ is the binary response for the $j^{th}$ sample within site $i$
+
+If the site is occupied: 
+> $y_{i,j} \sim Bernoulli(p)$
+> $y_i \sim Binomial(J, p)$ where $y_i$ is the total number of detections from the $J$ samples in the $i^{th}$ site 
+
+If the site is unoccupied: 
+> $y_{i,j} = 0$ with probability 1, since we assume there are no false detections
+
+# Simulate a data set 
+
+> M sites each sampled J times 
+> constant $p$ and $\psi$
+
+```{r}
+set.seed(1202020)
+p <- 0.6 # constant detection probability... could change to depend on covariates
+psi <- 0.6 # constant occupancy probability... could change to depend on covariates 
+M <- 10 # number of sites
+J <- 8 # constant number of samples per site... does not need to be constant
+
+z <- rbinom(M, 1, psi) # site occupancy
+
+y1 <- matrix(NA, nrow = M*J, ncol = 4)
+y1[, 1] <- rep(1:M, each  = J) # column indicating site
+y1[, 2] <- rep(1:J, M) # column indicating sample within site
+y1[, 3] <- rep(z, each = J) # column indicating true site occupancy
+
+# creates a column of 1's and 0's indicating whether the species was detected
+for(i in 1:(M*J)){
+    y1[i, 4] <- rbinom(1, 1 , p*y1[i, 3]) # if the site is not occupied the species cannot be detected
+}
+
+colnames(y1) <- c("Site", "Sample", "True Occupancy", "Detected")
+
+library(car)
+some(y1) # view 10 sample rows of the simulated data
+
+# or
+
+y2 <- rbinom(M, J, p*z) # total number of detections for the J samples within each of the M sites, y_i
+```
+
+Using $p \sim Beta(1, 1)$ or $Unif(0, 1)$ (that's what the Royle book says but I think it's the Beta one, but they're the same) and $\psi \sim Beta(1, 1)$, and when $y_i > 0$ we know that $z_i = 1$, but when $y_i = 0$ we need to take a draw from the conditional distribution of $z_i|y_i = 0 \sim Bernoulli(\frac{\psi(1-p)^J}{\psi(1-p)^J + (1-\psi)})$, then conditional posterior distribution of $p$ is $Beta(a_p, b_p)$ where $a_p = 1 + \sum_{i = 1}^M y_iz_i$ and $b_p = 1 + J\sum_{i=1}^M z_i - \sum_{i = 1}^M y_iz_i$, the conditional posterior distribution of of $\psi$ is $Beta(a_\psi, b_\psi)$ where $a_\psi = 1 + \sum_{i=1}^M z_i$ and $b_\psi 1 + M - \sum_{i=1}^M z_i$. 
+
+```{r}
+y <- y2
+M <- length(y)
+J <- 8 # from above
+
+nsim <- 10000
+
+psi <- rep(NA, nsim)
+p <- rep(NA, nsim)
+
+psi[1] <- 0.5 # starting value for psi
+p[1] <- 0.5 # starting value for p
+
+for(k in 2:nsim){
+  z <- rep(NA, M)
+  for(i in 1:M){
+    if(y[i] > 0){
+      z[i] <- 1
+      } else{
+        prob <- (psi[k-1]*(1-p[k-1])^J)/(psi[k-1]*(1-p[k-1])^J + (1-psi[k-1]))
+        z[i] <- rbinom(1, 1, prob)
+      }
+  }
+  a_p <- 1 + sum(y*z)
+  b_p <- 1 + J*sum(z) - sum(y*z)
+  p[k] <- rbeta(1, a_p, b_p)
+  
+  a_psi <- 1 + sum(z)
+  b_psi <- 1 + M - sum(z)
+  psi[k] <- rbeta(1, a_psi, b_psi)
+}
+
+quantile(psi, c(0.025, 0.975))
+mean(psi)
+plot(psi, type = 'l')
+
+quantile(p, c(0.025, 0.975))
+mean(p)
+plot(p, type = 'l')
+```
+
+
+# Simulate another data set 
+
+> M sites each sampled $j_i$ times 
+> constant $p$ and $\psi$
+
+```{r}
+set.seed(1222020)
+p <- 0.6 # constant detection probability... could change to depend on covariates
+psi <- 0.6 # constant occupancy probability... could change to depend on covariates 
+M <- 10 # number of sites
+J <- sample(1:10, M, replace = T) # number of times each of the sites were sampled
+
+z <- rbinom(M, 1, psi) # site occupancy
+
+y <- rep(NA, M)
+
+for(i in 1:M){
+  y[i] <- rbinom(1, J[i], p*z[i]) # total number of detections for the J samples within each of the M sites, y_i
+}
+```
+
+```{r}
+y <- y
+M <- length(y)
+J <- J
+
+nsim <- 10000
+
+psi <- rep(NA, nsim)
+p <- rep(NA, nsim)
+
+psi[1] <- 0.5 # starting value for psi
+p[1] <- 0.5 # starting value for p
+
+for(k in 2:nsim){
+  z <- rep(NA, M)
+  for(i in 1:M){
+    if(y[i] > 0){
+      z[i] <- 1
+      } else{
+        prob <- (psi[k-1]*(1-p[k-1])^J[i])/(psi[k-1]*(1-p[k-1])^J[i] + (1-psi[k-1]))
+        z[i] <- rbinom(1, 1, prob)
+      }
+  }
+  a_p <- 1 + sum(y*z)
+  b_p <- 1 + sum(J*z) - sum(y*z)
+  p[k] <- rbeta(1, a_p, b_p)
+  
+  a_psi <- 1 + sum(z)
+  b_psi <- 1 + M - sum(z)
+  psi[k] <- rbeta(1, a_psi, b_psi)
+}
+
+quantile(psi, c(0.025, 0.975))
+mean(psi)
+plot(psi, type = 'l')
+
+quantile(p, c(0.025, 0.975))
+mean(p)
+plot(p, type = 'l')
+```
+
+# Simulate another data set 
+
+> M sites each sampled $j_i$ times 
+> $p$ and $\psi$ both depend on site level covariates 
+
+```{r}
+set.seed(1222020)
+M <- 10 # number of sites
+x <- runif(10, 0, 1)
+p <- 0.6 - 0.5*x # constant detection probability... could change to depend on covariates
+psi <- 0.6 + 0.3*x # constant occupancy probability... could change to depend on covariates 
+J <- sample(1:10, M, replace = T) # number of times each of the sites were sampled
+
+z <- rep(NA, M)
+y <- rep(NA, M)
+
+for(i in 1:M){
+  z[i] <- rbinom(1, 1, psi[i]) #site occupancy
+  y[i] <- rbinom(1, J[i], p*z[i]) # total number of detections for the J samples within each of the M sites, y_i
+}
+```
+
+$logit(p) = \beta_1 + \beta_2*x$ and $logit(\psi) = \beta_3 + \beta_4*x$ so I think now we need to use a Metropolis Algorithm 
