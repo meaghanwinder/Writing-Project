@@ -183,9 +183,9 @@ Date& Mark C. Greenwood \\
 
 \doublespacing
 
-\section{free write... this is very messy, basically just word vomit}
+\noindent{\bfseries free write... this is very messy, basically just word vomit}
 
-THIS INFORMATION ALL CAME FROM WILD 502 NOTES AND WHAT I LEARNED FROM THAT CLASS
+\noindent{\bfseries This is all information extracted from WILD 502 course material or things I learned from the class} 
 
 Occupancy is the presence of a particular species on a given site, this may not be the first choice of state variables to ecologists but occupancy studies are useful when there is a large spatial scale or the study is conducted over many years, when abundance or vital rates are hard to measure. Occupancy studies are also useful over capture-recapture methods when individuals cannot be marked or uniquely identified. However, sometimes patterns of species occurrence are of interest, this happens when researchers are interested in the range of a species or the spread of invasion. 
 
@@ -205,35 +205,68 @@ In WILD 502 when talking about multi-season occupancy models, we talked about ex
 
 In this case, if we consider site to be the lake then we have replication at the site level, but if each site is the sample location within the lake then there is replication for some (very few) on different dates. 
 
-THIS WAS THE INFORMATION I USED FOR MY WRITING PROJECT PROPOSAL
+\noindent{\bfseries This is what I used for my project proposal... Mark said this could make it's way into our abstract}
 
 Zebra mussels are a highly invasive species that have several negative impacts, both ecologically and economically, as they suffocate native mussels and cost millions of dollars to remove from man-made structures such as power plants (USGS). Zebra mussels have been established in the United States since the 1980s, and since then "they have spread rapidly throughout the Great Lakes region and into the large rivers of the eastern Mississippi drainage. They have also been found in Texas, Colorado, Utah, Nevada, and California" (USGS). As the threat of zebra mussels spreading into the northwestern United States grows, one concern is that the detection method used to find zebra mussels is not highly effective. The current method of sampling are plankton tows, which are essentially large nets with fine mesh, that are towed behind boats to capture zebra mussel veligers (larval stage of zebra mussels); this method only works to capture veligers because once the zebra mussels mature, they attach to substrate and are no longer able to be captured by the tows. Researchers typically go to several sites on a given day within a water body and take multiple plankton tows (usually 5). The contents of the tows is aggregated for each site, then taken to a lab, where scientists use a microscope to examine the contents for presence (sometimes counts) of zebra mussel veligers, if the veligers are not detected with the microscope, the scientists use Polymerase chain reaction (PCR) to  test for presence of zebra mussels veligers. A large problem with this method, is that there is a non-zero probability that the zebra mussels are in the water body and not captured with the tows, or in the tows and not identified with the microscope or with PCR. 
 
-I HAVE ALSO BEEN WORKING ON FITTING MODELS TO SIMULATED DATA 
+\noindent{\bfseries I have also been working on fitting models to simulated occupancy data} (see code at \url{https://github.com/meaghanwinder/Writing-Project/blob/master/Writing%20Project%20Code.Rmd})
 
 \begin{itemize}
-\item constant $\psi$ and constant $p$ with constant J samples per M sites 
-\item constant $\psi$ and constant $p$ with 
+\item constant $\psi = 0.6$ and constant $p = 0.6$ with constant $J = 8$ samples per $M = 10$ sites -- DONE
+\item constant $\psi = 0.6$ and constant $p = 0.6$ with $j_i$ samples per $M = 10$ sites -- DONE
+\item $\psi$ and $p$ both depend on a single site level covariate, $x$, with $j_i$ samples per $M = 10$ sites 
+\end{itemize}
+
+Things to think about for the simulation or questions I have: 
+\begin{itemize}
+\item think about how changing the detection probabilities and occupancy probabilities impact the results: 
+	\begin{itemize}
+	\item High occupancy, high detection
+	\item High occupancy, low detection 
+	\item Low occupancy, high detection 
+	\item Low occupancy, low detection 
+	\end{itemize}
+\item How do we/can we include sample level covariates to account for sampling effort (number of tows, if available)?
+\item If we are getting more data:
+	\begin{itemize}
+	\item How do we account for multiple sampling seasons (years)? 
+	\item How do the assumptions of occupancy models change when we have several sampling years versus only 1
+\end{itemize}
+\end{itemize}
+
+Additional questions, not directly related to the simulation:
+\begin{itemize}
+	\item How do we account for this multilevel (for lack of a better word) testing process? For example, sometimes (?) when they fail to find them in the microscope, then they test them using polymerase chain reaction (PCR), and sometimes gene sequencing (? -- looks like it was only used on one observation in the sample data), or scanning electron microscopy (SEM).
+	\item One assumption of occupancy models is that there is a non-zero probability of mis-identification. I read an article (Denise Holser) that suggests that there might be an issue with that assumption in this sitatuion because there are similar looking organisms that may be present in the waters; she then suggest that the Bureau of Reclaimation has attempted to mediate this issue with improved microscopic methods and improved PCR methods. I will look into this some more.   
 \end{itemize}
 
 
 \section{Introduction}
 
+\subsection{Motivation}
 
 \section{Data}
 
+This could maybe be included in the introduction section... unless I do EDA here, then probably leave this as its own section
 
-\section{Background Modeling Techniques}
+\section{Modeling Background}
 
-  
+This whole section might be able to be merged with the methods section 
+
+\subsection{Occupancy Models}
+ 
+\subsection{Bayesian Modeling Background}
+
 \section{Methods}
 
 
-\section{Zebra Mussel Analysis}
+\section{Analysis}
 
+Could do EDA here
 
 \section{Conclusion}
 
+\subsection{Further Investigations}
 
 \newpage
 \section{References}

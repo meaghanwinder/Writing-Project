@@ -66,7 +66,7 @@ some(y1) # view 10 sample rows of the simulated data
 y2 <- rbinom(M, J, p*z) # total number of detections for the J samples within each of the M sites, y_i
 ```
 
-Using $p \sim Beta(1, 1)$ or $Unif(0, 1)$ (that's what the Royle book says but I think it's the Beta one, but they're the same) and $\psi \sim Beta(1, 1)$, and when $y_i > 0$ we know that $z_i = 1$, but when $y_i = 0$ we need to take a draw from the conditional distribution of $z_i|y_i = 0 \sim Bernoulli(\frac{\psi(1-p)^J}{\psi(1-p)^J + (1-\psi)})$, then conditional posterior distribution of $p$ is $Beta(a_p, b_p)$ where $a_p = 1 + \sum_{i = 1}^M y_iz_i$ and $b_p = 1 + J\sum_{i=1}^M z_i - \sum_{i = 1}^M y_iz_i$, the conditional posterior distribution of of $\psi$ is $Beta(a_\psi, b_\psi)$ where $a_\psi = 1 + \sum_{i=1}^M z_i$ and $b_\psi 1 + M - \sum_{i=1}^M z_i$. 
+Using $p \sim Beta(1, 1)$ or $Unif(0, 1)$ (that's what the Royle book says but I think it's the Beta one, but I think you need Beta dist. to find the posterior distributions described) and $\psi \sim Beta(1, 1)$, and when $y_i > 0$ we know that $z_i = 1$, but when $y_i = 0$ we need to take a draw from the conditional distribution of $z_i|y_i = 0 \sim Bernoulli(\frac{\psi(1-p)^J}{\psi(1-p)^J + (1-\psi)})$, then conditional posterior distribution of $p$ is $Beta(a_p, b_p)$ where $a_p = 1 + \sum_{i = 1}^M y_iz_i$ and $b_p = 1 + J\sum_{i=1}^M z_i - \sum_{i = 1}^M y_iz_i$, the conditional posterior distribution of of $\psi$ is $Beta(a_\psi, b_\psi)$ where $a_\psi = 1 + \sum_{i=1}^M z_i$ and $b_\psi 1 + M - \sum_{i=1}^M z_i$. 
 
 ```{r}
 y <- y2
@@ -131,6 +131,8 @@ for(i in 1:M){
 }
 ```
 
+Using $p \sim Beta(1, 1)$ or $Unif(0, 1)$ (that's what the Royle book says but I think it's the Beta one, but I think you need Beta dist. to find the posterior distributions described) and $\psi \sim Beta(1, 1)$, and when $y_i > 0$ we know that $z_i = 1$, but when $y_i = 0$ we need to take a draw from the conditional distribution of $z_i|y_i = 0 \sim Bernoulli(\frac{\psi(1-p)^{j_i}}{\psi(1-p)^{j_i} + (1-\psi)})$, then conditional posterior distribution of $p$ is $Beta(a_p, b_p)$ where $a_p = 1 + \sum_{i = 1}^M y_iz_i$ and $b_p = 1 + \sum_{i=1}^M j_iz_i - \sum_{i = 1}^M y_iz_i$, the conditional posterior distribution of of $\psi$ is $Beta(a_\psi, b_\psi)$ where $a_\psi = 1 + \sum_{i=1}^M z_i$ and $b_\psi 1 + M - \sum_{i=1}^M z_i$. 
+
 ```{r}
 y <- y
 M <- length(y)
@@ -172,17 +174,18 @@ mean(p)
 plot(p, type = 'l')
 ```
 
+
 # Simulate another data set 
 
 > M sites each sampled $j_i$ times 
-> $p$ and $\psi$ both depend on site level covariates 
+> $p$ and $\psi$ both depend on site level covariate $x$ 
 
 ```{r}
 set.seed(1222020)
 M <- 10 # number of sites
-x <- runif(10, 0, 1)
-p <- 0.6 - 0.5*x # constant detection probability... could change to depend on covariates
-psi <- 0.6 + 0.3*x # constant occupancy probability... could change to depend on covariates 
+x <- runif(10, 0, 10)
+p <- exp(2 - 0.5*x)/(1 + exp(2 - 0.5*x)) # detection probability depends on site covariate x
+psi <- exp(0.5 + 0.2*x)/(1 + exp(0.5 + 0.2*x)) # occupancy probability depends on site covariate x
 J <- sample(1:10, M, replace = T) # number of times each of the sites were sampled
 
 z <- rep(NA, M)
@@ -190,8 +193,56 @@ y <- rep(NA, M)
 
 for(i in 1:M){
   z[i] <- rbinom(1, 1, psi[i]) #site occupancy
-  y[i] <- rbinom(1, J[i], p*z[i]) # total number of detections for the J samples within each of the M sites, y_i
+  y[i] <- rbinom(1, J[i], p[i]*z[i]) # total number of detections for the J samples within each of the M sites, y_i
 }
 ```
 
-$logit(p) = \beta_1 + \beta_2*x$ and $logit(\psi) = \beta_3 + \beta_4*x$ so I think now we need to use a Metropolis Algorithm 
+$logit(p_i) = \beta_1 + \beta_2*x_i$ and $logit(\psi_i) = \beta_3 + \beta_4*x_i$ so now we need to use a Metropolis algorithm 
+
+```{r}
+library(mnormt) # needed if you use `rmnnorm`
+set.seed(01282020)
+
+X <- matrix(c(rep(1, length(x)), x), ncol = 2)
+par <- dim(X)[2]
+
+num_mcmc <- 10000
+step_size <- rep(0.01, par)
+# accept_ratio_p <- matrix(0, nrow = num_mcmc, ncol = par)
+# accept_ratio_psi <- matrix(0, nrow = num_mcmc, ncol = par)
+# p_beta_mcmc <- matrix(0, nrow = num_mcmc, ncol = par)
+# psi_beta_mcmc <- matrix(0, nrow = num_mcmc, ncol = par)
+# 
+# p_beta_prior_var <- diag(par)*10000
+# psi_beta_prior_var <- diag(par)*10000
+# p_beta_current <- p_beta_mcmc[1, ]
+# psi_beta_current <- psi_beta_mcmc[1, ]
+# 
+# for(i in 2:num_mcmc){
+#   for(j in 1:par){
+#     p_beta_star <- p_beta_current 
+#     p_beta_star[j] <- p_beta_star[j] + rnorm(1, 0, step_size[j])
+#     
+#     psi_beta_star <- psi_beta_current
+#     psi_beta_star[j] <- psi_beta_star[j] + rnorm(0, 1, step_size[j])
+#     
+#     psi_current <- exp(X %*% psi_beta_current)/(1 + exp(X %*% psi_beta_current))
+#     psi_star <- exp(X %*% psi_star)/(1 + exp(X %*% psi_star))
+#     
+#     log_pi_psi_current <- 
+#     
+#     p_current <- exp(X %*% p_beta_current)/(1 + exp(X %*% p_beta_current))
+#     p_star <- exp(X %*% p_beta_star)/(1 + exp(X %*% p_beta_star))
+#     
+#     log_pi_p_current <- 
+#       
+# 
+#   }
+# }
+
+
+
+# I am confused now because I got near the end and then realized that the betas associated with p and psi should probably be jointly considered
+# I need help now 
+```
+

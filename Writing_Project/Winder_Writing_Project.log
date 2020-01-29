@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2020.1.16)  28 JAN 2020 10:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2020.1.16)  28 JAN 2020 14:57
 entering extended mode
 **./Winder_Writing_Project.tex
 (Winder_Writing_Project.tex
@@ -1126,42 +1126,45 @@ Overfull \hbox (31.48502pt too wide) in paragraph at lines 167--172
 \tf@toc=\write3
 \openout3 = `Winder_Writing_Project.toc'.
 
- [1] [2]
+ [1]
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 196.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-Overfull \hbox (11.419pt too wide) in paragraph at lines 208--209
-[]\OT1/cmr/m/n/12 THIS WAS THE IN-FOR-MA-TION I USED FOR MY WRIT-ING PROJECT
+) [2] [3]
+Overfull \hbox (2.6606pt too wide) in paragraph at lines 212--213
+\OT1/cmr/bx/n/12 data \OT1/cmr/m/n/12 (see code at $\OT1/cmtt/m/n/12 https : / 
+/ github . com / meaghanwinder / Writing-[]Project /
  []
 
-[3] [4] [5] (Winder_Writing_Project.bbl) [6] [7] (Winder_Writing_Project.aux) )
- 
+[4] [5] [6] [7] (Winder_Writing_Project.bbl) [8] [9]
+(Winder_Writing_Project.aux) ) 
 Here is how much of TeX's memory you used:
- 17872 strings out of 493305
- 321140 string characters out of 3138874
- 650471 words of memory out of 3000000
- 21236 multiletter control sequences out of 15000+200000
- 540408 words of font info for 51 fonts, out of 3000000 for 9000
+ 17875 strings out of 493305
+ 321178 string characters out of 3138874
+ 649471 words of memory out of 3000000
+ 21238 multiletter control sequences out of 15000+200000
+ 540884 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,7n,63p,1783b,319s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\mwind\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tc
-rm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Winder_Writing_Project.pdf (9 pages, 379394 bytes).
+ <C:\Users\mwind\AppData\Local\MiKTeX\2.9\fonts\p
+k\ljfour\jknappen\ec\dpi600\tcrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+ex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mtt12.pfb>
+Output written on Winder_Writing_Project.pdf (11 pages, 391607 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
+ 96 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
