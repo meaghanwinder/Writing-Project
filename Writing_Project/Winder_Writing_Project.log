@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2020.1.16)  28 JAN 2020 14:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2020.1.16)  3 FEB 2020 18:28
 entering extended mode
 **./Winder_Writing_Project.tex
 (Winder_Writing_Project.tex
@@ -63,6 +63,167 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\alltt.sty"
 Package: alltt 1997/06/16 v2.0g defines alltt environment
 )
+Package color Info: Redefining color fgcolor on input line 64.
+
+
+! LaTeX Error: Command \hlnum already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 ...1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}
+                                                  %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \hlstr already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 ...}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}
+                                                  %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \hlcom already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 ...olor[rgb]{0.678,0.584,0.686}{\textit{#1}}}
+                                                  %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \hlopt already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 ...and{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}
+                                                  %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \hlstd already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 ...1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}
+                                                  %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \hlkwa already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 ...color[rgb]{0.161,0.373,0.58}{\textbf{#1}}}
+                                                  %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \hlkwb already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 ...[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}
+                                                  %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \hlkwc already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.72 ...1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}
+                                                  %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \hlkwd already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.73 ...olor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}
+                                                  %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \kframe already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92  \at@end@of@kframe}
+                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Package color Info: Redefining color shadecolor on input line 95.
+Package color Info: Redefining color messagecolor on input line 96.
+Package color Info: Redefining color warningcolor on input line 97.
+Package color Info: Redefining color errorcolor on input line 98.
+
+! LaTeX Error: Command \knitrout already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.99 \newenvironment{knitrout}{}{}
+                                   % an empty environment to be redefined in...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 ("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2018/02/14 3.18 The Babel package
 
@@ -902,18 +1063,18 @@ Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
 (Winder_Writing_Project.aux)
 \openout1 = `Winder_Writing_Project.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
 
 ("C:\Users\mwind\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-p
 df.mkii"
@@ -1107,18 +1268,18 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 <msulogo.jpg, id=1, 276.3123pt x 193.6836pt>
 File: msulogo.jpg Graphic file (type jpg)
 <use msulogo.jpg>
-Package pdftex.def Info: msulogo.jpg  used on input line 129.
+Package pdftex.def Info: msulogo.jpg  used on input line 179.
 (pdftex.def)             Requested size: 142.26378pt x 99.72598pt.
  [1
 
 {C:/Users/mwind/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./msulogo.j
 pg>]
-Overfull \hbox (31.48502pt too wide) in paragraph at lines 157--162
+Overfull \hbox (31.48502pt too wide) in paragraph at lines 207--212
  [] 
  []
 
 
-Overfull \hbox (31.48502pt too wide) in paragraph at lines 167--172
+Overfull \hbox (31.48502pt too wide) in paragraph at lines 217--222
  [] 
  []
 
@@ -1127,44 +1288,165 @@ Overfull \hbox (31.48502pt too wide) in paragraph at lines 167--172
 \openout3 = `Winder_Writing_Project.toc'.
 
  [1]
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 196.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 246.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) [2] [3]
-Overfull \hbox (2.6606pt too wide) in paragraph at lines 212--213
+Overfull \hbox (2.6606pt too wide) in paragraph at lines 262--263
 \OT1/cmr/bx/n/12 data \OT1/cmr/m/n/12 (see code at $\OT1/cmtt/m/n/12 https : / 
 / github . com / meaghanwinder / Writing-[]Project /
  []
 
-[4] [5] [6] [7] (Winder_Writing_Project.bbl) [8] [9]
-(Winder_Writing_Project.aux) ) 
+[4] [5] [6] [7] [8] (Winder_Writing_Project.bbl) [9]
+Package color Info: Redefining color shadecolor on input line 373.
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 376.
+
+Overfull \hbox (121.25418pt too wide) in paragraph at lines 377--377
+[][]\OT1/cmtt/m/n/12 p[] []<-[] []0.6[] []\OT1/cmtt/m/it/12 # constant detectio
+n probability... could change to depend on covariates[][] 
+ []
+
+
+Overfull \hbox (139.90413pt too wide) in paragraph at lines 378--378
+[][]\OT1/cmtt/m/n/12 psi[] []<-[] []0.6[] []\OT1/cmtt/m/it/12 # constant occupa
+ncy probability... could change to depend on covariates [][] 
+ []
+
+
+Overfull \hbox (90.00435pt too wide) in paragraph at lines 380--380
+[][]\OT1/cmtt/m/n/12 J[] []<-[] []8[] []\OT1/cmtt/m/it/12 # constant number of 
+samples per site... does not need to be constant[][] 
+ []
+
+
+Overfull \hbox (30.68115pt too wide) in paragraph at lines 387--387
+[][]\OT1/cmtt/m/n/12 y1[,[] []3[][]][] []<-[] []rep[][](z,[] []each[] []= J)[] 
+[]\OT1/cmtt/m/it/12 # column indicating true site occupancy[][] 
+ []
+
+
+Overfull \hbox (97.17886pt too wide) in paragraph at lines 389--389
+[][]\OT1/cmtt/m/it/12 # creates a column of 1s and 0s indicating whether the 
+species was detected[][] 
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 390
+.
+(C:/PROGRA~1/R/R-36~1.2/share/texmf/tex/latex\omscmtt.fd
+File: omscmtt.fd 
+)
+LaTeX Font Info:    Font shape `OMS/cmtt/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 390.
+
+Overfull \hbox (249.42998pt too wide) in paragraph at lines 391--391
+[]    []\OT1/cmtt/m/n/12 y1[i,[] []4[][]][] []<-[] []rbinom[][]([][]1[][],[] []
+1[] [], p[][]*[][]y1[i,[] []3[][]])[] []\OT1/cmtt/m/it/12 # if the site is not 
+occupied the species cannot be detected[][] 
+ []
+
+
+Overfull \hbox (11.3752pt too wide) in paragraph at lines 394--394
+[][]\OT1/cmtt/m/n/12 colnames[][](y1)[] []<-[] []c[][]([][]"Site"[][],[] []"Sam
+ple"[][],[] []"True Occupancy"[][],[] []"Detected"[][])[][] 
+ []
+
+
+Overfull \hbox (251.67888pt too wide) in paragraph at lines 401--401
+[][]\OT1/cmtt/m/n/12 y2[] []<-[] []rbinom[][](M, J, p[][]*[][]z)[] []\OT1/cmtt/
+m/it/12 # total number of detections for the J samples within each of the M sit
+es, y_i[][] 
+ []
+
+
+Overfull \hbox (121.25418pt too wide) in paragraph at lines 404--404
+[][]\OT1/cmtt/m/n/12 p[] []<-[] []0.6[] []\OT1/cmtt/m/it/12 # constant detectio
+n probability... could change to depend on covariates[][] 
+ []
+
+
+Overfull \hbox (139.90413pt too wide) in paragraph at lines 405--405
+[][]\OT1/cmtt/m/n/12 psi[] []<-[] []0.6[] []\OT1/cmtt/m/it/12 # constant occupa
+ncy probability... could change to depend on covariates [][] 
+ []
+
+
+Overfull \hbox (124.43065pt too wide) in paragraph at lines 407--407
+[][]\OT1/cmtt/m/n/12 J[] []<-[] []sample[][]([][]1[][]:[][]10[][], M,[] []repla
+ce[] []= T)[] []\OT1/cmtt/m/it/12 # number of times each of the sites were samp
+led[][] 
+ []
+
+
+Overfull \hbox (313.42891pt too wide) in paragraph at lines 414--414
+[]  []\OT1/cmtt/m/n/12 y[i][] []<-[] []rbinom[][]([][]1[][], J[i], p[][]*[][]z[
+i])[] []\OT1/cmtt/m/it/12 # total number of detections for the J samples within
+ each of the M sites, y_i[][] 
+ []
+
+
+Overfull \hbox (384.1556pt too wide) in paragraph at lines 424--424
+[][]\OT1/cmtt/m/n/12 p[] []<-[] []exp[][](beta1.true[] []-[] []beta2.true[][]*[
+][]x)[][]/[][]([][]1[] []+[] []exp[][](beta1.true[] []-[] []beta2.true[][]*[][]
+x))[] []\OT1/cmtt/m/it/12 # detection probability depends on site covariate x[]
+[] 
+ []
+
+
+Overfull \hbox (396.5056pt too wide) in paragraph at lines 425--425
+[][]\OT1/cmtt/m/n/12 psi[] []<-[] []exp[][](beta3.true[] []+[] []beta4.true[][]
+*[][]x)[][]/[][]([][]1[] []+[] []exp[][](beta3.true[] []+[] []beta4.true[][]*[]
+[]x))[] []\OT1/cmtt/m/it/12 # occupancy probability depends on site covariate x
+[][] 
+ []
+
+
+Overfull \hbox (124.43065pt too wide) in paragraph at lines 426--426
+[][]\OT1/cmtt/m/n/12 J[] []<-[] []sample[][]([][]1[][]:[][]10[][], M,[] []repla
+ce[] []= T)[] []\OT1/cmtt/m/it/12 # number of times each of the sites were samp
+led[][] 
+ []
+
+
+Overfull \hbox (331.95392pt too wide) in paragraph at lines 433--433
+[]  []\OT1/cmtt/m/n/12 y[i][] []<-[] []rbinom[][]([][]1[][], J[i], p[i][][]*[][
+]z[i])[] []\OT1/cmtt/m/it/12 # total number of detections for the J samples wit
+hin each of the M sites, y_i[][] 
+ []
+
+
+Overfull \vbox (2.5783pt too high) detected at line 436
+ []
+
+[10] [11] (Winder_Writing_Project.aux) ) 
 Here is how much of TeX's memory you used:
- 17875 strings out of 493305
- 321178 string characters out of 3138874
- 649471 words of memory out of 3000000
- 21238 multiletter control sequences out of 15000+200000
- 540884 words of font info for 53 fonts, out of 3000000 for 9000
+ 17897 strings out of 493305
+ 321589 string characters out of 3138874
+ 655471 words of memory out of 3000000
+ 21255 multiletter control sequences out of 15000+200000
+ 541052 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,7n,63p,1783b,319s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\mwind\AppData\Local\MiKTeX\2.9\fonts\p
-k\ljfour\jknappen\ec\dpi600\tcrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-ex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mtt12.pfb>
-Output written on Winder_Writing_Project.pdf (11 pages, 391607 bytes).
+ <C:\Users\mwind\AppData\Local\MiKTeX\2
+.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmitt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmtt12.pfb>
+Output written on Winder_Writing_Project.pdf (13 pages, 415078 bytes).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
+ 107 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

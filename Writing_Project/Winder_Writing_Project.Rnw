@@ -1,54 +1,4 @@
 \documentclass[12pt]{article}\usepackage[]{graphicx}\usepackage[]{color}
-% maxwidth is the original width if it is less than linewidth
-% otherwise use linewidth (to make sure the graphics do not exceed the margin)
-\makeatletter
-\def\maxwidth{ %
-  \ifdim\Gin@nat@width>\linewidth
-    \linewidth
-  \else
-    \Gin@nat@width
-  \fi
-}
-\makeatother
-
-\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
-\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
-\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
-\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
-\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
-\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
-\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
-\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
-\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
-\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
-\let\hlipl\hlkwb
-
-\usepackage{framed}
-\makeatletter
-\newenvironment{kframe}{%
- \def\at@end@of@kframe{}%
- \ifinner\ifhmode%
-  \def\at@end@of@kframe{\end{minipage}}%
-  \begin{minipage}{\columnwidth}%
- \fi\fi%
- \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
- \colorbox{shadecolor}{##1}\hskip-\fboxsep
-     % There is no \\@totalrightmargin, so:
-     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
- \MakeFramed {\advance\hsize-\width
-   \@totalleftmargin\z@ \linewidth\hsize
-   \@setminipage}}%
- {\par\unskip\endMakeFramed%
- \at@end@of@kframe}
-\makeatother
-
-\definecolor{shadecolor}{rgb}{.97, .97, .97}
-\definecolor{messagecolor}{rgb}{0, 0, 0}
-\definecolor{warningcolor}{rgb}{1, 0, 1}
-\definecolor{errorcolor}{rgb}{1, 0, 0}
-\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
-
-\usepackage{alltt}\usepackage[]{graphicx}\usepackage[]{color}
 %% maxwidth is the original width if it is less than linewidth
 %% otherwise use linewidth (to make sure the graphics do not exceed the margin)
 \makeatletter
@@ -121,7 +71,7 @@
 }
 \usepackage{epsfig} % eps graphics
 %authoryear,open={(},close={)}}
-\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+
 \begin{document}
 
 \begin{titlepage}
@@ -267,11 +217,74 @@ Zebra mussels are a highly invasive species that have several negative impacts, 
 \item $\psi$ and $p$ both depend on a single site level covariate, $x$, with $j_i$ samples per $M = 10$ sites
 \end{itemize}
 
+<<sim1, echo = F, warning = F, message = F, results = 'hide'>>=
+# SIMULATED DATA 1
+set.seed(1202020)
+p <- 0.6 # constant detection probability... could change to depend on covariates
+psi <- 0.6 # constant occupancy probability... could change to depend on covariates 
+M <- 10 # number of sites
+J <- 8 # constant number of samples per site... does not need to be constant
 
+z <- rbinom(M, 1, psi) # site occupancy
 
+y1 <- matrix(NA, nrow = M*J, ncol = 4)
+y1[, 1] <- rep(1:M, each  = J) # column indicating site
+y1[, 2] <- rep(1:J, M) # column indicating sample within site
+y1[, 3] <- rep(z, each = J) # column indicating true site occupancy
 
+# creates a column of 1's and 0's indicating whether the species was detected
+for(i in 1:(M*J)){
+    y1[i, 4] <- rbinom(1, 1 , p*y1[i, 3]) # if the site is not occupied the species cannot be detected
+}
 
+colnames(y1) <- c("Site", "Sample", "True Occupancy", "Detected")
 
+library("car")
+some(y1) # view 10 sample rows of the simulated data
+
+# or
+
+y2 <- rbinom(M, J, p*z) # total number of detections for the J samples within each of the M sites, y_i
+@
+
+<<sim2, echo = F>>=
+# SIMULATED DATA 2
+set.seed(1222020)
+p <- 0.6 # constant detection probability... could change to depend on covariates
+psi <- 0.6 # constant occupancy probability... could change to depend on covariates 
+M <- 10 # number of sites
+J <- sample(1:10, M, replace = T) # number of times each of the sites were sampled
+
+z <- rbinom(M, 1, psi) # site occupancy
+
+y <- rep(NA, M)
+
+for(i in 1:M){
+  y[i] <- rbinom(1, J[i], p*z[i]) # total number of detections for the J samples within each of the M sites, y_i
+}
+@
+
+<<sim3, echo = F>>=
+#SIMULATED DATA 3
+set.seed(1222020)
+M <- 10 # number of sites
+x <- runif(10, 0, 10)
+beta1.true <- 2
+beta2.true <- 0.5
+beta3.true <- 0.5
+beta4.true <- 0.2
+p <- exp(beta1.true - beta2.true*x)/(1 + exp(beta1.true - beta2.true*x)) # detection probability depends on site covariate x
+psi <- exp(beta3.true + beta4.true*x)/(1 + exp(beta3.true + beta4.true*x)) # occupancy probability depends on site covariate x
+J <- sample(1:10, M, replace = T) # number of times each of the sites were sampled
+
+z <- rep(NA, M)
+y <- rep(NA, M)
+
+for(i in 1:M){
+  z[i] <- rbinom(1, 1, psi[i]) #site occupancy
+  y[i] <- rbinom(1, J[i], p[i]*z[i]) # total number of detections for the J samples within each of the M sites, y_i
+}
+@
 
 Things to think about for the simulation or questions I have: 
 \begin{itemize}
@@ -305,7 +318,15 @@ Additional questions, not directly related to the simulation:
 
 This could maybe be included in the introduction section... unless I do EDA here, then probably leave this as its own section
 
+<<load_data, echo = F, warning = F, message = F, results = 'hide'>>=
+library("readxl")
+USBR.login <- read_excel("C:/Users/mwind/OneDrive/Writing-Project/USBR_2018_data_sample.xlsx", sheet = 1)
+USBR.sampleprep <- read_excel("C:/Users/mwind/OneDrive/Writing-Project/USBR_2018_data_sample.xlsx", sheet = 2)
+USBR.microscopy <- read_excel("C:/Users/mwind/OneDrive/Writing-Project/USBR_2018_data_sample.xlsx", sheet = 3)
+USBR.PCR <- read_excel("C:/Users/mwind/OneDrive/Writing-Project/USBR_2018_data_sample.xlsx", sheet = 4)
 
+unique(USBR.sampleprep$`Water Name`) # number of lakes (sites) in the 2018 sample data
+@
 
 \section{Modeling Background}
 
@@ -369,72 +390,12 @@ A script containing all code used for this analysis is available at \\
 
 \singlespacing
 
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlcom{# SIMULATED DATA 1}
-\hlkwd{set.seed}\hlstd{(}\hlnum{1202020}\hlstd{)}
-\hlstd{p} \hlkwb{<-} \hlnum{0.6} \hlcom{# constant detection probability... could change to depend on covariates}
-\hlstd{psi} \hlkwb{<-} \hlnum{0.6} \hlcom{# constant occupancy probability... could change to depend on covariates }
-\hlstd{M} \hlkwb{<-} \hlnum{10} \hlcom{# number of sites}
-\hlstd{J} \hlkwb{<-} \hlnum{8} \hlcom{# constant number of samples per site... does not need to be constant}
-
-\hlstd{z} \hlkwb{<-} \hlkwd{rbinom}\hlstd{(M,} \hlnum{1}\hlstd{, psi)} \hlcom{# site occupancy}
-
-\hlstd{y1} \hlkwb{<-} \hlkwd{matrix}\hlstd{(}\hlnum{NA}\hlstd{,} \hlkwc{nrow} \hlstd{= M}\hlopt{*}\hlstd{J,} \hlkwc{ncol} \hlstd{=} \hlnum{4}\hlstd{)}
-\hlstd{y1[,} \hlnum{1}\hlstd{]} \hlkwb{<-} \hlkwd{rep}\hlstd{(}\hlnum{1}\hlopt{:}\hlstd{M,} \hlkwc{each}  \hlstd{= J)} \hlcom{# column indicating site}
-\hlstd{y1[,} \hlnum{2}\hlstd{]} \hlkwb{<-} \hlkwd{rep}\hlstd{(}\hlnum{1}\hlopt{:}\hlstd{J, M)} \hlcom{# column indicating sample within site}
-\hlstd{y1[,} \hlnum{3}\hlstd{]} \hlkwb{<-} \hlkwd{rep}\hlstd{(z,} \hlkwc{each} \hlstd{= J)} \hlcom{# column indicating true site occupancy}
-
-\hlcom{# creates a column of 1's and 0's indicating whether the species was detected}
-\hlkwa{for}\hlstd{(i} \hlkwa{in} \hlnum{1}\hlopt{:}\hlstd{(M}\hlopt{*}\hlstd{J))\{}
-    \hlstd{y1[i,} \hlnum{4}\hlstd{]} \hlkwb{<-} \hlkwd{rbinom}\hlstd{(}\hlnum{1}\hlstd{,} \hlnum{1} \hlstd{, p}\hlopt{*}\hlstd{y1[i,} \hlnum{3}\hlstd{])} \hlcom{# if the site is not occupied the species cannot be detected}
-\hlstd{\}}
-
-\hlkwd{colnames}\hlstd{(y1)} \hlkwb{<-} \hlkwd{c}\hlstd{(}\hlstr{"Site"}\hlstd{,} \hlstr{"Sample"}\hlstd{,} \hlstr{"True Occupancy"}\hlstd{,} \hlstr{"Detected"}\hlstd{)}
-
-\hlkwd{library}\hlstd{(}\hlstr{"car"}\hlstd{)}
-\hlkwd{some}\hlstd{(y1)} \hlcom{# view 10 sample rows of the simulated data}
-
-\hlcom{# or}
-
-\hlstd{y2} \hlkwb{<-} \hlkwd{rbinom}\hlstd{(M, J, p}\hlopt{*}\hlstd{z)} \hlcom{# total number of detections for the J samples within each of the M sites, y_i}
-\hlcom{# SIMULATED DATA 2}
-\hlkwd{set.seed}\hlstd{(}\hlnum{1222020}\hlstd{)}
-\hlstd{p} \hlkwb{<-} \hlnum{0.6} \hlcom{# constant detection probability... could change to depend on covariates}
-\hlstd{psi} \hlkwb{<-} \hlnum{0.6} \hlcom{# constant occupancy probability... could change to depend on covariates }
-\hlstd{M} \hlkwb{<-} \hlnum{10} \hlcom{# number of sites}
-\hlstd{J} \hlkwb{<-} \hlkwd{sample}\hlstd{(}\hlnum{1}\hlopt{:}\hlnum{10}\hlstd{, M,} \hlkwc{replace} \hlstd{= T)} \hlcom{# number of times each of the sites were sampled}
-
-\hlstd{z} \hlkwb{<-} \hlkwd{rbinom}\hlstd{(M,} \hlnum{1}\hlstd{, psi)} \hlcom{# site occupancy}
-
-\hlstd{y} \hlkwb{<-} \hlkwd{rep}\hlstd{(}\hlnum{NA}\hlstd{, M)}
-
-\hlkwa{for}\hlstd{(i} \hlkwa{in} \hlnum{1}\hlopt{:}\hlstd{M)\{}
-  \hlstd{y[i]} \hlkwb{<-} \hlkwd{rbinom}\hlstd{(}\hlnum{1}\hlstd{, J[i], p}\hlopt{*}\hlstd{z[i])} \hlcom{# total number of detections for the J samples within each of the M sites, y_i}
-\hlstd{\}}
-\hlcom{#SIMULATED DATA 3}
-\hlkwd{set.seed}\hlstd{(}\hlnum{1222020}\hlstd{)}
-\hlstd{M} \hlkwb{<-} \hlnum{10} \hlcom{# number of sites}
-\hlstd{x} \hlkwb{<-} \hlkwd{runif}\hlstd{(}\hlnum{10}\hlstd{,} \hlnum{0}\hlstd{,} \hlnum{10}\hlstd{)}
-\hlstd{beta1.true} \hlkwb{<-} \hlnum{2}
-\hlstd{beta2.true} \hlkwb{<-} \hlnum{0.5}
-\hlstd{beta3.true} \hlkwb{<-} \hlnum{0.5}
-\hlstd{beta4.true} \hlkwb{<-} \hlnum{0.2}
-\hlstd{p} \hlkwb{<-} \hlkwd{exp}\hlstd{(beta1.true} \hlopt{-} \hlstd{beta2.true}\hlopt{*}\hlstd{x)}\hlopt{/}\hlstd{(}\hlnum{1} \hlopt{+} \hlkwd{exp}\hlstd{(beta1.true} \hlopt{-} \hlstd{beta2.true}\hlopt{*}\hlstd{x))} \hlcom{# detection probability depends on site covariate x}
-\hlstd{psi} \hlkwb{<-} \hlkwd{exp}\hlstd{(beta3.true} \hlopt{+} \hlstd{beta4.true}\hlopt{*}\hlstd{x)}\hlopt{/}\hlstd{(}\hlnum{1} \hlopt{+} \hlkwd{exp}\hlstd{(beta3.true} \hlopt{+} \hlstd{beta4.true}\hlopt{*}\hlstd{x))} \hlcom{# occupancy probability depends on site covariate x}
-\hlstd{J} \hlkwb{<-} \hlkwd{sample}\hlstd{(}\hlnum{1}\hlopt{:}\hlnum{10}\hlstd{, M,} \hlkwc{replace} \hlstd{= T)} \hlcom{# number of times each of the sites were sampled}
-
-\hlstd{z} \hlkwb{<-} \hlkwd{rep}\hlstd{(}\hlnum{NA}\hlstd{, M)}
-\hlstd{y} \hlkwb{<-} \hlkwd{rep}\hlstd{(}\hlnum{NA}\hlstd{, M)}
-
-\hlkwa{for}\hlstd{(i} \hlkwa{in} \hlnum{1}\hlopt{:}\hlstd{M)\{}
-  \hlstd{z[i]} \hlkwb{<-} \hlkwd{rbinom}\hlstd{(}\hlnum{1}\hlstd{,} \hlnum{1}\hlstd{, psi[i])} \hlcom{#site occupancy}
-  \hlstd{y[i]} \hlkwb{<-} \hlkwd{rbinom}\hlstd{(}\hlnum{1}\hlstd{, J[i], p[i]}\hlopt{*}\hlstd{z[i])} \hlcom{# total number of detections for the J samples within each of the M sites, y_i}
-\hlstd{\}}
-\end{alltt}
-\end{kframe}
-\end{knitrout}
+<<echo = T, eval = F>>=
+<<data>>
+<<sim1>>
+<<sim2>>
+<<sim3>>
+@
 
 
 \lstset{

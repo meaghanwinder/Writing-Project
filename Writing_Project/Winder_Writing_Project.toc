@@ -6,8 +6,8 @@
 \contentsline {subsection}{\numberline {3.1}Occupancy Models}{7}
 \contentsline {subsection}{\numberline {3.2}Bayesian Modeling Background}{7}
 \contentsline {section}{\numberline {4}Methods}{7}
-\contentsline {section}{\numberline {5}Analysis}{7}
-\contentsline {section}{\numberline {6}Conclusion}{7}
-\contentsline {subsection}{\numberline {6.1}Further Investigations}{7}
-\contentsline {section}{\numberline {7}References}{8}
-\contentsline {section}{\numberline {8}Appendix - R Code}{9}
+\contentsline {section}{\numberline {5}Analysis}{8}
+\contentsline {section}{\numberline {6}Conclusion}{8}
+\contentsline {subsection}{\numberline {6.1}Further Investigations}{8}
+\contentsline {section}{\numberline {7}References}{9}
+\contentsline {section}{\numberline {8}Appendix - R Code}{10}
