@@ -217,6 +217,19 @@ Zebra mussels are a highly invasive species that have several negative impacts, 
 \item $\psi$ and $p$ both depend on a single site level covariate, $x$, with $j_i$ samples per $M = 10$ sites
 \end{itemize}
 
+$y_{i,j} = \{0, 1\}$ is the binary response for the $j^{th}$ sample within site $i$
+
+If the site is occupied: 
+\begin{itemize}
+\item $y_{i,j} \sim Bernoulli(p)$
+\item $y_i \sim Binomial(J, p)$ where $y_i$ is the total number of detections from the $J$ samples in the $i^{th}$ site 
+\end{itemize}
+
+If the site is unoccupied: 
+\begin{itemize}
+\item $y_{i,j} = 0$ with probability 1, since we assume there are no false detections
+\end{itemize}
+
 <<sim1, echo = F, warning = F, message = F, results = 'hide'>>=
 # SIMULATED DATA 1
 set.seed(1202020)
@@ -312,7 +325,21 @@ Additional questions, not directly related to the simulation:
 
 \section{Introduction}
 
-\subsection{Motivation}
+
+
+One criticism of the detection of zebra mussels using eDNA is that there is a non-zero false positive rate (this has been worked on?), what is the false negative rate?
+\begin{itemize}
+\item "a positive eDNA detection can occur even though the living target taxa was never present in the sampled water body" \cite{Sepulveda:eDNA}
+\item 
+\end{itemize}
+
+plankton tow methods: 
+\begin{itemize}
+\item "Plankton tow sampling is the current standard for early detection of dressenids in western North America. Using a net, large amounts of water and debris are collected and then concentrated for microscopic examination of the free-swimming larval form (i.e., veligers) of dreissenid mussels." identification is confirmed with a DNA test (PCR) \cite{Sepulvelda:eDNA} 
+\end{itemize}
+
+Research question(s): How does the detection probability of zebra mussels using microscopy compare to the detection probability of zebra mussels using eDNA? What is the false negative rate for both methods? Given that, how many samples should we collect at a given waterbody? 
+
 
 \section{Data}
 
@@ -333,15 +360,6 @@ unique(USBR.sampleprep$`Water Name`) # number of lakes (sites) in the 2018 sampl
 This whole section might be able to be merged with the methods section 
 
 \subsection{Occupancy Models}
-
-$y_{i,j} = \{0, 1\}$ is the binary response for the $j^{th}$ sample within site $i$
-
-If the site is occupied: 
-> $y_{i,j} \sim Bernoulli(p)$
-> $y_i \sim Binomial(J, p)$ where $y_i$ is the total number of detections from the $J$ samples in the $i^{th}$ site 
-
-If the site is unoccupied: 
-> $y_{i,j} = 0$ with probability 1, since we assume there are no false detections
  
 \subsection{Bayesian Modeling Background}
 
@@ -352,12 +370,13 @@ Package options for Multi-season single-species occupancy models:
 \item nimble.dynamic.occ
 \item STAN
 \item JAGS
+\item wiquid package??
 \item Frequentist Options: 
   \begin{itemize}
   \item unmarked
   \item Program MARK
   \end{itemize}
-\item write my own package 
+\item write my own package? 
 \end{itemize}
 
 \section{Analysis}
@@ -391,10 +410,10 @@ A script containing all code used for this analysis is available at \\
 \singlespacing
 
 <<echo = T, eval = F>>=
-<<data>>
 <<sim1>>
 <<sim2>>
 <<sim3>>
+<<load_data>>
 @
 
 
