@@ -329,13 +329,12 @@ Additional questions, not directly related to the simulation:
 
 One criticism of the detection of zebra mussels using eDNA is that there is a non-zero false positive rate (this has been worked on?), what is the false negative rate?
 \begin{itemize}
-\item "a positive eDNA detection can occur even though the living target taxa was never present in the sampled water body" \cite{Sepulveda:eDNA}
-\item 
+\item ``a positive eDNA detection can occur even though the living target taxa was never present in the sampled water body'' \cite{Sepulveda:eDNA}
 \end{itemize}
 
 plankton tow methods: 
 \begin{itemize}
-\item "Plankton tow sampling is the current standard for early detection of dressenids in western North America. Using a net, large amounts of water and debris are collected and then concentrated for microscopic examination of the free-swimming larval form (i.e., veligers) of dreissenid mussels." identification is confirmed with a DNA test (PCR) \cite{Sepulvelda:eDNA} 
+\item ``Plankton tow sampling is the current standard for early detection of dressenids in western North America. Using a net, large amounts of water and debris are collected and then concentrated for microscopic examination of the free-swimming larval form (i.e., veligers) of dreissenid mussels.'' identification is confirmed with a DNA test (PCR) \cite{Sepulvelda:eDNA} 
 \end{itemize}
 
 Research question(s): How does the detection probability of zebra mussels using microscopy compare to the detection probability of zebra mussels using eDNA? What is the false negative rate for both methods? Given that, how many samples should we collect at a given waterbody? 
