@@ -339,7 +339,7 @@ An alternative method for detection of rare, endangered, or invasive aquatic org
 When these two methods result in conflicting answers, decision making can be even more complicated, since a positive eDNA result only suggests that the DNA of the target species is present, regardless of whether the target species is alive or even present at all, but when veligers are detected, positive eDNA results indicate a potential colonization, which is useful to managers \cite{Holser:body}.
 
 
-\textbf{I wrote all this, and then realized I should probably include at least some stuff about occupancy models in order to discuss the research questions. I will work on incorporating this more when we nail down the data sets for sure.} 
+\textbf{I wrote all this, and then realized I should probably include at least some stuff about occupancy models in order to discuss the research questions. I will work on incorporating this more when we nail down the data sets for sure. Also, the research questions might need some tweaking based on which data set we do, or if we do both.} 
 
 Research question(s): How does the detection probability of zebra mussels using microscopy compare to the detection probability of zebra mussels using eDNA? What is the false negative rate for both methods? Given that, how many samples should we collect at a given water body? 
 

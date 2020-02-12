@@ -1,11 +1,11 @@
 \babel@toc {english}{}
 \contentsline {section}{\numberline {1}Introduction}{6}
-\contentsline {section}{\numberline {2}Data}{10}
+\contentsline {section}{\numberline {2}Data}{11}
 \contentsline {section}{\numberline {3}Modeling Background}{11}
 \contentsline {subsection}{\numberline {3.1}Occupancy Models}{11}
 \contentsline {subsection}{\numberline {3.2}Bayesian Modeling Background}{11}
 \contentsline {section}{\numberline {4}Methods}{11}
-\contentsline {section}{\numberline {5}Analysis}{11}
+\contentsline {section}{\numberline {5}Analysis}{12}
 \contentsline {section}{\numberline {6}Conclusion}{12}
 \contentsline {subsection}{\numberline {6.1}Further Investigations}{12}
 \contentsline {section}{\numberline {7}References}{13}
