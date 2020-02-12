@@ -1,9 +1,71 @@
 \begin{thebibliography}{}
 
+\bibitem[Bontke, 2020]{CBS:Austin}
+Bontke, J. (2020).
+\newblock City spends \$4 million on liquid compound to stop spread of zebra
+  mussels.
+\newblock {\em CBS|Austin}.
+
+\bibitem[{Bureau of Reclamation}, 2019]{BOR}
+{Bureau of Reclamation} (2019).
+\newblock Invasive mussels.
+\newblock \url{https://www.usbr.gov/mussels/index.html}.
+
+\bibitem[Holser, 2011]{Holser:detection}
+Holser, D.~M. (2011).
+\newblock Early detection of dreissenid species: {Zebra/Quagga} mussels in
+  water systems.
+\newblock {\em Aquatic Invasions}, 8(2):217--222.
+
+\bibitem[Holser, 2017]{Holser:body}
+Holser, D.~M. (2017).
+\newblock Where is the body? {Dreissenid mussels}, raw water testing, and the
+  real value of environmental {DNA}.
+\newblock {\em Management of Biological Invasions}, 8(3):335--341.
+
+\bibitem[McMahon, 1996]{McMahon}
+McMahon, R.~F. (1996).
+\newblock The physiological ecology of the zebra mussel, \textit{Dreissena
+  polymorpha}, {in North America and Europe}.
+\newblock {\em American Zoologist}, 36(3):339--363.
+
+\bibitem[Mills et~al., 1996]{Mills}
+Mills, E.~L., Rosenberg, G., Spidle, A.~P., Ludyanskiy, M., Pligin, Y., and
+  May, B. (1996).
+\newblock A review of the biology and ecology of the quagga mussel
+  (\textit{Dreissena bugensis}), a second species of freshwater dreissenid
+  introduced to {North America}.
+\newblock {\em American Zoologist}, 36(3):271--286.
+
+\bibitem[Nichols, 1996]{Nichols}
+Nichols, S.~J. (1996).
+\newblock Variations in the reproductive cycle of \textit{Dreissena polymorpha}
+  in {Europe, Russia, and North America}.
+\newblock {\em American Zoologist}, 36(3):311--325.
+
+\bibitem[Rees et~al., 2014]{Rees}
+Rees, H.~C., Maddison, B.~C., Middleditch, D.~J., Patmore, J.~R., and Gough,
+  K.~C. (2014).
+\newblock The detection of aquatic animal species using environmental dna -- a
+  review of edna as a survey tool in ecology.
+\newblock {\em Journal of Applied Ecology}, 51:1450--1459.
+
+\bibitem[Schmelzle and Kinziger, 2016]{Schmelzle}
+Schmelzle, M.~C. and Kinziger, A.~P. (2016).
+\newblock Using occupancy modelling to compare environmental {DNA} to
+  traditional field methods for regional-scale monitoring of an endangered
+  aquatic species.
+\newblock 16:1--14.
+
 \bibitem[Sepulveda et~al., 2019]{Sepulveda:eDNA}
 Sepulveda, A.~J., Amberg, J.~J., and Hanson, E. (2019).
 \newblock Using environmental {DNA} to extend the window of early detection for
   dreissenid mussels.
 \newblock {\em Managment of Biological Invasions}, 10(2):342--358.
+
+\bibitem[{U.S. National Park Service}, 2017]{NPS}
+{U.S. National Park Service} (2017).
+\newblock Invasive {Zebra Mussels}.
+\newblock \url{https://www.nps.gov/articles/zebra-mussels.htm}.
 
 \end{thebibliography}
