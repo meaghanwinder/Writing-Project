@@ -104,7 +104,7 @@
 \begin{flushleft} 
 \large
 \emph{Author:} \\
-Meaghan \textsc{Winder} \\
+\textsc{Meaghan Winder} \\
 \end{flushleft}
 \end{minipage}
 ~
@@ -112,7 +112,7 @@ Meaghan \textsc{Winder} \\
 \begin{flushright} 
 \large
 \emph{Supervisor:} \\
-Dr. Andrew \textsc{Hoegh} 
+\textsc{Dr. Andrew Hoegh} 
 \end{flushright}
 \end{minipage}\\[1.5cm]
 
@@ -182,6 +182,46 @@ Date& Mark C. Greenwood \\
 \end{abstract}
 
 \doublespacing
+
+\section{Introduction}
+
+In early 2020, the City of Austin, Texas approved the spending of four million dollars over the next five years in an attempt to remove zebra mussels from the city's source of drinking water with a liquid copper sulfate pentahydrate released into the water intake pipes \cite{CBS:Austin}. This is one of many pursuits to remove dreissenid mussels\footnote{Zebra mussels (\textit{Dreissena polymorpha}) and quagga mussels (\textit{Dreissena rostriformis bugensis}) collectively.} from water bodies across the United States, and four million dollars is only a small fraction of what is spent annually on control and mitigation efforts. 
+
+Zebra mussels are native to the Caspian and Black Seas, but have become widespread in both Europe and the United States; they were discovered in the Great Lakes in the late 1980s and have since spread rapidly across the United States. The United States National Park Service stated that ``[o]nce a population of zebra mussels has become established in a water body, there is very little to be done to remove them. Prevention, therefore, is the best way to keep a water body clean of zebra mussels'' \cite{NPS}; hence, early detection of invasive species, such as dreissenid mussels, has become a priority, so that organizations can plan, budget, and install necessary technologies before colonization has occured \cite{Holser:body}. 
+
+Zebra mussels live between two and five years; they start as microscopic veligers but mature to thumbnail sized adults; they begin reproduction at two years of age, after which, females can release up to one million eggs per year \cite{NPS}. Dreissenid mussel veligers free-swim in the water; often, they travel to uninfested waters on boats or through other aquatic recreational activies, however, sometimes they are moved by nature and travel downstream to uninfested waters. Adult dreissenids attach and colonize hard surfaces in the water, which often results in costly removal procedures \cite{Holser:detection}. This process of accumulation of adult zebra mussels on rocks, native mussels, docks, boats, or other hard surfaces is referred to as ``biofouling,'' and objects that are in the water for long periods of time become difficult and costly to clean. Water supply and delivery facilities, water recreation sites, and other water dependent economies in dreissenid mussel infested waters become much more expensive to maintain and operate \cite{BOR}. Dreissenid infestations result not only in economic impacts, but in environmental ones as well. Dreissenid mussels are filter feeders and siphon plankton from the water, which can lead to changes the water body ecosystem by increasing water clarity; a single adult dreissenid can filter about a liter of water per day, which reduces the availability of algae for native mussels and bottom feeding fish \cite{BOR}. Additionally, ``biofouling'' can prevent native mussels from moving, feeding, reproducing, or regulating the water system. Several actions, such as the 2017 initiative, \textit{Safeguarding the West from Invasive Species}, by the Department of the Interior, have been taken to protect water bodies in the western United States from the economic and ecological threats posed by the invasive dreissenid mussels. Early detection of dreissenid mussel species can reduce the economic and ecological reprocussions of dreissenid infestations, however there are issues with the available early detection methods. 
+
+The established standard for early detection of dreissenids in the western United States is plankton tow sampling for mussel veligers. Using a fine mesh net, water and debris are collected at multiple sampling sites within each water body; the debris from each net collected at the same sampling site on the same day is aggregated and examined, using cross-polarized light microscopy, for the free-swimming veligers. Following the microscopic examination, positive species identification is confirmed using polymerase chain reaction (PCR). This early detection method requires a breeding population, so is limited to the weeks immediately following a spawning event \cite{Nichols}; spawning begins at water temperatures above 10$^\circ$ C for quagga mussels and above 12$^\circ$ C for zebra mussels \cite{McMahon, Mills}. This suggests that veliger availability in northern latitude water bodies is typically limited to warmer months \cite{Sepulveda:eDNA}.
+
+An alternative method for detection of rare, endangered, or invasive aquatic organisms, one growing in popularity, are environmental DNA (eDNA) surveys \cite{Schmelzle}. Environmental DNA methods can detect DNA diffused from the target species from water sampled from a water body. Sepulveda, Amberg, and Hanson suggest the use of eDNA surveys may widen the seasonal sampling window over plankton tow methods, since eDNA does not rely on a breeding population (2019). This method is more time and cost effective than traditional sampling methods for species of low abundance \cite{Rees}. However, a positive eDNA result does not necessarily mean the target species is present or alive at the site; positive eDNA results can be obtained from ``a failed introduction, from external sources, or from field contamination, rather than fresh DNA from mussel colonization'' \cite{Sepulveda:eDNA}. One criticism of the detection of dreissenid mussels using eDNA is there is a possibility of obtaining false-positive results; since control efforts for invasive species are costly, there is some hesitation in using eDNA surveys as the sole decision-making tool for the management of invasive species. 
+
+When these two methods result in conflicting answers, decision making can be even more complicated, since a positive eDNA result only suggests that the DNA of the target species is present, regardless of whether the species is alive or even present at all, but when veligers are detected, positive eDNA results indicate a potential colonization, which is useful to managers \cite{Holser:body}.
+
+
+\textbf{I wrote all this, and then realized I should probably include at least some stuff about occupancy models in order to discuss the research questions. I will work on incorporating this more when we nail down the data sets for sure. Also, the research questions might need some tweaking based on which data set we do, or if we do both.} 
+
+Research question(s): How does the detection probability of zebra mussels using microscopy compare to the detection probability of zebra mussels using eDNA? What is the false negative rate for both methods? Given that, how many samples should we collect at a given water body? 
+
+
+\section{Data}
+
+This could maybe be included in the introduction section... unless I do EDA here, then probably leave this as its own section
+
+<<load_data, echo = F, warning = F, message = F, results = 'hide'>>=
+library("readxl")
+USBR.login <- read_excel("C:/Users/mwind/OneDrive/Writing-Project/USBR_2018_data_sample.xlsx", sheet = 1)
+USBR.sampleprep <- read_excel("C:/Users/mwind/OneDrive/Writing-Project/USBR_2018_data_sample.xlsx", sheet = 2)
+USBR.microscopy <- read_excel("C:/Users/mwind/OneDrive/Writing-Project/USBR_2018_data_sample.xlsx", sheet = 3)
+USBR.PCR <- read_excel("C:/Users/mwind/OneDrive/Writing-Project/USBR_2018_data_sample.xlsx", sheet = 4)
+
+unique(USBR.sampleprep$`Water Name`) # number of lakes (sites) in the 2018 sample data
+@
+
+\section{Modeling Background}
+
+This whole section might be able to be merged with the methods section 
+
+\subsection{Occupancy Models}
 
 \noindent{\bfseries free write... this is very messy, basically just word vomit}
 
@@ -322,47 +362,6 @@ Additional questions, not directly related to the simulation:
 	\item One assumption of occupancy models is that there is a non-zero probability of misidentification. I read an article (Denise Holser) that suggests that there might be an issue with that assumption in this situation because there are similar looking organisms that may be present in the waters; she then suggest that the Bureau of Reclamation has attempted to mediate this issue with improved microscopic methods and improved PCR methods. I will look into this some more.   
 \end{itemize}
 
-
-\section{Introduction}
-
-In early 2020, the City of Austin, Texas approved the spending of four million dollars over the next five years in an attempt to remove zebra mussels from the city's source of drinking water with a liquid copper sulfate pentahydrate released into the water intake pipes \cite{CBS:Austin}. This example is one of many pursuits to remove dreissenid mussels\footnote{Zebra mussels (\textit{Dreissena polymorpha}) and quagga mussels (\textit{Dreissena rostriformis bugensis}) collectively.} from water bodies across the United States, and the four million dollars is only a small fraction of what is spent annually on control and mitigation efforts \cite{Sepulveda:eDNA}. 
-
-Zebra mussels are native to the Caspian and Black Seas, but have become widespread in both Europe and the United States; zebra mussels were discovered in the Great Lakes in the late 1980s and have since spread rapidly across the United States \cite{NPS}. The United States National Park Service stated that ``[o]nce a population of zebra mussels has become established in a water body, there is very little to be done to remove them. Prevention, therefore, is the best way to keep a water body clean of zebra mussels'' (2017); hence, early detection of invasive species, such as dreissenid mussels, has become a priority, so that organizations can plan, budget, and install necessary technologies before colonization has occured \cite{Holser:body}. 
-
-Zebra mussels live between two and five years; they start as microscopic veligers but mature to thumbnail sized adults \cite{NPS}. Zebra mussels begin reproduction at two years of age, after which, females can release up to one million eggs per year \cite{NPS}. Dreissenid mussel veligers free-swim in the water; often, they travel to uninfested waters on boats or through other aquatic recreational activies, however, sometimes they are moved by nature and travel downstream to uninfested waters \cite{BOR, Holser:body, NPS}. Adult dreissenids attach and colonize hard surfaces in the water, which results in economic issues \cite{Holser:detection}. This process of accumulation of adult zebra mussels on rocks, native mussels, docks, boats, or other hard surfaces is referred to as ``biofouling,'' and objects that are in the water for long periods of time become difficult and costly to clean \cite{NPS}. Water supply and delivery facilities, water recreation sites, and other water dependent economies in dreissenid mussel infested waters become much more expensive to maintain and operate \cite{BOR}. Dreissenid mussel infestations result not only in economic impacts, but in environmental ones as well. Dreissenid mussels are filter feeders and siphon plankton from the water, which can lead to changes the water body ecosystem by increasing water clarity \cite{NPS}; a single adult dreissenid can filter about a liter of water per day, which reduces the availability of algae for native mussels and bottom feeding fish \cite{BOR}. Additionally, ``biofouling'' can prevent native mussels from moving, feeding, reproducing, or regulating water \cite{NPS}. Several actions, such as the 2017 initiative, \textit{Safeguarding the West from Invasive Species}, by the Department of the Interior, have been taken to protect water bodies in the western United States from the economic and ecological threats posed by the invasive dreissenid mussels \cite{BOR}. Early detection of dreissenid mussel species can reduce the economic and ecological reprocussions of dreissenid mussel infestations, but there are issues with the available early detection methods. 
-
-The established standard for early detection of dreissenids in the western United States is plankton tow sampling for mussel veligers \cite{Sepulveda:eDNA}. Using a fine mesh net, water and debris are collected at multiple sampling sites within each water body; the debris from each net collected at the same sampling site on the same day is aggregated and examined, using cross-polarized light microscopy, for the free-swimming veligers. Following the microscopic examination, positive species identification is confirmed with a polymerase chain reaction (PCR) test \cite{Sepulveda:eDNA}. This early detection method requires a breeding population, so is limited to the weeks immediately following a spawning event \cite{Nichols}; spawning begins at water temperatures above 10$^\circ$ C for quagga mussels and above 12$^\circ$ C for zebra mussels \cite{McMahon, Mills}. This suggests that 
-veliger availability in northern latitude water bodies is typically limited to warmer months \cite{Sepulveda:eDNA}.
-
-An alternative method for detection of rare, endangered, or invasive aquatic organisms, one that is growing in popularity, are environmental DNA (eDNA) surveys \cite{Schmelzle}. As opposed to plankton tow sampling, eDNA is a molecular approach that can detect DNA diffused from target organisms into a water body \cite{Sepulveda:eDNA}. It is suggested that the use of eDNA surveys may widen the seasonal sampling window over plankton tow methods, since eDNA does not rely on a breeding population \cite{Sepulveda:eDNA}. This method is more time and cost effective than traditional sampling methods for species of low abundance \cite{Rees}; ``eDNA is a highly sensitive tool for dreissenid mussel surveillance in newly invaded waters and in seasons when veligers are likely to be rare'' \cite{Sepulveda:eDNA}. However, a positive eDNA result does not necessarily mean that the target species is present or alive at the site; positive eDNA results can be obtained from ``a failed introduction, from external sources, or from field contamination, rather than fresh DNA from mussel colonization'' \cite{Sepulveda:eDNA}. One criticism of the detection of dreissenid mussels using eDNA is that there is a possibility of obtaining a false-positive result; since control efforts for invasive species are costly, there is hesitation in using eDNA surveys as decision-making tools for invasive species \cite{Sepulveda:eDNA}. 
-
-When these two methods result in conflicting answers, decision making can be even more complicated, since a positive eDNA result only suggests that the DNA of the target species is present, regardless of whether the target species is alive or even present at all, but when veligers are detected, positive eDNA results indicate a potential colonization, which is useful to managers \cite{Holser:body}.
-
-
-\textbf{I wrote all this, and then realized I should probably include at least some stuff about occupancy models in order to discuss the research questions. I will work on incorporating this more when we nail down the data sets for sure. Also, the research questions might need some tweaking based on which data set we do, or if we do both.} 
-
-Research question(s): How does the detection probability of zebra mussels using microscopy compare to the detection probability of zebra mussels using eDNA? What is the false negative rate for both methods? Given that, how many samples should we collect at a given water body? 
-
-
-\section{Data}
-
-This could maybe be included in the introduction section... unless I do EDA here, then probably leave this as its own section
-
-<<load_data, echo = F, warning = F, message = F, results = 'hide'>>=
-library("readxl")
-USBR.login <- read_excel("C:/Users/mwind/OneDrive/Writing-Project/USBR_2018_data_sample.xlsx", sheet = 1)
-USBR.sampleprep <- read_excel("C:/Users/mwind/OneDrive/Writing-Project/USBR_2018_data_sample.xlsx", sheet = 2)
-USBR.microscopy <- read_excel("C:/Users/mwind/OneDrive/Writing-Project/USBR_2018_data_sample.xlsx", sheet = 3)
-USBR.PCR <- read_excel("C:/Users/mwind/OneDrive/Writing-Project/USBR_2018_data_sample.xlsx", sheet = 4)
-
-unique(USBR.sampleprep$`Water Name`) # number of lakes (sites) in the 2018 sample data
-@
-
-\section{Modeling Background}
-
-This whole section might be able to be merged with the methods section 
-
-\subsection{Occupancy Models}
  
 \subsection{Bayesian Modeling Background}
 

@@ -4,12 +4,15 @@
 Bontke, J. (2020).
 \newblock City spends \$4 million on liquid compound to stop spread of zebra
   mussels.
-\newblock {\em CBS|Austin}.
+\newblock
+  \url{https://cbsaustin.com/news/local/city-spends-4-million-on-liquid-compound-to-stop-spread-of-zebra-mussels}.
+\newblock Date accessed: January 29, 2020.
 
 \bibitem[{Bureau of Reclamation}, 2019]{BOR}
 {Bureau of Reclamation} (2019).
 \newblock Invasive mussels.
 \newblock \url{https://www.usbr.gov/mussels/index.html}.
+\newblock Date accessed: Feburary 11, 2020.
 
 \bibitem[Holser, 2011]{Holser:detection}
 Holser, D.~M. (2011).
@@ -67,5 +70,6 @@ Sepulveda, A.~J., Amberg, J.~J., and Hanson, E. (2019).
 {U.S. National Park Service} (2017).
 \newblock Invasive {Zebra Mussels}.
 \newblock \url{https://www.nps.gov/articles/zebra-mussels.htm}.
+\newblock February 11, 2020.
 
 \end{thebibliography}

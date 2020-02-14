@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2020.1.16)  11 FEB 2020 21:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2020.1.16)  14 FEB 2020 14:06
 entering extended mode
 **./Winder_Writing_Project.tex
 (Winder_Writing_Project.tex
@@ -1292,108 +1292,118 @@ Overfull \hbox (31.48502pt too wide) in paragraph at lines 217--222
 \tf@toc=\write3
 \openout3 = `Winder_Writing_Project.toc'.
 
- [1]
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 246.
+ [1] [2] [3]
+Overfull \hbox (4.90434pt too wide) in paragraph at lines 246--247
+\OT1/cmr/m/n/12 aquatic or-gan-isms, one grow-ing in pop-u-lar-ity, are en-vi-r
+on-men-tal DNA (eDNA)
+ []
 
+[4] [5] [6]
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 278.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [2] [3]
-Overfull \hbox (2.6606pt too wide) in paragraph at lines 262--263
+) [7]
+Overfull \hbox (2.6606pt too wide) in paragraph at lines 294--295
 \OT1/cmr/bx/n/12 data \OT1/cmr/m/n/12 (see code at $\OT1/cmtt/m/n/12 https : / 
 / github . com / meaghanwinder / Writing-[]Project /
  []
 
-[4] [5] [6] [7] [8] [9] [10] [11] [12] (Winder_Writing_Project.bbl [13])
-[14]
-Package color Info: Redefining color shadecolor on input line 395.
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 398.
+[8] [9] [10] [11] (Winder_Writing_Project.bbl
+Overfull \hbox (87.36383pt too wide) in paragraph at lines 4--10
+\OT1/cmtt/m/n/12 city-[]spends-[]4-[]million-[]on-[]liquid-[]compound-[]to-[]st
+op-[]spread-[]of-[]zebra-[]mussels$\OT1/cmr/m/n/12 . 
+ []
 
-Overfull \hbox (121.25418pt too wide) in paragraph at lines 399--399
+[12]) [13]
+Package color Info: Redefining color shadecolor on input line 394.
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 397.
+
+Overfull \hbox (121.25418pt too wide) in paragraph at lines 398--398
 [][]\OT1/cmtt/m/n/12 p[] []<-[] []0.6[] []\OT1/cmtt/m/it/12 # constant detectio
 n probability... could change to depend on covariates[][] 
  []
 
 
-Overfull \hbox (139.90413pt too wide) in paragraph at lines 400--400
+Overfull \hbox (139.90413pt too wide) in paragraph at lines 399--399
 [][]\OT1/cmtt/m/n/12 psi[] []<-[] []0.6[] []\OT1/cmtt/m/it/12 # constant occupa
 ncy probability... could change to depend on covariates [][] 
  []
 
 
-Overfull \hbox (90.00435pt too wide) in paragraph at lines 402--402
+Overfull \hbox (90.00435pt too wide) in paragraph at lines 401--401
 [][]\OT1/cmtt/m/n/12 J[] []<-[] []8[] []\OT1/cmtt/m/it/12 # constant number of 
 samples per site... does not need to be constant[][] 
  []
 
 
-Overfull \hbox (30.68115pt too wide) in paragraph at lines 409--409
+Overfull \hbox (30.68115pt too wide) in paragraph at lines 408--408
 [][]\OT1/cmtt/m/n/12 y1[,[] []3[][]][] []<-[] []rep[][](z,[] []each[] []= J)[] 
 []\OT1/cmtt/m/it/12 # column indicating true site occupancy[][] 
  []
 
 
-Overfull \hbox (97.17886pt too wide) in paragraph at lines 411--411
+Overfull \hbox (97.17886pt too wide) in paragraph at lines 410--410
 [][]\OT1/cmtt/m/it/12 # creates a column of 1s and 0s indicating whether the 
 species was detected[][] 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 412
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 411
 .
 (C:/PROGRA~1/R/R-36~1.2/share/texmf/tex/latex\omscmtt.fd
 File: omscmtt.fd 
 )
 LaTeX Font Info:    Font shape `OMS/cmtt/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 412.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 411.
 
-Overfull \hbox (249.42998pt too wide) in paragraph at lines 413--413
+Overfull \hbox (249.42998pt too wide) in paragraph at lines 412--412
 []    []\OT1/cmtt/m/n/12 y1[i,[] []4[][]][] []<-[] []rbinom[][]([][]1[][],[] []
 1[] [], p[][]*[][]y1[i,[] []3[][]])[] []\OT1/cmtt/m/it/12 # if the site is not 
 occupied the species cannot be detected[][] 
  []
 
 
-Overfull \hbox (11.3752pt too wide) in paragraph at lines 416--416
+Overfull \hbox (11.3752pt too wide) in paragraph at lines 415--415
 [][]\OT1/cmtt/m/n/12 colnames[][](y1)[] []<-[] []c[][]([][]"Site"[][],[] []"Sam
 ple"[][],[] []"True Occupancy"[][],[] []"Detected"[][])[][] 
  []
 
 
-Overfull \hbox (251.67888pt too wide) in paragraph at lines 423--423
+Overfull \hbox (251.67888pt too wide) in paragraph at lines 422--422
 [][]\OT1/cmtt/m/n/12 y2[] []<-[] []rbinom[][](M, J, p[][]*[][]z)[] []\OT1/cmtt/
 m/it/12 # total number of detections for the J samples within each of the M sit
 es, y_i[][] 
  []
 
 
-Overfull \hbox (121.25418pt too wide) in paragraph at lines 426--426
+Overfull \hbox (121.25418pt too wide) in paragraph at lines 425--425
 [][]\OT1/cmtt/m/n/12 p[] []<-[] []0.6[] []\OT1/cmtt/m/it/12 # constant detectio
 n probability... could change to depend on covariates[][] 
  []
 
 
-Overfull \hbox (139.90413pt too wide) in paragraph at lines 427--427
+Overfull \hbox (139.90413pt too wide) in paragraph at lines 426--426
 [][]\OT1/cmtt/m/n/12 psi[] []<-[] []0.6[] []\OT1/cmtt/m/it/12 # constant occupa
 ncy probability... could change to depend on covariates [][] 
  []
 
 
-Overfull \hbox (124.43065pt too wide) in paragraph at lines 429--429
+Overfull \hbox (124.43065pt too wide) in paragraph at lines 428--428
 [][]\OT1/cmtt/m/n/12 J[] []<-[] []sample[][]([][]1[][]:[][]10[][], M,[] []repla
 ce[] []= T)[] []\OT1/cmtt/m/it/12 # number of times each of the sites were samp
 led[][] 
  []
 
 
-Overfull \hbox (313.42891pt too wide) in paragraph at lines 436--436
+Overfull \hbox (313.42891pt too wide) in paragraph at lines 435--435
 []  []\OT1/cmtt/m/n/12 y[i][] []<-[] []rbinom[][]([][]1[][], J[i], p[][]*[][]z[
 i])[] []\OT1/cmtt/m/it/12 # total number of detections for the J samples within
  each of the M sites, y_i[][] 
  []
 
 
-Overfull \hbox (384.1556pt too wide) in paragraph at lines 446--446
+Overfull \hbox (384.1556pt too wide) in paragraph at lines 445--445
 [][]\OT1/cmtt/m/n/12 p[] []<-[] []exp[][](beta1.true[] []-[] []beta2.true[][]*[
 ][]x)[][]/[][]([][]1[] []+[] []exp[][](beta1.true[] []-[] []beta2.true[][]*[][]
 x))[] []\OT1/cmtt/m/it/12 # detection probability depends on site covariate x[]
@@ -1401,7 +1411,7 @@ x))[] []\OT1/cmtt/m/it/12 # detection probability depends on site covariate x[]
  []
 
 
-Overfull \hbox (396.5056pt too wide) in paragraph at lines 447--447
+Overfull \hbox (396.5056pt too wide) in paragraph at lines 446--446
 [][]\OT1/cmtt/m/n/12 psi[] []<-[] []exp[][](beta3.true[] []+[] []beta4.true[][]
 *[][]x)[][]/[][]([][]1[] []+[] []exp[][](beta3.true[] []+[] []beta4.true[][]*[]
 []x))[] []\OT1/cmtt/m/it/12 # occupancy probability depends on site covariate x
@@ -1409,58 +1419,58 @@ Overfull \hbox (396.5056pt too wide) in paragraph at lines 447--447
  []
 
 
-Overfull \hbox (124.43065pt too wide) in paragraph at lines 448--448
+Overfull \hbox (124.43065pt too wide) in paragraph at lines 447--447
 [][]\OT1/cmtt/m/n/12 J[] []<-[] []sample[][]([][]1[][]:[][]10[][], M,[] []repla
 ce[] []= T)[] []\OT1/cmtt/m/it/12 # number of times each of the sites were samp
 led[][] 
  []
 
 
-Overfull \hbox (331.95392pt too wide) in paragraph at lines 455--455
+Overfull \hbox (331.95392pt too wide) in paragraph at lines 454--454
 []  []\OT1/cmtt/m/n/12 y[i][] []<-[] []rbinom[][]([][]1[][], J[i], p[i][][]*[][
 ]z[i])[] []\OT1/cmtt/m/it/12 # total number of detections for the J samples wit
 hin each of the M sites, y_i[][] 
  []
 
 
-Overfull \hbox (258.37532pt too wide) in paragraph at lines 458--458
+Overfull \hbox (258.37532pt too wide) in paragraph at lines 457--457
 [][]\OT1/cmtt/m/n/12 USBR.login[] []<-[] []read_excel[][]([][]"C:/Users/mwind/O
 neDrive/Writing-Project/USBR_2018_data_sample.xlsx"[][],[] []sheet[] []=[] []1[
 ][])[][] 
  []
 
 
-Overfull \hbox (289.25034pt too wide) in paragraph at lines 459--459
+Overfull \hbox (289.25034pt too wide) in paragraph at lines 458--458
 [][]\OT1/cmtt/m/n/12 USBR.sampleprep[] []<-[] []read_excel[][]([][]"C:/Users/mw
 ind/OneDrive/Writing-Project/USBR_2018_data_sample.xlsx"[][],[] []sheet[] []=[]
  []2[][])[][] 
  []
 
 
-Overfull \hbox (289.25034pt too wide) in paragraph at lines 460--460
+Overfull \hbox (289.25034pt too wide) in paragraph at lines 459--459
 [][]\OT1/cmtt/m/n/12 USBR.microscopy[] []<-[] []read_excel[][]([][]"C:/Users/mw
 ind/OneDrive/Writing-Project/USBR_2018_data_sample.xlsx"[][],[] []sheet[] []=[]
  []3[][])[][] 
  []
 
 
-Overfull \hbox (246.02531pt too wide) in paragraph at lines 461--461
+Overfull \hbox (246.02531pt too wide) in paragraph at lines 460--460
 [][]\OT1/cmtt/m/n/12 USBR.PCR[] []<-[] []read_excel[][]([][]"C:/Users/mwind/One
 Drive/Writing-Project/USBR_2018_data_sample.xlsx"[][],[] []sheet[] []=[] []4[][
 ])[][] 
  []
 
 
-Overfull \hbox (149.2556pt too wide) in paragraph at lines 463--463
+Overfull \hbox (149.2556pt too wide) in paragraph at lines 462--462
 [][]\OT1/cmtt/m/n/12 unique[][](USBR.sampleprep[][]$[][]Water Name)[] []\OT1/
 cmtt/m/it/12 # number of lakes (sites) in the 2018 sample data[][] 
  []
 
 
-Overfull \vbox (2.5783pt too high) detected at line 465
+Overfull \vbox (2.5783pt too high) detected at line 464
  []
 
-[15] [16] (Winder_Writing_Project.aux) ) 
+[14] [15] (Winder_Writing_Project.aux) ) 
 Here is how much of TeX's memory you used:
  17997 strings out of 493305
  322903 string characters out of 3138874
@@ -1468,7 +1478,7 @@ Here is how much of TeX's memory you used:
  21351 multiletter control sequences out of 15000+200000
  541852 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,8n,63p,2206b,321s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,8n,63p,2130b,321s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\mwind\AppData\Local\MiKTeX\2
 .9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
@@ -1485,9 +1495,9 @@ blic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Winder_Writing_Project.pdf (18 pages, 456036 bytes).
+Output written on Winder_Writing_Project.pdf (17 pages, 455687 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
+ 128 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
