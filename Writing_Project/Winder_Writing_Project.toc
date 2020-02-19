@@ -3,9 +3,9 @@
 \contentsline {section}{\numberline {2}Data}{6}
 \contentsline {section}{\numberline {3}Modeling Background}{6}
 \contentsline {subsection}{\numberline {3.1}Occupancy Models}{6}
-\contentsline {subsection}{\numberline {3.2}Bayesian Modeling Background}{11}
-\contentsline {section}{\numberline {4}Methods}{11}
-\contentsline {section}{\numberline {5}Analysis}{11}
+\contentsline {subsection}{\numberline {3.2}Bayesian Modeling Background}{10}
+\contentsline {section}{\numberline {4}Methods}{10}
+\contentsline {section}{\numberline {5}Analysis}{10}
 \contentsline {section}{\numberline {6}Conclusion}{11}
 \contentsline {subsection}{\numberline {6.1}Further Investigations}{11}
 \contentsline {section}{\numberline {7}References}{12}
