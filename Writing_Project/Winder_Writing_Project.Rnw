@@ -55,7 +55,9 @@
 \usepackage{bm}
 \usepackage{graphicx}
 \usepackage{cite}
+\def\citepunct{; \penalty\citepunctpenalty}
 \usepackage{url}
+\usepackage{soul}
 \usepackage{caption}
 \usepackage{setspace}
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -196,12 +198,7 @@ The established standard for early detection of dreissenids in the western Unite
 
 An alternative method for detection of rare, endangered, or invasive species, one growing in popularity, is environmental DNA (eDNA) surveys \cite{Schmelzle}. Environmental DNA methods can detect DNA diffused from the target species from water sampled from a water body. Multiple water samples are collected from each sampling site within a lake, the samples are then analyzed using one of several types of PCR chemistry. Sepulveda, Amberg, and Hanson (2019) suggest the use of eDNA surveys may widen the seasonal sampling window over plankton tow methods, since eDNA does not rely on a breeding population. This method is more time and cost effective than traditional sampling methods for species of low abundance \cite{Rees}. However, a positive eDNA result does not necessarily mean the target species is present or alive at the site; positive eDNA results can be obtained from ``a failed introduction, from external sources, or from field contamination, rather than fresh DNA from mussel colonization'' \cite{Sepulveda:eDNA}. One criticism of the detection of dreissenid mussels using eDNA is there is a possibility of obtaining false-positive results; since control efforts for invasive species are costly, there is some hesitation in using eDNA surveys as the sole decision-making tool for the management of invasive species. 
 
-\textit{Occupancy models allow the occurence of a species to be accurately estimated, even when the species is imperfectly detected. For both the plankton tow surveys and the eDNA surveys, there is a non-zero probability of a false positive result. repeated surveys at the same site to learn about detection probability. generally, even if the site is target species is present at the site, not all samples from the site will contain the target species, and even if the sample contains the target species, not all subsamples from it will test positive for the target species.}
-
-When these two methods result in conflicting answers, decision making can be even more complicated, since a positive eDNA result only suggests that the DNA of the target species is present, regardless of whether the species is alive or even present at all, but when veligers are detected, positive eDNA results indicate a potential colonization, which is useful to managers \cite{Holser:body}.
-
-Research question(s): How does the detection probability of zebra mussels using microscopy compare to the detection probability of zebra mussels using eDNA? What is the false negative rate for both methods? Given that, how many samples should we collect at a given water body? 
-
+When these two methods result in conflicting answers, decision making can be even more complicated, since a positive eDNA result only suggests that the DNA of the target species is present, regardless of whether the species is alive or even present at all, but when veligers are detected, positive eDNA results indicate a potential colonization, which is useful to managers \cite{Holser:body}. \textit{\hl{new paragraph here?}}Occupancy models allow the occurence of a species to be accurately estimated, even when the species is imperfectly detected. For both the plankton tow surveys and the eDNA surveys, there is a non-zero probability of a false negative result. Since plankton tow survey methods are restricted to capturing only mussel veligers, dreissenid mussels can be present in the lake and not be captured in the plankton tow nets at one or more of the sampling sites, either because the veligers are missed with the nets or because there are no free-swimming veligers available in the water; even if the veligers are captured in the net, there is a possibility that they are not detected using cross-polarized light microscopy. Similarly for eDNA methods, dreissenid mussels could be present in the lake, but their DNA could be missed in one or more of the samples from each of the sampling sites; even if dreissenid mussel DNA is present in the sample, it could be missed in the PCR replicate \textit{\hl{(written such that lake is the top level for eDNA too, if it isn't analyzed like this  then change this sentence a little bit)}}. Replication in the survey design can help researchers learn about the detection probability for each of the early detection methods. One question of interest is how the detection probabilities and false negative rates of dreissenid mussels compare for plankton tow methods and eDNA survey methods. Given that information, the follow up question is how many samples \textit{\hl{(I don't think I want to use the word samples since it is defined so clearly below)}} should be taken with each method \textit{\hl{(get a bit more specific here)}}. 
 
 \section{Data}
 
@@ -211,11 +208,26 @@ lots of data visualization here
 
 @
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.7]{planktontow}
+	\caption{A diagram displaying the structure of the plankton tow data.}
+	\label{pt}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.7]{eDNA}
+	\caption{A diagram displaying the hierarchical structure of the eDNA data.}
+	\label{edna}
+\end{figure}
+
+
 \section{Modeling Background}
 
 \subsection{Occupancy Models}
 
-\textbf{I did not finish this section like I was supposed to :(  but I did learn a lot more about multi-scale occupancy models and I will try to have this section cleaned up by the end of the week}
+\textbf{this is still in the works}
 
 Occupancy is the presence of a particular species on a given site, this may not be the first choice of state variables to ecologists but occupancy studies are useful when there is a large spatial scale or the study is conducted over many years, when abundance or vital rates are hard to measure. Occupancy studies are also useful over capture-recapture methods when individuals cannot be marked or uniquely identified. However, sometimes patterns of species occurrence are of interest, this happens when researchers are interested in the range of a species or the spread of invasion. The sampling units for occupancy studies are called 'sites'. We can learn about detection probabilities when multiple site visits are used. Also, when using occupancy models we need to account for imperfect detection because it is possible that the researchers could miss the species even if it is present at the site. 
 
@@ -246,12 +258,13 @@ in the hierarchical multi-scale occupancy model (with three nested levels) defin
 \item $\bm{v}_{ij}$ are the sample level covariates for $p_{ij}$
 \end{itemize}
 
+
 The assumptions are: 
 \begin{itemize}
-\item The occupancy state of sites is constant during a single season. 
-\item The occupancy probability is constant across sites, or is modeled appropriately using site-level covariates. 
-\item The probability of detection given occupancy status is constant across sites, or modeled appropriately using site-level covariates. 
-\item The species is not misidentified, no false positives. 
+\item The species is not misidentified, no false positives
+\item no un-modeled heterogeneity in the probabilities of detection and occupancy
+\item each survey is closed to changes in occupancy over the sampling period
+\item the detection of the species is independent for each survey
 \end{itemize}
 
 
@@ -330,7 +343,7 @@ for(i in 1:M){
 
 \section{Methods}
 
-Package options for Multi-season (should we even be using that or should we be modeling the time component in another way) single-species occupancy models: 
+Package options for Multi-season (should we even be using these models or should we be modeling the time component in another way) single-species occupancy models: 
 \begin{itemize}
 \item nimble.dynamic.occ
 \item STAN
