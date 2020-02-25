@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2020.1.16)  25 FEB 2020 12:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2020.1.16)  25 FEB 2020 14:52
 entering extended mode
 **./Winder_Writing_Project.tex
 (Winder_Writing_Project.tex
@@ -1313,187 +1313,69 @@ Overfull \hbox (31.48502pt too wide) in paragraph at lines 220--225
 \openout3 = `Winder_Writing_Project.toc'.
 
  [1] [2] [3] [4] [5]
-<planktontow.png, id=35, 319.4334pt x 218.2554pt>
-File: planktontow.png Graphic file (type png)
-<use planktontow.png>
-Package pdftex.def Info: planktontow.png  used on input line 261.
-(pdftex.def)             Requested size: 223.60184pt x 152.77773pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<eDNA.png, id=36, 438.438pt x 277.9986pt>
-File: eDNA.png Graphic file (type png)
-<use eDNA.png>
-Package pdftex.def Info: eDNA.png  used on input line 268.
-(pdftex.def)             Requested size: 306.9045pt x 194.59769pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[6] [7 <./planktontow.png>]
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 284.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 257.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [8 <./eDNA.png>]
-[9] [10] [11] [12] (Winder_Writing_Project.bbl
+) [6]
+<planktontow.png, id=39, 319.4334pt x 218.2554pt>
+File: planktontow.png Graphic file (type png)
+<use planktontow.png>
+Package pdftex.def Info: planktontow.png  used on input line 267.
+(pdftex.def)             Requested size: 223.60184pt x 152.77773pt.
+ [7 <./planktontow.png>]
+<eDNA.png, id=44, 438.438pt x 277.9986pt>
+File: eDNA.png Graphic file (type png)
+<use eDNA.png>
+Package pdftex.def Info: eDNA.png  used on input line 290.
+(pdftex.def)             Requested size: 306.9045pt x 194.59769pt.
+ [8 <./eDNA.png>] [9] [10] [11] [12] [13] (Winder_Writing_Project.bbl
 Overfull \hbox (87.36383pt too wide) in paragraph at lines 4--10
 \OT1/cmtt/m/n/12 city-[]spends-[]4-[]million-[]on-[]liquid-[]compound-[]to-[]st
 op-[]spread-[]of-[]zebra-[]mussels$\OT1/cmr/m/n/12 . 
  []
 
-[13]) [14] [15]
-Package color Info: Redefining color shadecolor on input line 400.
+[14]) [15] [16]
+Package color Info: Redefining color shadecolor on input line 422.
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 403.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 426.
 
-Overfull \hbox (121.25418pt too wide) in paragraph at lines 404--404
-[][]\OT1/cmtt/m/n/12 p[] []<-[] []0.6[] []\OT1/cmtt/m/it/12 # constant detectio
-n probability... could change to depend on covariates[][] 
+Overfull \hbox (66.95023pt too wide) in paragraph at lines 426--426
+[][]\OT1/cmtt/m/n/12 eDNA[] []<-[] []read.csv[][]([][]"C:/Users/mwind/OneDrive/
+Writing Project_EXTRA/eDNA.csv"[][])[][] 
  []
 
-
-Overfull \hbox (139.90413pt too wide) in paragraph at lines 405--405
-[][]\OT1/cmtt/m/n/12 psi[] []<-[] []0.6[] []\OT1/cmtt/m/it/12 # constant occupa
-ncy probability... could change to depend on covariates [][] 
- []
-
-
-Overfull \hbox (90.00435pt too wide) in paragraph at lines 407--407
-[][]\OT1/cmtt/m/n/12 J[] []<-[] []8[] []\OT1/cmtt/m/it/12 # constant number of 
-samples per site... does not need to be constant[][] 
- []
-
-
-Overfull \hbox (30.68115pt too wide) in paragraph at lines 414--414
-[][]\OT1/cmtt/m/n/12 y1[,[] []3[][]][] []<-[] []rep[][](z,[] []each[] []= J)[] 
-[]\OT1/cmtt/m/it/12 # column indicating true site occupancy[][] 
- []
-
-
-Overfull \hbox (97.17886pt too wide) in paragraph at lines 416--416
-[][]\OT1/cmtt/m/it/12 # creates a column of 1s and 0s indicating whether the 
-species was detected[][] 
- []
-
-LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 417
-.
-(C:/PROGRA~1/R/R-36~1.2/share/texmf/tex/latex\omscmtt.fd
-File: omscmtt.fd 
-)
-LaTeX Font Info:    Font shape `OMS/cmtt/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 417.
-
-Overfull \hbox (249.42998pt too wide) in paragraph at lines 418--418
-[]    []\OT1/cmtt/m/n/12 y1[i,[] []4[][]][] []<-[] []rbinom[][]([][]1[][],[] []
-1[] [], p[][]*[][]y1[i,[] []3[][]])[] []\OT1/cmtt/m/it/12 # if the site is not 
-occupied the species cannot be detected[][] 
- []
-
-
-Overfull \hbox (11.3752pt too wide) in paragraph at lines 421--421
-[][]\OT1/cmtt/m/n/12 colnames[][](y1)[] []<-[] []c[][]([][]"Site"[][],[] []"Sam
-ple"[][],[] []"True Occupancy"[][],[] []"Detected"[][])[][] 
- []
-
-
-Overfull \hbox (251.67888pt too wide) in paragraph at lines 428--428
-[][]\OT1/cmtt/m/n/12 y2[] []<-[] []rbinom[][](M, J, p[][]*[][]z)[] []\OT1/cmtt/
-m/it/12 # total number of detections for the J samples within each of the M sit
-es, y_i[][] 
- []
-
-
-Overfull \hbox (121.25418pt too wide) in paragraph at lines 431--431
-[][]\OT1/cmtt/m/n/12 p[] []<-[] []0.6[] []\OT1/cmtt/m/it/12 # constant detectio
-n probability... could change to depend on covariates[][] 
- []
-
-
-Overfull \hbox (139.90413pt too wide) in paragraph at lines 432--432
-[][]\OT1/cmtt/m/n/12 psi[] []<-[] []0.6[] []\OT1/cmtt/m/it/12 # constant occupa
-ncy probability... could change to depend on covariates [][] 
- []
-
-
-Overfull \hbox (124.43065pt too wide) in paragraph at lines 434--434
-[][]\OT1/cmtt/m/n/12 J[] []<-[] []sample[][]([][]1[][]:[][]10[][], M,[] []repla
-ce[] []= T)[] []\OT1/cmtt/m/it/12 # number of times each of the sites were samp
-led[][] 
- []
-
-
-Overfull \hbox (313.42891pt too wide) in paragraph at lines 441--441
-[]  []\OT1/cmtt/m/n/12 y[i][] []<-[] []rbinom[][]([][]1[][], J[i], p[][]*[][]z[
-i])[] []\OT1/cmtt/m/it/12 # total number of detections for the J samples within
- each of the M sites, y_i[][] 
- []
-
-
-Overfull \hbox (384.1556pt too wide) in paragraph at lines 451--451
-[][]\OT1/cmtt/m/n/12 p[] []<-[] []exp[][](beta1.true[] []-[] []beta2.true[][]*[
-][]x)[][]/[][]([][]1[] []+[] []exp[][](beta1.true[] []-[] []beta2.true[][]*[][]
-x))[] []\OT1/cmtt/m/it/12 # detection probability depends on site covariate x[]
-[] 
- []
-
-
-Overfull \hbox (396.5056pt too wide) in paragraph at lines 452--452
-[][]\OT1/cmtt/m/n/12 psi[] []<-[] []exp[][](beta3.true[] []+[] []beta4.true[][]
-*[][]x)[][]/[][]([][]1[] []+[] []exp[][](beta3.true[] []+[] []beta4.true[][]*[]
-[]x))[] []\OT1/cmtt/m/it/12 # occupancy probability depends on site covariate x
-[][] 
- []
-
-
-Overfull \hbox (124.43065pt too wide) in paragraph at lines 453--453
-[][]\OT1/cmtt/m/n/12 J[] []<-[] []sample[][]([][]1[][]:[][]10[][], M,[] []repla
-ce[] []= T)[] []\OT1/cmtt/m/it/12 # number of times each of the sites were samp
-led[][] 
- []
-
-
-Overfull \hbox (331.95392pt too wide) in paragraph at lines 460--460
-[]  []\OT1/cmtt/m/n/12 y[i][] []<-[] []rbinom[][]([][]1[][], J[i], p[i][][]*[][
-]z[i])[] []\OT1/cmtt/m/it/12 # total number of detections for the J samples wit
-hin each of the M sites, y_i[][] 
- []
-
-[16]
-Overfull \vbox (2.66667pt too high) detected at line 463
- []
-
-[17] [18] (Winder_Writing_Project.aux) ) 
+[17] (Winder_Writing_Project.aux) ) 
 Here is how much of TeX's memory you used:
- 18280 strings out of 493305
- 326373 string characters out of 3138874
- 662189 words of memory out of 3000000
- 21609 multiletter control sequences out of 15000+200000
+ 18261 strings out of 493305
+ 326001 string characters out of 3138874
+ 661189 words of memory out of 3000000
+ 21594 multiletter control sequences out of 15000+200000
  547384 words of font info for 75 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,8n,63p,2137b,321s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\mwind\AppData\Local\MiKTeX\2
-.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmitt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Winder_Writing_Project.pdf (20 pages, 495898 bytes).
+ 48i,8n,63p,2138b,321s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\mwind\AppData\Local\MiKTeX\2.9\fo
+nts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmitt
+10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Winder_Writing_Project.pdf (19 pages, 488990 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
+ 147 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

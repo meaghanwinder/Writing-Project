@@ -190,23 +190,27 @@ Date& Mark C. Greenwood \\
 
 In early 2020, the City of Austin, Texas approved the spending of four million dollars over the next five years in an attempt to remove zebra mussels from the city's source of drinking water with a liquid copper sulfate pentahydrate released into the water intake pipes \cite{CBS:Austin}. This is one of many pursuits to remove dreissenid mussels\footnote{Zebra mussels (\textit{Dreissena polymorpha}) and quagga mussels (\textit{Dreissena rostriformis bugensis}) collectively.} from water bodies across the United States, and four million dollars is only a small fraction of what is spent annually on control and mitigation efforts. 
 
-Zebra mussels are native to the Caspian and Black Seas, but have become widespread in both Europe and the United States; they were discovered in the Great Lakes in the late 1980s and have since spread rapidly across the United States. The United States National Park Service stated that ``[o]nce a population of zebra mussels has become established in a water body, there is very little to be done to remove them. Prevention, therefore, is the best way to keep a water body clean of zebra mussels'' \cite{NPS}; hence, early detection of invasive species, such as dreissenid mussels, has become a priority, so that organizations can plan, budget, and install necessary technologies before colonization has occured \cite{Holser:body}. 
+Zebra mussels are native to the Caspian and Black Seas, but have become widespread in both Europe and the United States; they were discovered in the Great Lakes in the late 1980s and have since spread rapidly across the United States. The United States National Park Service stated that ``[o]nce a population of zebra mussels has become established in a water body, there is very little to be done to remove them. Prevention, therefore, is the best way to keep a water body clean of zebra mussels'' \cite{NPS}; hence, early detection of invasive species, such as dreissenid mussels, has become a priority, so that organizations can plan, budget, and install necessary technologies before colonization has occurred \cite{Holser:body}. 
 
-Zebra mussels live between two and five years; they start as microscopic veligers but mature to thumbnail sized adults; they begin reproduction at two years of age, after which, females can release up to one million eggs per year \cite{NPS}. Dreissenid mussel veligers free-swim in the water; often, they travel to uninfested waters on boats or through other aquatic recreational activies, however, sometimes they are moved by nature and travel downstream to uninfested waters. Adult dreissenids attach and colonize hard surfaces in the water, this process of accumulation of adult zebra mussels on rocks, native mussels, docks, boats, or other hard surfaces is referred to as ``biofouling,'' and objects that are in the water for long periods of time become difficult and costly to clean. Once a water body is infested with dreissenid mussels, water supply and delivery facilities, water recreation sites, and other water dependent economies in that body of water become much more expensive to maintain and operate \cite{BOR}. Dreissenid infestations result not only in economic impacts, but in environmental ones as well. Dreissenid mussels are filter feeders and siphon plankton from the water, which can lead to changes the water body ecosystem by increasing water clarity; a single adult dreissenid can filter about a liter of water per day, which reduces the availability of algae for native mussels and bottom feeding fish \cite{BOR}. Additionally, ``biofouling'' can prevent native mussels from moving, feeding, reproducing, or regulating the water system. Several actions, such as the 2017 initiative, \textit{Safeguarding the West from Invasive Species}, by the Department of the Interior, have been taken to protect water bodies in the western United States from the economic and ecological threats posed by the invasive dreissenid mussels. Early detection of dreissenid mussel species can reduce the economic and ecological reprocussions of dreissenid infestations, however there are issues with the available early detection methods. 
+Zebra mussels live between two and five years; they start as microscopic veligers but mature to thumbnail sized adults; they begin reproduction at two years of age, after which, females can release up to one million eggs per year \cite{NPS}. Dreissenid mussel veligers free-swim in the water; often, they travel to uninfested waters on boats or through other aquatic recreational activities, however, sometimes they are moved by nature and travel downstream to uninfested waters. Adult dreissenids attach and colonize hard surfaces in the water, this process of accumulation of adult zebra mussels on rocks, native mussels, docks, boats, or other hard surfaces is referred to as ``biofouling,'' and objects that are in the water for long periods of time become difficult and costly to clean. Once a water body is infested with dreissenid mussels, water supply and delivery facilities, water recreation sites, and other water dependent economies in that body of water become much more expensive to maintain and operate \cite{BOR}. Dreissenid infestations result not only in economic impacts, but in environmental ones as well. Dreissenid mussels are filter feeders and siphon plankton from the water, which can lead to changes the water body ecosystem by increasing water clarity; a single adult dreissenid can filter about a liter of water per day, which reduces the availability of algae for native mussels and bottom feeding fish \cite{BOR}. Additionally, ``biofouling'' can prevent native mussels from moving, feeding, reproducing, or regulating the water system. Several actions, such as the 2017 initiative, \textit{Safeguarding the West from Invasive Species}, by the Department of the Interior, have been taken to protect water bodies in the western United States from the economic and ecological threats posed by the invasive dreissenid mussels. Early detection of dreissenid mussel species can reduce the economic and ecological repercussions of dreissenid infestations, however there are issues with the available early detection methods. 
 
 The established standard for early detection of dreissenids in the western United States is plankton tow sampling for mussel veligers. Using a fine mesh net, water and debris are collected at multiple sampling sites within each water body; the debris from each net collected at the same sampling site on the same day is aggregated and examined, using cross-polarized light microscopy, for the free-swimming veligers. Following the microscopic examination, positive species identification is confirmed using polymerase chain reaction (PCR). This early detection method requires a breeding population, so is limited to the weeks immediately following a spawning event \cite{Nichols}; spawning begins at water temperatures above 10$^\circ$ C for quagga mussels and above 12$^\circ$ C for zebra mussels \cite{McMahon, Mills}. This suggests that veliger availability in northern latitude water bodies is typically limited to warmer months \cite{Sepulveda:eDNA}.
 
 An alternative method for detection of rare, endangered, or invasive species, one growing in popularity, is environmental DNA (eDNA) surveys \cite{Schmelzle}. Environmental DNA methods can detect DNA diffused from the target species from water sampled from a water body. Multiple water samples are collected from each sampling site within a lake, the samples are then analyzed using one of several types of PCR chemistry. Sepulveda, Amberg, and Hanson (2019) suggest the use of eDNA surveys may widen the seasonal sampling window over plankton tow methods, since eDNA does not rely on a breeding population. This method is more time and cost effective than traditional sampling methods for species of low abundance \cite{Rees}. However, a positive eDNA result does not necessarily mean the target species is present or alive at the site; positive eDNA results can be obtained from ``a failed introduction, from external sources, or from field contamination, rather than fresh DNA from mussel colonization'' \cite{Sepulveda:eDNA}. One criticism of the detection of dreissenid mussels using eDNA is there is a possibility of obtaining false-positive results; since control efforts for invasive species are costly, there is some hesitation in using eDNA surveys as the sole decision-making tool for the management of invasive species. 
 
-When these two methods result in conflicting answers, decision making can be even more complicated, since a positive eDNA result only suggests that the DNA of the target species is present, regardless of whether the species is alive or even present at all, but when veligers are detected, positive eDNA results indicate a potential colonization, which is useful to managers \cite{Holser:body}. \textit{\hl{new paragraph here?}}Occupancy models allow the occurence of a species to be accurately estimated, even when the species is imperfectly detected. For both the plankton tow surveys and the eDNA surveys, there is a non-zero probability of a false negative result. Since plankton tow survey methods are restricted to capturing only mussel veligers, dreissenid mussels can be present in the lake and not be captured in the plankton tow nets at one or more of the sampling sites, either because the veligers are missed with the nets or because there are no free-swimming veligers available in the water; even if the veligers are captured in the net, there is a possibility that they are not detected using cross-polarized light microscopy. Similarly for eDNA methods, dreissenid mussels could be present in the lake, but their DNA could be missed in one or more of the samples from each of the sampling sites; even if dreissenid mussel DNA is present in the sample, it could be missed in the PCR replicate \textit{\hl{(written such that lake is the top level for eDNA too, if it isn't analyzed like this  then change this sentence a little bit)}}. Replication in the survey design can help researchers learn about the detection probability for each of the early detection methods. One question of interest is how the detection probabilities and false negative rates of dreissenid mussels compare for plankton tow methods and eDNA survey methods. Given that information, the follow up question is how many samples \textit{\hl{(I don't think I want to use the word samples since it is defined so clearly below)}} should be taken with each method \textit{\hl{(get a bit more specific here)}}. 
+When these two methods result in conflicting answers, decision making can be even more complicated, since a positive eDNA result only suggests that the DNA of the target species is present, regardless of whether the species is alive or even present at all, but when veligers are detected, positive eDNA results indicate a potential colonization, which is useful to managers \cite{Holser:body}. \textit{\hl{new paragraph here?}}Occupancy models allow the occurrence of a species to be accurately estimated, even when the species is imperfectly detected. For both the plankton tow surveys and the eDNA surveys, there is a non-zero probability of a false negative result. Since plankton tow survey methods are restricted to capturing only mussel veligers, dreissenid mussels can be present in the lake and not be captured in the plankton tow nets at one or more of the sampling sites, either because the veligers are missed with the nets or because there are no free-swimming veligers available in the water; even if the veligers are captured in the net, there is a possibility that they are not detected using cross-polarized light microscopy. Similarly for eDNA methods, dreissenid mussels could be present in the lake, but their DNA could be missed in one or more of the samples from each of the sampling sites; even if dreissenid mussel DNA is present in the sample, it could be missed in the PCR replicate \textit{\hl{(written such that lake is the top level for eDNA too, if it isn't analyzed like this  then change this sentence a little bit)}}. Replication in the survey design can help researchers learn about the detection probability for each of the early detection methods. One question of interest is how the detection probabilities and false negative rates of dreissenid mussels compare for plankton tow methods and eDNA survey methods. Given that information, the follow up question is how many samples \textit{\hl{(I don't think I want to use the word samples since it is defined so clearly below)}} should be taken with each method \textit{\hl{(get a bit more specific here)}}. 
 
 \section{Data}
 
-lots of data visualization here
-
-<<load_data, echo = F, warning = F, message = F, results = 'hide'>>=
-
-@
+Plankton tow data description
+\begin{itemize}
+  \item data source: BOR
+  \item region
+  \item number of lakes (number of lakes where dreissenid mussel veligers were detected)
+  \item number of sites
+  \item dates
+  \item potential covariates
+\end{itemize}
 
 \begin{figure}[h]
 	\centering
@@ -215,6 +219,25 @@ lots of data visualization here
 	\label{pt}
 \end{figure}
 
+Plankton tow data visualization
+
+eDNA data description
+\begin{itemize}
+  \item data source: part of larger study involving Asian clams 
+  \item region: north-eastern United States, VT and NY
+  \item number of lakes: 3 with data, 4 total... the last one did not have any positive replicates
+  \item 3 sites in Lake Bomoseen, 5 sites in Lake George, 5 sites (one inaccessible) in Lake Memphremagog
+  \item 5 samples (at all sites) and a field blank (at most sites)
+  \item 20000 ddPCR replicates from each sample??
+  \item data collected summer/fall 2019
+  \item water temperature information available
+\end{itemize}
+
+<<load_eDNA_data, echo = F, warning = F, message = F, results = 'hide'>>=
+eDNA <- read.csv("C:/Users/mwind/OneDrive/Writing Project_EXTRA/eDNA.csv")
+levels(eDNA$Lake)
+@
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale = 0.7]{eDNA}
@@ -222,6 +245,7 @@ lots of data visualization here
 	\label{edna}
 \end{figure}
 
+eDNA data visualization
 
 \section{Modeling Background}
 
@@ -233,20 +257,20 @@ Occupancy is the presence of a particular species on a given site, this may not 
 
 in the hierarchical multi-scale occupancy model (with three nested levels) defined by \cite{Dorazio_Erickson}:
 \begin{itemize}
-\item learn about the probability of species occurance at a site 
+\item learn about the probability of species occurrence at a site 
 \item $Z_i$ denotes the presence or absence of the target species at the $i^{th}$ site ($i = 1, \dots, M$)
 \item $Z_i \sim Bernoulli(\psi_i)$
 \item $\psi_i$ is the probability that the target species is present at the $i^{th}$ site
 \item $\bm{\beta}$ are the site level regression parameters for $\psi_i$
 \item $\bm{x}_i$ are the site level covariates for $\psi_i$
-\item learn about the conditional probability of species occurence in a sample of a site given the species is present at the site
+\item learn about the conditional probability of species occurrence in a sample of a site given the species is present at the site
 \item $A_{ij}$ denotes the presence or absence of the target species in the $j^{th}$ sample from the $i^{th}$ site ($j = 1, \dots, J_i$)
 \item $A_{ij}|z_i \sim Bernoulli(z_i\theta_{ij})$
 \item $z_i$ is a realized value of $Z_i$
 \item $\theta_{ij}$ is the conditional probability that the target species is present in the $j^{th}$ sample from the $i^{th}$ site, given the target species is present at the location 
 \item $\bm{\alpha}$ are the sample level regression parameters for $\theta_{ij}$
 \item $\bm{w}_{ij}$ are the sample level covariates for $\theta_{ij}$
-\item learn about the conditional probability of detection of the speies in a subsample of a sample given that the species is present in the sample
+\item learn about the conditional probability of detection of the species in a sub-sample of a sample given that the species is present in the sample
 \item $Y_{ijk}$ denotes the detected or not detected in the $k^{th}$ replicate of the $j^{th}$ sample collected at the $i^{th}$ site ($k = 1, \dots, K_{ij}$)
 \item $Y_{ijk}|a_{ij} \sim Bernoulli(a_{ij}p_{ijk})$
 \item $a_{ij}$ is a realized value of $A_{ij}$
@@ -406,16 +430,14 @@ Things to think about for the simulation or questions I have:
 Additional questions, not directly related to the simulation:
 \begin{itemize}
 	\item How do we account for this multilevel (for lack of a better word) testing process? For example, sometimes (?) when they find them in the microscope, then they test them using polymerase chain reaction (PCR) to confirm positive identification, and sometimes gene sequencing (? -- looks like it was only used on one observation in the sample data), or scanning electron microscopy (SEM).
-	\item One assumption of occupancy models is that there is a non-zero probability of misidentification. I read an article (Denise Holser) that suggests that there might be an issue with that assumption in this situation because there are similar looking organisms that may be present in the waters; she then suggest that the Bureau of Reclamation has attempted to mediate this issue with improved microscopic methods and improved PCR methods. I will look into this some more.   
 \end{itemize}
 
 \singlespacing
 
 <<echo = T, eval = F>>=
-<<sim1>>
-<<sim2>>
-<<sim3>>
-<<load_data>>
+# put the code chunk names here like this: <<name>>
+
+<<load_eDNA_data>>
 @
 
 
