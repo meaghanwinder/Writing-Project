@@ -99,6 +99,7 @@
 \newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
 
 \usepackage{alltt}
+\usepackage{booktabs}
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
@@ -126,6 +127,9 @@
 %authoryear,open={(},close={)}}
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
+
+
+
 
 \begin{titlepage}
 
@@ -248,9 +252,74 @@ The established standard for early detection of dreissenids in the western Unite
 
 An alternative method for detection of rare, endangered, or invasive species, one growing in popularity, is environmental DNA (eDNA) surveys \cite{Schmelzle}. Environmental DNA methods can detect DNA diffused from the target species from water sampled from a water body. Multiple water samples are collected from each sampling site within a lake, the samples are then analyzed using one of several types of PCR chemistry. Sepulveda, Amberg, and Hanson (2019) suggest the use of eDNA surveys may widen the seasonal sampling window over plankton tow methods, since eDNA does not rely on a breeding population. This method is more time and cost effective than traditional sampling methods for species of low abundance \cite{Rees}. However, a positive eDNA result does not necessarily mean the target species is present or alive at the site; positive eDNA results can be obtained from ``a failed introduction, from external sources, or from field contamination, rather than fresh DNA from mussel colonization'' \cite{Sepulveda:eDNA}. One criticism of the detection of dreissenid mussels using eDNA is there is a possibility of obtaining false-positive results; since control efforts for invasive species are costly, there is some hesitation in using eDNA surveys as the sole decision-making tool for the management of invasive species. 
 
-When these two methods result in conflicting answers, decision making can be even more complicated, since a positive eDNA result only suggests that the DNA of the target species is present, regardless of whether the species is alive or even present at all, but when veligers are detected, positive eDNA results indicate a potential colonization, which is useful to managers \cite{Holser:body}. \textit{\hl{new paragraph here?}} Occupancy models allow the occurrence of a species to be accurately estimated, even when the species is imperfectly detected. For both the plankton tow surveys and the eDNA surveys, there is a non-zero probability of a false negative result. Since plankton tow survey methods are restricted to capturing only mussel veligers, dreissenid mussels can be present in the lake and not be captured in the plankton tow nets at one or more of the sampling sites, either because the veligers are missed with the nets or because there are no free-swimming veligers available in the water; even if the veligers are captured in the net, there is a possibility that they are not detected using cross-polarized light microscopy. Similarly for eDNA methods, dreissenid mussels could be present in the lake, but their DNA could be missed in one or more of the samples from each of the sampling sites; even if dreissenid mussel DNA is present in the sample, it could be missed in the PCR replicate \textit{\hl{(written such that lake is the top level for eDNA too, if it isn't analyzed like this  then change this sentence a little bit)}}. Replication in the survey design can help researchers learn about the detection probability for each of the early detection methods. One question of interest is how the detection probabilities and false negative rates of dreissenid mussels compare for plankton tow methods and eDNA survey methods. Given that information, the follow up question is how many samples \textit{\hl{(I don't think I want to use the word samples since it is defined so clearly below)}} should be taken with each method \textit{\hl{(get a bit more specific here)}}. 
+When these two methods result in conflicting answers, decision making can be even more complicated, since a positive eDNA result only suggests that the DNA of the target species is present, regardless of whether the species is alive or even present at all, but when veligers are detected, positive eDNA results indicate a potential colonization, which is useful to managers \cite{Holser:body}. \textit{\hl{new paragraph here?}} Occupancy models allow the occurrence of a species to be accurately estimated, even when the species is imperfectly detected. For both the plankton tow surveys and the eDNA surveys, there is a non-zero probability of a false negative result. Since plankton tow survey methods are restricted to capturing only mussel veligers, dreissenid mussels can be present in the lake and not be captured in the plankton tow nets at one or more of the sampling sites, either because the veligers are missed with the nets or because there are no free-swimming veligers available in the water; even if the veligers are captured in the net, there is a possibility that they are not detected using cross-polarized light microscopy. Similarly for eDNA methods, dreissenid mussels could be present in the lake, but their DNA could be missed in one or more of the samples from each of the sampling sites; even if dreissenid mussel DNA is present in the sample, it could be missed in the PCR replicate \textit{\hl{(written such that lake is the top level for eDNA too, if it isn't analyzed like this  then change this sentence a little bit)}}. Replication in the survey design can help researchers learn about the detection probabilities for each of the early detection methods. One question of interest is how the detection probabilities and false negative rates of dreissenid mussels compare for plankton tow methods and eDNA survey methods. Given that information, the follow up question is how many samples \textit{\hl{(I don't think I want to use the word samples since it is defined so clearly below)}} should be taken with each method \textit{\hl{(get a bit more specific here)}}. 
 
 \section{Data}
+
+\textit{\hl{A sentence or two here about the both data sets.}}
+
+\subsection{eDNA Survey Data}
+
+
+
+data source: part of larger study involving Asian clams 
+region: north-eastern United States, VT and NY
+number of lakes: 3 with data, 4 total... the last one did not have any positive replicates
+data collected summer/fall 2019
+water temperature information available
+
+5 samples (at all sites) and a field blank (at most sites, all had 0 positive droplets)
+  \item 20000 ddPCR replicates from each sample?? Figure \ref{edna} is a diagram of data structure within a lake. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.7]{eDNA}
+	\caption{A diagram displaying the hierarchical structure of the eDNA data.}
+	\label{edna}
+\end{figure}
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{table}[!h]
+
+\caption{\label{tab:eDNA_table}10 sample rows of the eDNA data.}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{tabular}[t]{ccccccc}
+\toprule
+Lake & Site & Sample.ID & Date.Collected & Water.Temp & Conc & Positive.Droplets\\
+\midrule
+BOM & BOM1 & BOM1w0528195 & 5/28/2019 & 11.0 & 8.51 & 60\\
+BOM & BOM1 & BOM1w0708194 & 7/8/2019 & 25.5 & 0.81 & 7\\
+BOM & BOM2 & BOM2w1021191 & 10/21/2019 & NA & 1.14 & 8\\
+BOM & BOM3 & BOM3w0528193 & 5/28/2019 & 6.0 & 178.72 & 1154\\
+BOM & BOM3 & BOM3w0708193 & 7/8/2019 & 24.5 & 175.99 & 1388\\
+BOM & BOM3 & BOM3w1021191 & 10/21/2019 & NA & 2.04 & 13\\
+LG & LG1 & LG1w0528194 & 5/28/2019 & 12.0 & 0.00 & 0\\
+LG & LG2 & LG2w0708194 & 7/8/2019 & 23.0 & 0.00 & 0\\
+LG & LG2 & LG2w0708195 & 7/8/2019 & 23.0 & 0.00 & 0\\
+MG & MG5 & MG5w082319D & 8/23/2019 & 18.3 & 0.00 & 0\\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+
+\end{knitrout}
+
+
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{figure}
+
+{\centering \includegraphics[width=\maxwidth]{figure/eDNA_visualization-1} 
+
+}
+
+\end{figure}
+
+
+\end{knitrout}
+
+\subsection{Plankton Tow Survey Data}
 
 Plankton tow data description
 \begin{itemize}
@@ -271,30 +340,9 @@ Plankton tow data description
 
 Plankton tow data visualization
 
-eDNA data description
-\begin{itemize}
-  \item data source: part of larger study involving Asian clams 
-  \item region: north-eastern United States, VT and NY
-  \item number of lakes: 3 with data, 4 total... the last one did not have any positive replicates
-  \item 3 sites in Lake Bomoseen, 5 sites in Lake George, 5 sites (one inaccessible) in Lake Memphremagog
-  \item 5 samples (at all sites) and a field blank (at most sites)
-  \item 20000 ddPCR replicates from each sample??
-  \item data collected summer/fall 2019
-  \item water temperature information available
-\end{itemize}
+\section{Methods}
 
-
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale = 0.7]{eDNA}
-	\caption{A diagram displaying the hierarchical structure of the eDNA data.}
-	\label{edna}
-\end{figure}
-
-eDNA data visualization
-
-\section{Modeling Background}
+\subsection{Bayesian Modeling Background}
 
 \subsection{Occupancy Models}
 
@@ -331,7 +379,6 @@ in the hierarchical multi-scale occupancy model (with three nested levels) defin
 \item $\bm{v}_{ij}$ are the sample level covariates for $p_{ij}$
 \end{itemize}
 
-
 The assumptions are: 
 \begin{itemize}
 \item The species is not misidentified, no false positives
@@ -349,9 +396,7 @@ In WILD 502 when talking about multi-season occupancy models, we talked about ex
 
 
  
-\subsection{Bayesian Modeling Background}
-
-\section{Methods}
+\subsection{Implementation}
 
 Package options for Multi-season (should we even be using these models or should we be modeling the time component in another way) single-species occupancy models: 
 \begin{itemize}
@@ -373,9 +418,15 @@ Package for eDNA data:
 
 \section{Analysis}
 
-Could do EDA here
+\subsection{Analysis of eDNA Data}
 
-\section{Conclusion}
+analysis and results
+
+\subsection{Analysis of Plankton Tow Data}
+
+analysis and results 
+
+\section{Discussion}
 
 \subsection{Further Investigations}
 
@@ -422,12 +473,146 @@ Additional questions, not directly related to the simulation:
 
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlcom{# put the code chunk names here like this: <<name>>}
+\begin{verbatim}
+# packages used 
+library(car)
+library(dplyr)
+library(kableExtra)
+library(ggplot2)
+library(gridExtra)
+## library(devtools)
+## devtools::install_github("StrattonCh/msocc")
+library(msocc)
 
-\hlstd{eDNA} \hlkwb{<-} \hlkwd{read.csv}\hlstd{(}\hlstr{"C:/Users/mwind/OneDrive/Writing Project_EXTRA/eDNA.csv"}\hlstd{)}
-\hlkwd{levels}\hlstd{(eDNA}\hlopt{$}\hlstd{Lake)}
-\end{alltt}
+
+# load eDNA data
+eDNA <- read.csv(
+  "C:/Users/mwind/OneDrive/Writing Project_EXTRA/eDNA.csv")
+length(levels(eDNA$Lake))
+levels(eDNA$Lake) <- c("BOM", "LG", "MG")
+names(eDNA)
+eDNA <- eDNA %>% 
+  filter(Site != "tb")
+
+
+# number of samples where there were (0, 3] positive droplets
+eDNA %>% 
+  count(Positive.Droplets <= 3 & Positive.Droplets > 0)
+
+# number of samples with 0 positive droplets
+eDNA %>% 
+  group_by(Lake) %>%
+  count(Positive.Droplets == 0)
+
+
+# reorder dates in chronological order
+eDNA$Date.Collected <- factor(eDNA$Date.Collected,
+                          levels = c("5/28/2019", "7/8/2019", 
+                                     "8/23/2019", "9/25/2019",
+                                     "10/21/2019"))
+
+
+# generate table of 10 sample rows of eDNA data
+set.seed(03142020)
+knitr::kable(some(eDNA), 'latex', booktabs = T, linesep = "",
+             caption = "10 sample rows of the eDNA data.", 
+             align = 'c', row.names = F) %>%
+  kable_styling(latex_options = 
+                  c("scale_down", "hold_position"))
+
+
+# summary of positive droplets by lake
+tapply(eDNA$Positive.Droplets, eDNA$Lake, summary)
+
+
+# summary of water temperature by lake
+tapply(eDNA$Water.Temp, eDNA$Lake, summary)
+
+
+# visualization of eDNA data
+eDNA.df <- data.frame(eDNA)
+
+BOM <- eDNA.df %>% 
+  filter(Lake == "BOM") %>%
+  ggplot(aes(x = Site, 
+             y = Positive.Droplets, 
+             colour = Date.Collected)) + 
+  labs(title = 'Positive ddPCR replicates at Lake BOM by Site', 
+       x = 'Site', 
+       y = 'Positive Droplets', 
+       color = 'Date') +
+  geom_point(alpha = 0.7, 
+             position = position_jitter(width = 0.25, 
+                                        height = 1, 
+                                        seed = 03172020)) + 
+  theme_bw() + 
+  theme(text = element_text(size = 8),
+        panel.border = element_blank(), 
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), 
+        axis.line = element_line(colour = "black"))
+
+
+LG <- eDNA.df %>% 
+  filter(Lake == "LG") %>%
+  ggplot(aes(x = Site, 
+             y = Positive.Droplets, 
+             colour = Date.Collected)) + 
+  labs(title = 'Positive ddPCR replicates at Lake LG by Site', 
+       x = 'Site', 
+       y = 'Positive Droplets', 
+       color = 'Date') +
+  ylim(c(-0.01, 3)) + 
+  geom_point(alpha = 0.7, 
+             position = position_jitter(width = 0.25, 
+                                        height = 0.001, 
+                                        seed = 03172020)) + 
+  theme_bw() + 
+  theme(text = element_text(size = 8),
+        panel.border = element_blank(), 
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), 
+        axis.line = element_line(colour = "black"))
+
+
+MG <- eDNA.df %>% 
+  filter(Lake == "MG") %>%
+  ggplot(aes(x = Site, 
+             y = Positive.Droplets, 
+             colour = Date.Collected)) + 
+  labs(title = 'Positive ddPCR replicates at Lake MG by Site', 
+       x = 'Site', 
+       y = 'Positive Droplets', 
+       color = 'Date') +
+  ylim(c(-0.01, 3)) + 
+  geom_point(alpha = 0.7, 
+             position = position_jitter(width = 0.25, 
+                                        height = 0.001, 
+                                        seed = 03172020)) + 
+  theme_bw() + 
+  theme(text = element_text(size = 8),
+        panel.border = element_blank(), 
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), 
+        axis.line = element_line(colour = "black"))
+
+temp <- eDNA %>% 
+  ggplot(aes(x = Water.Temp, 
+             y = Positive.Droplets)) +
+  geom_point(alpha = 0.7) + 
+  labs(title = 'Positive ddPCR replicates by Water Temperature', 
+       x = expression(paste('Water Temperature (', 
+                            degree, 'C)')), 
+       y = 'Positive Droplets') +
+  theme_bw() + 
+  theme(text = element_text(size = 8),
+        panel.border = element_blank(), 
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), 
+        axis.line = element_line(colour = "black"))
+
+grid.arrange(BOM, LG, MG, temp, nrow = 2)
+\end{verbatim}
 \end{kframe}
 \end{knitrout}
 

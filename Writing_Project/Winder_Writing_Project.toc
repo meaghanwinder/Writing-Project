@@ -1,12 +1,16 @@
 \babel@toc {english}{}
 \contentsline {section}{\numberline {1}Introduction}{2}
 \contentsline {section}{\numberline {2}Data}{6}
-\contentsline {section}{\numberline {3}Modeling Background}{9}
-\contentsline {subsection}{\numberline {3.1}Occupancy Models}{9}
-\contentsline {subsection}{\numberline {3.2}Bayesian Modeling Background}{12}
-\contentsline {section}{\numberline {4}Methods}{12}
-\contentsline {section}{\numberline {5}Analysis}{13}
-\contentsline {section}{\numberline {6}Conclusion}{13}
-\contentsline {subsection}{\numberline {6.1}Further Investigations}{13}
-\contentsline {section}{\numberline {7}References}{14}
-\contentsline {section}{\numberline {8}Appendix - R Code}{16}
+\contentsline {subsection}{\numberline {2.1}eDNA Survey Data}{7}
+\contentsline {subsection}{\numberline {2.2}Plankton Tow Survey Data}{7}
+\contentsline {section}{\numberline {3}Methods}{10}
+\contentsline {subsection}{\numberline {3.1}Bayesian Modeling Background}{10}
+\contentsline {subsection}{\numberline {3.2}Occupancy Models}{10}
+\contentsline {subsection}{\numberline {3.3}Implementation}{13}
+\contentsline {section}{\numberline {4}Analysis}{14}
+\contentsline {subsection}{\numberline {4.1}Analysis of eDNA Data}{14}
+\contentsline {subsection}{\numberline {4.2}Analysis of Plankton Tow Data}{14}
+\contentsline {section}{\numberline {5}Discussion}{15}
+\contentsline {subsection}{\numberline {5.1}Further Investigations}{15}
+\contentsline {section}{\numberline {6}References}{16}
+\contentsline {section}{\numberline {7}Appendix - R Code}{18}
