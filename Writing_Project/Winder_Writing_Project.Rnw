@@ -82,9 +82,11 @@
 # packages used 
 library(car)
 library(dplyr)
+library(tidyr)
 library(kableExtra)
 library(ggplot2)
 library(gridExtra)
+library(tm)
 ## library(devtools)
 ## devtools::install_github("StrattonCh/msocc")
 library(msocc)
@@ -210,11 +212,13 @@ Zebra mussels are native to the Caspian and Black Seas, but have become widespre
 
 Zebra mussels live between two and five years; they start as microscopic veligers but mature to thumbnail sized adults; they begin reproduction at two years of age, after which, females can release up to one million eggs per year \cite{NPS}. Dreissenid mussel veligers free-swim in the water; often, they travel to uninfested waters on boats or through other aquatic recreational activities, however, sometimes they are moved by nature and travel downstream to uninfested waters. Adult dreissenids attach and colonize hard surfaces in the water, this process of accumulation of adult zebra mussels on rocks, native mussels, docks, boats, or other hard surfaces is referred to as ``biofouling,'' and objects that are in the water for long periods of time become difficult and costly to clean. Once a water body is infested with dreissenid mussels, water supply and delivery facilities, water recreation sites, and other water dependent economies in that body of water become much more expensive to maintain and operate \cite{BOR}. Dreissenid infestations result not only in economic impacts, but in environmental ones as well. Dreissenid mussels are filter feeders and siphon plankton from the water, which can lead to changes the water body ecosystem by increasing water clarity; a single adult dreissenid can filter about a liter of water per day, which reduces the availability of algae for native mussels and bottom feeding fish \cite{BOR}. Additionally, ``biofouling'' can prevent native mussels from moving, feeding, reproducing, or regulating the water system. Several actions, such as the 2017 initiative, \textit{Safeguarding the West from Invasive Species}, by the Department of the Interior, have been taken to protect water bodies in the western United States from the economic and ecological threats posed by the invasive dreissenid mussels. Early detection of dreissenid mussel species can reduce the economic and ecological repercussions of dreissenid infestations, however there are issues with the available early detection methods. 
 
-The established standard for early detection of dreissenids in the western United States is plankton tow sampling for mussel veligers. Using a fine mesh net, water and debris are collected at multiple sampling sites within each water body; the debris from each net collected at the same sampling site on the same day is aggregated and examined, using cross-polarized light microscopy, for the free-swimming veligers. Following the microscopic examination, positive species identification is confirmed using polymerase chain reaction (PCR). This early detection method requires a breeding population, so is limited to the weeks immediately following a spawning event \cite{Nichols}; spawning begins at water temperatures above 10$^\circ$ C for quagga mussels and above 12$^\circ$ C for zebra mussels \cite{McMahon, Mills}. This suggests that veliger availability in northern latitude water bodies is typically limited to warmer months \cite{Sepulveda:eDNA}.
+The established standard for early detection of dreissenids in the western United States is plankton tow sampling for mussel veligers. Using a fine mesh net, water and debris are collected at multiple sampling sites within each water body; the debris from each net collected at the same sampling site on the same day is aggregated and examined, using cross-polarized light microscopy, for the free-swimming veligers. Following the microscopic examination, positive species identification is confirmed using polymerase chain reaction (PCR). This early detection method requires a breeding population, so is limited to the weeks immediately following a spawning event \cite{Nichols}; spawning begins at water temperatures above 10$^\circ$C for quagga mussels and above 12$^\circ$C for zebra mussels \cite{McMahon, Mills}. This suggests that veliger availability in northern latitude water bodies is typically limited to warmer months \cite{Sepulveda:eDNA}.
 
-An alternative method for detection of rare, endangered, or invasive species, one growing in popularity, is environmental DNA (eDNA) surveys \cite{Schmelzle}. Environmental DNA methods can detect DNA diffused from the target species from water sampled from a water body. Multiple water samples are collected from each sampling site within a lake, the samples are then analyzed using one of several types of PCR chemistry. Sepulveda, Amberg, and Hanson (2019) suggest the use of eDNA surveys may widen the seasonal sampling window over plankton tow methods, since eDNA does not rely on a breeding population. This method is more time and cost effective than traditional sampling methods for species of low abundance \cite{Rees}. However, a positive eDNA result does not necessarily mean the target species is present or alive at the site; positive eDNA results can be obtained from ``a failed introduction, from external sources, or from field contamination, rather than fresh DNA from mussel colonization'' \cite{Sepulveda:eDNA}. One criticism of the detection of dreissenid mussels using eDNA is there is a possibility of obtaining false-positive results; since control efforts for invasive species are costly, there is some hesitation in using eDNA surveys as the sole decision-making tool for the management of invasive species. 
+An alternative method for detection of rare, endangered, or invasive species, one growing in popularity, is environmental DNA (eDNA) surveys \cite{Schmelzle}. Environmental DNA methods can detect DNA diffused from the target species from water sampled from a water body. Multiple water samples are collected from each sampling site within a lake, the samples are then analyzed using one of several types of PCR chemistry. Sepulveda, Amberg, and Hanson (2019) suggest the use of eDNA surveys may widen the seasonal sampling window over plankton tow methods, since eDNA does not rely on a breeding population. Environmental DNA surveys are more time and cost effective than traditional sampling methods for species of low abundance \cite{Rees}. However, a positive eDNA result does not necessarily mean the target species is present or alive at the site; positive eDNA results can be obtained from ``a failed introduction, from external sources, or from field contamination, rather than fresh DNA from mussel colonization'' \cite{Sepulveda:eDNA}. One criticism of the detection of dreissenid mussels using eDNA is there is a possibility of obtaining false-positive results; since control efforts for invasive species are costly, there is some hesitation in using eDNA surveys as the sole decision-making tool for the management of invasive species. When these two methods result in conflicting answers, decision making can be even more complicated, since a positive eDNA result only suggests that the DNA of the target species is present, regardless of whether the species is alive or even present at all, but when veligers are detected, positive eDNA results indicate a potential colonization, which is useful to managers \cite{Holser:body}. 
 
-When these two methods result in conflicting answers, decision making can be even more complicated, since a positive eDNA result only suggests that the DNA of the target species is present, regardless of whether the species is alive or even present at all, but when veligers are detected, positive eDNA results indicate a potential colonization, which is useful to managers \cite{Holser:body}. \textit{\hl{new paragraph here?}} Occupancy models allow the occurrence of a species to be accurately estimated, even when the species is imperfectly detected. For both the plankton tow surveys and the eDNA surveys, there is a non-zero probability of a false negative result. Since plankton tow survey methods are restricted to capturing only mussel veligers, dreissenid mussels can be present in the lake and not be captured in the plankton tow nets at one or more of the sampling sites, either because the veligers are missed with the nets or because there are no free-swimming veligers available in the water; even if the veligers are captured in the net, there is a possibility that they are not detected using cross-polarized light microscopy. Similarly for eDNA methods, dreissenid mussels could be present in the lake, but their DNA could be missed in one or more of the samples from each of the sampling sites; even if dreissenid mussel DNA is present in the sample, it could be missed in the PCR replicate \textit{\hl{(written such that lake is the top level for eDNA too, if it isn't analyzed like this  then change this sentence a little bit)}}. Replication in the survey design can help researchers learn about the detection probabilities for each of the early detection methods. One question of interest is how the detection probabilities and false negative rates of dreissenid mussels compare for plankton tow methods and eDNA survey methods. Given that information, the follow up question is how many samples \textit{\hl{(I don't think I want to use the word samples since it is defined so clearly below)}} should be taken with each method \textit{\hl{(get a bit more specific here)}}. 
+Occupancy models allow the occurrence of a species to be accurately estimated, even when the species is imperfectly detected. For both the plankton tow surveys and the eDNA surveys, there is a non-zero probability of a false negative result. Since plankton tow survey methods are restricted to capturing only mussel veligers, dreissenid mussels can be present in the lake and not be captured in the plankton tow nets at one or more of the sampling sites, either because the veligers are missed with the nets or because there are no free-swimming veligers available in the water; even if the veligers are captured in the net, there is a possibility that they are not detected using cross-polarized light microscopy. Similarly for eDNA methods, dreissenid mussels could be present in the lake, but their DNA could be missed in one or more of the samples from each of the sampling sites; even if dreissenid mussel DNA is present in the sample, it could be missed in the PCR replicate. Replication in the survey design can help researchers learn about the detection probabilities for each of the early detection methods. 
+
+The primary goal is to determine how the detection probabilities and false negative rates of dreissenid mussels compare for plankton tow and eDNA survey methods, and explore which environmental factors influence them. Furthermore, recommendations on the sampling effort needed to ensure high detection probabilities for each survey method are of subsequent interest. 
 
 \section{Data}
 
@@ -226,16 +230,22 @@ When these two methods result in conflicting answers, decision making can be eve
 # load eDNA data
 eDNA <- read.csv(
   "C:/Users/mwind/OneDrive/Writing Project_EXTRA/eDNA.csv")
-length(levels(eDNA$Lake))
+
+
+# rename lakes
 levels(eDNA$Lake) <- c("BOM", "LG", "MG")
-names(eDNA)
+
+
+# remove field blank samples
 eDNA <- eDNA %>% 
   filter(Site != "tb")
+eDNA$Site <- droplevels(eDNA$Site)
 
 
-# number of samples where there were (0, 3] positive droplets
+# number of samples with (0, 3) positive droplets
 eDNA %>% 
-  count(Positive.Droplets <= 3 & Positive.Droplets > 0)
+  count(Positive.Droplets < 3 & Positive.Droplets > 0)
+
 
 # number of samples with 0 positive droplets
 eDNA %>% 
@@ -252,28 +262,25 @@ eDNA$Date.Collected <- factor(eDNA$Date.Collected,
 
 @
 
-data source: part of larger study involving Asian clams 
-region: north-eastern United States, VT and NY
-number of lakes: 3 with data, 4 total... the last one did not have any positive replicates
-data collected summer/fall 2019
-water temperature information available
+The eDNA data were collected during the spring, summer, and fall of 2019 as part of a study on the detection of dreissenid mussels and Asian clams in northeastern lakes using environmental DNA. There were six lakes surveyed across Maine, New Hampshire, New York, and Vermont; each lake was sampled for dreissenid mussels, Asian clams, or both. The data available are from three of the lakes sampled for dreissenid mussels. There are multiples sites within each lake, from each, five one-liter water samples were collected. Most sites were visited on more than one day throughout the course of the study. On each day, water temperatures were recorded at each site (with the exception of water temperatures in one lake on one of the study days). Each of the samples were analyzed using the DNA amplification technique, known as digital droplet PCR (ddPCR), on a Biorad Digital Droplet PCR system using dreissenid mussel assays. This ddPCR technique divides the sample aliquot into 20000 droplets, which are analyzed separately. A field blank of clean lab water accompanied the set of five samples from each site on a given day to ensure no cross contamination in the lab; all replications of the field blank ddPCR analyses for the dreissenid mussels were negative. Figure \ref{fig:eDNA_diagram} illustrates the data structure within a lake on a given day. 
 
-5 samples (at all sites) and a field blank (at most sites, all had 0 positive droplets)
-  \item 20000 ddPCR replicates from each sample?? Figure \ref{edna} is a diagram of data structure within a lake. 
-
-\begin{figure}[h]
+\begin{figure}[]
 	\centering
 	\includegraphics[scale = 0.7]{eDNA}
 	\caption{A diagram displaying the hierarchical structure of the eDNA data.}
-	\label{edna}
+	\label{fig:eDNA_diagram}
 \end{figure}
+
+Table \ref{tab:eDNA_data} displays a sample of ten rows of the data set. The lakes are coded ``BOM,'' ``LG,'' and ``MG,'' and those names will be used throughout. ``Positive Droplets'' is the number of droplets where dreissenid mussel DNA was amplified and ``Concentration'' is a proxy measurement of how many droplets were amplified in the sample. 
 
 <<eDNA_table, echo = F, warning = F, message = F>>=
 # generate table of 10 sample rows of eDNA data
 set.seed(03142020)
 knitr::kable(some(eDNA), 'latex', booktabs = T, linesep = "",
-             caption = "10 sample rows of the eDNA data.", 
-             align = 'c', row.names = F) %>%
+             caption = "\\label{tab:eDNA_data}10 sample rows of the eDNA data.", 
+             align = 'c', row.names = F, 
+             col.names = c("Lake", "Site", "Sample", "Date", "Water Temperature", 
+                           "Concentration", "Positive Droplets")) %>%
   kable_styling(latex_options = 
                   c("scale_down", "hold_position"))
 
@@ -281,39 +288,73 @@ knitr::kable(some(eDNA), 'latex', booktabs = T, linesep = "",
 @
 
 <<eDNA_summary, echo = F, warning = F, message = F, eval = F>>=
-# summary of positive droplets by lake
-tapply(eDNA$Positive.Droplets, eDNA$Lake, summary)
+# BOM
+eDNA %>% filter(Lake == "BOM") %>% summary
 
+# LG
+eDNA %>% filter(Lake == "LG") %>% summary
 
-# summary of water temperature by lake
-tapply(eDNA$Water.Temp, eDNA$Lake, summary)
+# MG
+eDNA %>% filter(Lake == "MG") %>% summary
 
 
 @
 
-<<eDNA_visualization, echo = F, warning = F, message = F, results = 'hide', fig.align = 'center', fig.width = 10, fig.height = 10, fig.cap = "", fig.lp = "eDNA:EDA">>=
+There are three sites in lake BOM, each of which was sampled five times on three different days (May 28, July 8, and October 21), for a total of 15 samples per site and 45 total samples from lake BOM. The water temperatures in lake BOM ranged from 6$^\circ$C to 25.5$^\circ$C, but the water temperature was not recorded at any of the sites on October 21. Of the 20000 droplets from each sample in lake BOM, the number of positive droplets ranged from 0 to 3331. There are five sites in lake LG. The first three sites were sampled five times on both May 28 and July 8, and the final two sites were sampled five times on September 25, for a total of 40 samples from lake LG. The water temperatures in lake LG ranged from 12$^\circ$C to 23$^\circ$C. The number of positive droplets ranged from 0 to 3 for each sample from lake LG. There were originally five sites in lake MG, but one was inaccessible on the study day so there are data for four sites in lake MG, each of which was sampled five times on August 23, for a total of 20 samples from lake MG. The water temperatures in lake MG ranged from 17.2$^\circ$C to 18.9$^\circ$C. The number of positive droplets ranged from 0 to 2 for each sample from lake MG. Figure \ref{fig:eDNA_droplets} 
+
+<<eDNA_visualization_droplets, echo = F, warning = F, message = F, results = 'hide', fig.align = 'center', fig.width = 10, fig.height = 4.5, fig.cap = "A plot of the proportion of positive droplets from each sample by sampling site, colored by the date on which the sample was taken." , fig.lp = "fig:eDNA_droplets">>=
 # visualization of eDNA data
 eDNA.df <- data.frame(eDNA)
 
+date.cols <- c("5/28/2019" = "#2d6b28", 
+               "7/8/2019" = "#dfbf00",
+               "8/23/2019" = "#db9002",
+               "9/25/2019" = "#a91303",
+               "10/21/2019" = "#5a4320")
+
+eDNA.df %>% 
+  ggplot(aes(x = Site, 
+             y = Positive.Droplets/20000, 
+             colour = Date.Collected)) + 
+  labs(title = 'Proportion of Positive ddPCR Replicates by Site', 
+       x = 'Site', 
+       y = 'Proportion of Positive Droplets', 
+       color = 'Date') +
+  ylim(c(0, 1)) + 
+  geom_point(position = position_jitter(width = 0.25, 
+                                        height = 0.001, 
+                                        seed = 03172020)) + 
+  scale_colour_manual(values = date.cols) + 
+  theme_bw() + 
+  theme(title = element_text(size = 8),
+        panel.border = element_blank(), 
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), 
+        axis.line = element_line(colour = "black"), 
+        legend.position = 'bottom')
+@
+
+<<>>=
 BOM <- eDNA.df %>% 
   filter(Lake == "BOM") %>%
   ggplot(aes(x = Site, 
              y = Positive.Droplets, 
              colour = Date.Collected)) + 
-  labs(title = 'Positive ddPCR replicates at Lake BOM by Site', 
+  labs(title = 'Positive ddPCR Replicates at Lake BOM by Site', 
        x = 'Site', 
        y = 'Positive Droplets', 
        color = 'Date') +
-  geom_point(alpha = 0.7, 
-             position = position_jitter(width = 0.25, 
+  geom_point(position = position_jitter(width = 0.25, 
                                         height = 1, 
                                         seed = 03172020)) + 
+  scale_colour_manual(values = date.cols) + 
   theme_bw() + 
-  theme(text = element_text(size = 8),
+  theme(title = element_text(size = 8),
         panel.border = element_blank(), 
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(), 
-        axis.line = element_line(colour = "black"))
+        axis.line = element_line(colour = "black"), 
+        legend.position = 'bottom')
 
 
 LG <- eDNA.df %>% 
@@ -321,21 +362,22 @@ LG <- eDNA.df %>%
   ggplot(aes(x = Site, 
              y = Positive.Droplets, 
              colour = Date.Collected)) + 
-  labs(title = 'Positive ddPCR replicates at Lake LG by Site', 
+  labs(title = 'Positive ddPCR Replicates at Lake LG by Site', 
        x = 'Site', 
        y = 'Positive Droplets', 
        color = 'Date') +
   ylim(c(-0.01, 3)) + 
-  geom_point(alpha = 0.7, 
-             position = position_jitter(width = 0.25, 
+  geom_point(position = position_jitter(width = 0.25, 
                                         height = 0.001, 
                                         seed = 03172020)) + 
+  scale_colour_manual(values = date.cols) + 
   theme_bw() + 
-  theme(text = element_text(size = 8),
+  theme(title = element_text(size = 8),
         panel.border = element_blank(), 
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(), 
-        axis.line = element_line(colour = "black"))
+        axis.line = element_line(colour = "black"), 
+        legend.position = 'bottom')
 
 
 MG <- eDNA.df %>% 
@@ -343,38 +385,25 @@ MG <- eDNA.df %>%
   ggplot(aes(x = Site, 
              y = Positive.Droplets, 
              colour = Date.Collected)) + 
-  labs(title = 'Positive ddPCR replicates at Lake MG by Site', 
+  labs(title = 'Positive ddPCR Replicates at Lake MG by Site', 
        x = 'Site', 
        y = 'Positive Droplets', 
        color = 'Date') +
   ylim(c(-0.01, 3)) + 
-  geom_point(alpha = 0.7, 
-             position = position_jitter(width = 0.25, 
+  geom_point(position = position_jitter(width = 0.25, 
                                         height = 0.001, 
                                         seed = 03172020)) + 
+  scale_colour_manual(values = date.cols) + 
   theme_bw() + 
-  theme(text = element_text(size = 8),
+  theme(title = element_text(size = 8),
         panel.border = element_blank(), 
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(), 
-        axis.line = element_line(colour = "black"))
+        axis.line = element_line(colour = "black"), 
+        legend.position = 'bottom')
 
-temp <- eDNA %>% 
-  ggplot(aes(x = Water.Temp, 
-             y = Positive.Droplets)) +
-  geom_point(alpha = 0.7) + 
-  labs(title = 'Positive ddPCR replicates by Water Temperature', 
-       x = expression(paste('Water Temperature (', 
-                            degree, 'C)')), 
-       y = 'Positive Droplets') +
-  theme_bw() + 
-  theme(text = element_text(size = 8),
-        panel.border = element_blank(), 
-        panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank(), 
-        axis.line = element_line(colour = "black"))
 
-grid.arrange(BOM, LG, MG, temp, nrow = 2)
+grid.arrange(BOM, LG, MG, ncol = 3)
 @
 
 \subsection{Plankton Tow Survey Data}
@@ -448,7 +477,7 @@ The assumptions are:
 
 In WILD 502 when talking about multi-season occupancy models, we talked about extirpation and colonization rates, but I think that these could be modeled with a latent variable(s)? I don't think they are of particular interest here. 
 
-<<sim1, echo = F, warning = F, message = F, results = 'hide'>>=
+<<sim1, echo = F, warning = F, message = F, results = 'hide', eval = F>>=
 # SIMULATED DATA 1
 set.seed(1202020)
 p <- 0.6 # constant detection probability... could change to depend on covariates
@@ -478,7 +507,7 @@ some(y1) # view 10 sample rows of the simulated data
 y2 <- rbinom(M, J, p*z) # total number of detections for the J samples within each of the M sites, y_i
 @
 
-<<sim2, echo = F>>=
+<<sim2, echo = F, eval = F>>=
 # SIMULATED DATA 2
 set.seed(1222020)
 p <- 0.6 # constant detection probability... could change to depend on covariates
@@ -495,7 +524,7 @@ for(i in 1:M){
 }
 @
 
-<<sim3, echo = F>>=
+<<sim3, echo = F, eval = F>>=
 #SIMULATED DATA 3
 set.seed(1222020)
 M <- 10 # number of sites
@@ -542,6 +571,176 @@ Package for eDNA data:
 \subsection{Analysis of eDNA Data}
 
 analysis and results
+
+<<eDNA_wide_data, echo = F, warning = F, message = F, results = 'hide', eval = F>>=
+# format eDNA data for use in msocc package
+## USING ALL POSITIVE DROPLETS
+eDNA_wide <- data.frame(site = eDNA$Site, 
+                        sample = eDNA$Sample.ID)
+rep.names <- paste("PCR", 1:20000, sep = "")
+eDNA_wide[, rep.names] <- NA
+
+set.seed(03202020)
+for(i in 1:nrow(eDNA_wide)){
+  samp.id <- sample(1:20000, eDNA$Positive.Droplets[i])
+  for(j in 1:20000){
+  if(j %in% samp.id){
+    eDNA_wide[i, j + 2] <- 1
+    }
+  }
+}
+
+eDNA_wide[is.na(eDNA_wide)] <- 0
+
+# site level covariates
+site.cov <- data.frame(site = levels(eDNA$Site))
+site.cov[, 2] <- factor(removeNumbers(as.character(site.cov$site)))
+names(site.cov)[2] <- "lake"
+
+# sample level covariates
+sample.cov <- data.frame(site = eDNA$Site, 
+                         sample = eDNA$Sample.ID, 
+                         date = eDNA$Date.Collected)
+## water temp too but there are missing values, so need to impute... later
+  
+# replicate level covariates
+rep.cov <- data.frame(site = eDNA$Site, 
+                      sample = eDNA$Sample.ID, 
+                      date = eDNA$Date.Collected)
+## water temp too but there are missing values, so need to impute... later
+
+
+@
+
+<<eDNA_model1, echo = T, warning = F, message = F, results = 'hide', eval = F>>=
+eDNA_m1 <- msocc_mod(eDNA_wide, 
+                     site = list(model = ~ 1, cov_tbl = site.cov), 
+                     sample = list(model = ~ 1, cov_tbl = sample.cov), 
+                     rep = list(model = ~ 1, cov_tbl = rep.cov), 
+                     seed = 03202020) 
+
+burnin <- 100
+
+# site summary
+## posterior_summary function does not work b/c matrix too large 
+psi.post_m1 <- eDNA_m1$psi[-(1:burnin)]
+summary(psi.post_m1)
+quantile(psi.post_m1, c(0.025, 0.975))
+plot(psi.post_m1, type = "l") # REDO THIS IN GGPLOT IF KEEPING IT
+
+# sample summary
+## posterior_summary function does not work b/c matrix too large
+theta.post_m1 <- eDNA_m1$theta[-(1:burnin)]
+summary(theta.post_m1)
+quantile(theta.post_m1, c(0.025, 0.975))
+plot(theta.post_m1, type = "l") # REDO THIS IN GGPLOT IF KEEPING IT
+
+# rep summary
+## posterior_summary function does not work b/c matrix too large
+p.post_m1 <- eDNA_m1$p[-(1:burnin)]
+summary(p.post_m1)
+quantile(p.post_m1, c(0.025, 0.975))
+plot(p.post_m1, type = "l") # REDO THIS IN GGPLOT IF KEEPING IT
+
+@
+
+<<eDNA_model2, echo = T, warning = F, message = F, results = 'hide', eval = F>>=
+eDNA_m2 <- msocc_mod(eDNA_wide, 
+                     site = list(model = ~ lake, cov_tbl = site.cov), 
+                     sample = list(model = ~ date, cov_tbl = sample.cov), 
+                     rep = list(model = ~ 1, cov_tbl = rep.cov), 
+                     seed = 03202020) 
+
+burnin <- 100
+
+
+
+# site summary
+## posterior_summary function does not work b/c matrix too large
+X <- eDNA_m2$model.info$X
+beta <- eDNA_m2$beta
+
+eta <- beta %*% t(X)
+psi <- exp(eta)/(1 + exp(eta))
+
+psi.mcmc <- psi[-c(1:burnin), ]
+
+mean <- apply(psi.mcmc, 2, mean)
+median <- apply(psi.mcmc, 2, median)
+quantiles <- apply(psi.mcmc, 2, quantile, probs = c(0.025, 0.975))
+sum_tbl <- eDNA_m2$model.info$df %>% 
+  dplyr::select(-sample, -rep) %>%  
+  dplyr::distinct() %>% 
+  dplyr::mutate(median = median, 
+                mean = mean, 
+                lwr = quantiles[1, ], 
+                upr = quantiles[2, ])  
+sum_tbl
+
+# sample summary
+## posterior_summary function does not work b/c matrix too large
+### theta.post_m2 
+W <- eDNA_m2$model.info$W
+alpha <- eDNA_m2$alpha
+
+nu <- alpha %*% t(W)
+theta <- exp(nu)/(1 + exp(nu))
+  
+theta.mcmc <- theta[-c(1:burnin), ]
+
+mean <- apply(theta.mcmc, 2, mean)
+median <- apply(theta.mcmc, 2, median)
+quantiles <- apply(theta.mcmc, 2, quantile, probs = c(0.025, 0.975))
+sum_tbl <- eDNA_m2$model.info$df %>% dplyr::select(-rep) %>%  
+  dplyr::distinct() %>% 
+  dplyr::mutate(median = median, 
+                mean = mean, 
+                lwr = quantiles[1, ], 
+                upr = quantiles[2, ])  
+sum_tbl
+
+# rep summary
+## posterior_summary function does not work b/c matrix too large
+p.post_m2 <- eDNA_m2$p[-(1:burnin)]
+summary(p.post_m2)
+quantile(p.post_m2, c(0.025, 0.975))
+plot(p.post_m2, type = "l") # REDO THIS IN GGPLOT IF KEEPING IT
+@
+
+<<eDNA_model3, echo = T, warning = F, message = F, results = 'hide', eval = F>>=
+eDNA_m3 <- msocc_mod(eDNA_wide, 
+                     site = list(model = ~ site, cov_tbl = site.cov), 
+                     sample = list(model = ~ 1, cov_tbl = sample.cov), 
+                     rep = list(model = ~ 1, cov_tbl = rep.cov), 
+                     seed = 03202020) 
+
+burnin <- 100
+
+
+
+# site summary
+## posterior_summary function does not work b/c matrix too large
+X <- eDNA_m3$model.info$X
+beta <- eDNA_m3$beta
+
+eta <- beta %*% t(X)
+psi <- exp(eta)/(1 + exp(eta))
+
+psi.mcmc <- psi[-c(1:burnin), ]
+
+mean <- apply(psi.mcmc, 2, mean)
+median <- apply(psi.mcmc, 2, median)
+quantiles <- apply(psi.mcmc, 2, quantile, probs = c(0.025, 0.975))
+sum_tbl <- eDNA_m3$model.info$df %>% 
+  dplyr::select(-sample, -rep) %>%  
+  dplyr::distinct() %>% 
+  dplyr::mutate(median = median, 
+                mean = mean, 
+                lwr = quantiles[1, ], 
+                upr = quantiles[2, ])  
+sum_tbl
+@
+
 
 \subsection{Analysis of Plankton Tow Data}
 
@@ -597,7 +796,7 @@ Additional questions, not directly related to the simulation:
 <<load_eDNA_data>>
 <<eDNA_table>>
 <<eDNA_summary>>
-<<eDNA_visualization>>
+<<eDNA_visualization_droplets>>
 @
 
 
