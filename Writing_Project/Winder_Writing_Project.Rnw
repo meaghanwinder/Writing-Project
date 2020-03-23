@@ -78,7 +78,7 @@
 
 \begin{document}
 
-<<r_packages, echo = F, warning = F, message = F, results = 'hide'>>=
+<<r_packages, include = F, warning = F, message = F>>=
 # packages used 
 library(car)
 library(dplyr)
@@ -87,6 +87,7 @@ library(kableExtra)
 library(ggplot2)
 library(gridExtra)
 library(tm)
+library(readxl)
 ## library(devtools)
 ## devtools::install_github("StrattonCh/msocc")
 library(msocc)
@@ -226,7 +227,7 @@ The primary goal is to determine how the detection probabilities and false negat
 
 \subsection{eDNA Survey Data}
 
-<<load_eDNA_data, echo = F, warning = F, message = F, results = 'hide'>>=
+<<load_eDNA_data, include = F, warning = F, message = F>>=
 # load eDNA data
 eDNA <- read.csv(
   "C:/Users/mwind/OneDrive/Writing Project_EXTRA/eDNA.csv")
@@ -242,17 +243,6 @@ eDNA <- eDNA %>%
 eDNA$Site <- droplevels(eDNA$Site)
 
 
-# number of samples with (0, 3) positive droplets
-eDNA %>% 
-  count(Positive.Droplets < 3 & Positive.Droplets > 0)
-
-
-# number of samples with 0 positive droplets
-eDNA %>% 
-  group_by(Lake) %>%
-  count(Positive.Droplets == 0)
-
-
 # reorder dates in chronological order
 eDNA$Date.Collected <- factor(eDNA$Date.Collected,
                           levels = c("5/28/2019", "7/8/2019", 
@@ -262,7 +252,9 @@ eDNA$Date.Collected <- factor(eDNA$Date.Collected,
 
 @
 
-The eDNA data were collected during the spring, summer, and fall of 2019 as part of a study on the detection of dreissenid mussels and Asian clams in northeastern lakes using environmental DNA. There were six lakes surveyed across Maine, New Hampshire, New York, and Vermont; each lake was sampled for dreissenid mussels, Asian clams, or both. The data available are from three of the lakes sampled for dreissenid mussels. There are multiples sites within each lake, from each, five one-liter water samples were collected. Most sites were visited on more than one day throughout the course of the study. On each day, water temperatures were recorded at each site (with the exception of water temperatures in one lake on one of the study days). Each of the samples were analyzed using the DNA amplification technique, known as digital droplet PCR (ddPCR), on a Biorad Digital Droplet PCR system using dreissenid mussel assays. This ddPCR technique divides the sample aliquot into 20000 droplets, which are analyzed separately. A field blank of clean lab water accompanied the set of five samples from each site on a given day to ensure no cross contamination in the lab; all replications of the field blank ddPCR analyses for the dreissenid mussels were negative. Figure \ref{fig:eDNA_diagram} illustrates the data structure within a lake on a given day. 
+The eDNA data were collected during the spring, summer, and fall of 2019 as part of a study on the detection of dreissenid mussels and Asian clams in northeastern lakes using environmental DNA. There were six lakes surveyed across Maine, New Hampshire, New York, and Vermont; each lake was sampled for dreissenid mussels, Asian clams, or both. The data available are from three of the lakes sampled for dreissenid mussels. There are multiple sites within each lake, from each, five one-liter water samples were collected. Most sites were visited on more than one day throughout the course of the study. Each of the samples were analyzed using a DNA amplification technique, known as digital droplet PCR (ddPCR), on a Biorad Digital Droplet PCR system using dreissenid mussel assays. This PCR technique divides the sample aliquot into micro droplets to be analyzed separately. A field blank of clean lab water accompanied the set of five samples from each site on a given day to ensure no cross contamination in the lab; droplet replications for dreissenid mussel DNA were negative for all field blank samples. 
+
+The lakes are coded ``BOM,'' ``LG,'' and ``MG,'' and these names will be used throughout. There are three sites in lake BOM (BOM1, BOM2, BOM3), each of which was sampled five times on three different days (May 28, July 8, and October 21), for a total of 15 samples per site and 45 total samples from lake BOM. There are five sites in lake LG; the first three sites (LG1, LG2, LG3) were sampled five times on both May 28 and July 8, and the final two sites (LG4, LG5) were each sampled five times on September 25, for a total of 40 samples from lake LG. There were originally five sites in lake MG, but one (MG2) was inaccessible on the study day, so there are data for four sites in lake MG (MG1, MG3, MG4, MG5), each of which was sampled five times on August 23, for a total of 20 samples from lake MG. In all, there are twelve sites and 105 samples. Each of the samples were divided into 20,000 droplets for ddPCR analysis. Figure \ref{fig:eDNA_diagram} illustrates the hierarchical structure of the eDNA data within a lake. Ten sample rows of the data set are displayed in Table \ref{tab:eDNA_data}, where ``Positive Droplets'' is the number of droplets where dreissenid mussel DNA was amplified and ``Concentration'' is a proxy measurement of how many droplets were amplified in the sample. Water temperatures ($^\circ$C) were also recorded at each site on each study day, with the exception of temperatures at sites in lake BOM on October 21. 
 
 \begin{figure}[]
 	\centering
@@ -270,8 +262,6 @@ The eDNA data were collected during the spring, summer, and fall of 2019 as part
 	\caption{A diagram displaying the hierarchical structure of the eDNA data.}
 	\label{fig:eDNA_diagram}
 \end{figure}
-
-Table \ref{tab:eDNA_data} displays a sample of ten rows of the data set. The lakes are coded ``BOM,'' ``LG,'' and ``MG,'' and those names will be used throughout. ``Positive Droplets'' is the number of droplets where dreissenid mussel DNA was amplified and ``Concentration'' is a proxy measurement of how many droplets were amplified in the sample. 
 
 <<eDNA_table, echo = F, warning = F, message = F>>=
 # generate table of 10 sample rows of eDNA data
@@ -287,22 +277,43 @@ knitr::kable(some(eDNA), 'latex', booktabs = T, linesep = "",
 
 @
 
-<<eDNA_summary, echo = F, warning = F, message = F, eval = F>>=
+<<eDNA_summary, include = F, warning = F, message = F>>=
 # BOM
 eDNA %>% filter(Lake == "BOM") %>% summary
 
+
 # LG
 eDNA %>% filter(Lake == "LG") %>% summary
+
 
 # MG
 eDNA %>% filter(Lake == "MG") %>% summary
 
 
+# number of samples with 0 positive droplets, by lake
+eDNA %>% 
+  group_by(Lake) %>%
+  count(Positive.Droplets == 0)
+
+
+# number of samples with (0, 3] positive droplets
+eDNA %>% 
+  group_by(Lake) %>%
+  count(Positive.Droplets <= 3  & Positive.Droplets > 0)
+
+
+# number of samples with (3, 10] positive droplets
+eDNA %>% 
+  group_by(Lake) %>%
+  count(Positive.Droplets > 3 & Positive.Droplets <= 10)
+
+
 @
 
-There are three sites in lake BOM, each of which was sampled five times on three different days (May 28, July 8, and October 21), for a total of 15 samples per site and 45 total samples from lake BOM. The water temperatures in lake BOM ranged from 6$^\circ$C to 25.5$^\circ$C, but the water temperature was not recorded at any of the sites on October 21. Of the 20000 droplets from each sample in lake BOM, the number of positive droplets ranged from 0 to 3331. There are five sites in lake LG. The first three sites were sampled five times on both May 28 and July 8, and the final two sites were sampled five times on September 25, for a total of 40 samples from lake LG. The water temperatures in lake LG ranged from 12$^\circ$C to 23$^\circ$C. The number of positive droplets ranged from 0 to 3 for each sample from lake LG. There were originally five sites in lake MG, but one was inaccessible on the study day so there are data for four sites in lake MG, each of which was sampled five times on August 23, for a total of 20 samples from lake MG. The water temperatures in lake MG ranged from 17.2$^\circ$C to 18.9$^\circ$C. The number of positive droplets ranged from 0 to 2 for each sample from lake MG. Figure \ref{fig:eDNA_droplets} 
+The proportion of positive droplets per sample range between 0.00000 (0 of 20,000 positive droplets) and 0.16655 (3331 of 20,000 positive droplets) for lake BOM, between 0.00000 and 0.00015 (3 of 20,000 positive droplets) for lake LG, and between 0.00000 and 0.00010 (2 of 20,000 positive droplets) for lake MG. It is noted that samples with three or fewer positive droplets should be treated with caution, as they have potential to be false positives. This is immediately noticeable in lakes LG and MG, as all the values of positive droplets per sample are low for these two lakes. Of the 40 samples from lake LG, 38 of them resulted in no positive droplets, and the remaining two samples resulted in two or three positive droplets per sample. Similarly for lake MG, 16 of the 20 samples resulted in no positive droplets, and the remaining samples resulted in one or two positive droplets per sample. While larger proportions of positive droplets were observed in samples from lake BOM, there are still four samples which resulted in some positive droplets, but three or fewer positive droplets. Based on Figure \ref{fig:eDNA_droplets} it is clear that the samples taken on May 28 and July 8 from sites BOM2 and BOM3 tend to have the highest proportion of positive droplets, while the samples at the remaining sites across their respective sampling dates, and the samples taken on October 21 at sites BOM2 and BOM3 all have proportions of positive droplets close to 0. 
 
-<<eDNA_visualization_droplets, echo = F, warning = F, message = F, results = 'hide', fig.align = 'center', fig.width = 10, fig.height = 4.5, fig.cap = "A plot of the proportion of positive droplets from each sample by sampling site, colored by the date on which the sample was taken." , fig.lp = "fig:eDNA_droplets">>=
+\begin{figure}[]
+<<eDNA_visualization_droplets, echo = F, warning = F, message = F, fig.width = 9.5, fig.height = 4.5, fig.align = 'center'>>=
 # visualization of eDNA data
 eDNA.df <- data.frame(eDNA)
 
@@ -326,30 +337,36 @@ eDNA.df %>%
                                         seed = 03172020)) + 
   scale_colour_manual(values = date.cols) + 
   theme_bw() + 
-  theme(title = element_text(size = 8),
+  theme(title = element_text(size = 9),
         panel.border = element_blank(), 
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(), 
         axis.line = element_line(colour = "black"), 
         legend.position = 'bottom')
+
+
 @
+\caption{A plot of the proportion of positive droplets from each sample by site, colored by the date on which the sample was taken.}
+\label{fig:eDNA_droplets}
+\end{figure}
 
-<<>>=
-BOM <- eDNA.df %>% 
-  filter(Lake == "BOM") %>%
+Water temperature could play a role in the availability of dreissenid mussel eDNA in the water, or the probability that the DNA is able to be detected using ddPCR. The water temperatures observed in lake BOM range from 6$^\circ$C to 25.5$^\circ$C, but temperatures were not recorded at any of the sites in lake BOM on October 21. The observed water temperatures in lake LG range from 12$^\circ$C to 23$^\circ$C, and from 17.2$^\circ$C to 18.9$^\circ$C in lake MG. Based on Figure \ref{fig:eDNA_temp}, it seems that the water temperatures on the same day are similar across sites within the same lake. For sites that were visited more than once, it is clear that water temperatures were cooler in the spring but warmed up in the summer. 
+
+\begin{figure}[]
+<<eDNA_visualization_temp, echo = F, warning = F, message = F, fig.width = 9.5, fig.height = 4.5, fig.align = 'center'>>=
+# visualization of eDNA data
+eDNA.df %>% 
   ggplot(aes(x = Site, 
-             y = Positive.Droplets, 
+             y = Water.Temp, 
              colour = Date.Collected)) + 
-  labs(title = 'Positive ddPCR Replicates at Lake BOM by Site', 
+  labs(title = 'Water Temperature by Site', 
        x = 'Site', 
-       y = 'Positive Droplets', 
+       y = expression(paste('Water Temperatuere (', degree, 'C)')), 
        color = 'Date') +
-  geom_point(position = position_jitter(width = 0.25, 
-                                        height = 1, 
-                                        seed = 03172020)) + 
+  geom_point() + 
   scale_colour_manual(values = date.cols) + 
   theme_bw() + 
-  theme(title = element_text(size = 8),
+  theme(title = element_text(size = 9),
         panel.border = element_blank(), 
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(), 
@@ -357,56 +374,26 @@ BOM <- eDNA.df %>%
         legend.position = 'bottom')
 
 
-LG <- eDNA.df %>% 
-  filter(Lake == "LG") %>%
-  ggplot(aes(x = Site, 
-             y = Positive.Droplets, 
-             colour = Date.Collected)) + 
-  labs(title = 'Positive ddPCR Replicates at Lake LG by Site', 
-       x = 'Site', 
-       y = 'Positive Droplets', 
-       color = 'Date') +
-  ylim(c(-0.01, 3)) + 
-  geom_point(position = position_jitter(width = 0.25, 
-                                        height = 0.001, 
-                                        seed = 03172020)) + 
-  scale_colour_manual(values = date.cols) + 
-  theme_bw() + 
-  theme(title = element_text(size = 8),
-        panel.border = element_blank(), 
-        panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank(), 
-        axis.line = element_line(colour = "black"), 
-        legend.position = 'bottom')
-
-
-MG <- eDNA.df %>% 
-  filter(Lake == "MG") %>%
-  ggplot(aes(x = Site, 
-             y = Positive.Droplets, 
-             colour = Date.Collected)) + 
-  labs(title = 'Positive ddPCR Replicates at Lake MG by Site', 
-       x = 'Site', 
-       y = 'Positive Droplets', 
-       color = 'Date') +
-  ylim(c(-0.01, 3)) + 
-  geom_point(position = position_jitter(width = 0.25, 
-                                        height = 0.001, 
-                                        seed = 03172020)) + 
-  scale_colour_manual(values = date.cols) + 
-  theme_bw() + 
-  theme(title = element_text(size = 8),
-        panel.border = element_blank(), 
-        panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank(), 
-        axis.line = element_line(colour = "black"), 
-        legend.position = 'bottom')
-
-
-grid.arrange(BOM, LG, MG, ncol = 3)
 @
+\caption{A plot of the measured water temperatures by site, colored by the date on which the sample was taken.}
+\label{fig:eDNA_temp}
+\end{figure}
+
+\hl{\textit{A sentence here to transition to the plankton tow data}}
 
 \subsection{Plankton Tow Survey Data}
+
+<<load_tow_data, include = F, warning = F, message = F>>=
+# load tow data
+tow <- read_excel(
+  "C:/Users/mwind/OneDrive/Writing Project_EXTRA/USBR_2018_data_sample.xlsx",
+  sheet = 3)
+
+
+
+
+@
+
 
 Plankton tow data description
 \begin{itemize}
@@ -418,11 +405,11 @@ Plankton tow data description
   \item potential covariates
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}[]
 	\centering
 	\includegraphics[scale = 0.7]{planktontow}
 	\caption{A diagram displaying the structure of the plankton tow data.}
-	\label{pt}
+	\label{tab:tow_diagram}
 \end{figure}
 
 Plankton tow data visualization
