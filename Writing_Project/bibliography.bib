@@ -16,25 +16,16 @@
     month = {Jan}
 }
 
-@book{Claudi,
-   author = {Claudi, Renata and Mackie, Gerald},
-   year = {1994}, 
-   month = {01}, 
-   pages = {227},
-   title = {Zebra Mussel Monitoring and Control},
-   publisher = {Lewis Publishers, Inc.}  
-}
-
 @article{Dorazio_Erickson, 
-title = {\texttt{ednaoccupancy}: {A}n \texttt{R} package for multiscale occupancy modelling of environmental {DNA} data},
-volume = {18},
-doi = {10.1111/1755-0998.12735},
-number = {2}, 
-journal = {Molecular Ecology Resources}, 
-author = {Dorazio, Robert M. and Erickson, Richard A.}, 
-year = {2017}, 
-month = {Feb}, 
-pages = {368 - 380}
+    title = {\texttt{eDNAoccupancy}: {A}n \texttt{R} package for multiscale occupancy modelling of environmental {DNA} data},
+    volume = {18},
+    doi = {10.1111/1755-0998.12735},
+    number = {2}, 
+    journal = {Molecular Ecology Resources}, 
+    author = {Dorazio, Robert M. and Erickson, Richard A.}, 
+    year = {2018},  
+    month = {March}, 
+    pages = {368 - 380}
 }
 
 @article{Holser:detection,
@@ -61,6 +52,14 @@ pages = {368 - 380}
    type = {Journal Article}
 }
 
+@book{MacKenzie, 
+    place = {London}, 
+    title = {Occupancy estimation and modeling: inferring patterns and dynamics of species occurrence}, 
+    publisher = {Academic Press}, 
+    author = {MacKenzie, Darryl I. and Nichols, James D. and Royle, J. Andrew and Pollock, Kenneth H},  
+    year = {2018}
+}
+
 @article{McMahon,
     author = {McMahon, Robert F.},
     title = {The physiological ecology of the zebra mussel, \textit{Dreissena polymorpha}, {in North America and Europe}},
@@ -85,25 +84,13 @@ pages = {368 - 380}
 
 @article{Nichols,
     author = {Nichols, Susan Jerrine},
-	    title = {Variations in the Reproductive Cycle of \textit{Dreissena polymorpha} in {Europe, Russia, and North America}}, 
+	title = {Variations in the Reproductive Cycle of \textit{Dreissena polymorpha} in {Europe, Russia, and North America}}, 
     journal = {American Zoologist},
     volume = {36}, 
     number = {3}, 
     pages = {311 - 325},
     year = {1996},
     doi = {10.1093/icb/36.3.311}
-}
-
-@article{Nichols_2008, 
-    title = {Multi-scale occupancy estimation and modelling using multiple detection methods}, 
-    volume = {45}, 
-    doi = {10.1111/j.1365-2664.2008.01509.x}, 
-    number = {5},  
-    journal = {Journal of Applied Ecology}, 
-    author = {Nichols, James D. and Bailey, Larissa L. and O’Connell Jr., Allan F. and Talancy, Neil W. and Campbell Grant, Evan H. and Gilbert, Andrew T. and Annand, Elizabeth M. and Husband, Thomas P. and Hines, James E.}, 
-    year = {2008}, 
-    month = {Aug}, 
-    pages = {1321 - 1329}
 }
 
 @online{NPS, 
@@ -114,6 +101,29 @@ pages = {368 - 380}
     year = {2017}
  }
 
+@article{Polson,
+    author = {Polson, Nicholas G. and Scott, James G. and Windle, Jesse},
+    title = {Bayesian Inference for Logistic Models Using Pólya–Gamma Latent Variables},
+    journal = {Journal of the American Statistical Association},
+    volume = {108},
+    number = {504},
+    pages = {1339-1349},
+    year  = {2013},
+    publisher = {Taylor & Francis},
+    doi = {10.1080/01621459.2013.829001},
+    URL = {https://doi.org/10.1080/01621459.2013.829001},
+    eprint = {https://doi.org/10.1080/01621459.2013.829001}
+}
+
+@Manual{R,
+    title = {R: A Language and Environment for Statistical Computing},
+    author = {{R Core Team}},
+    organization = {R Foundation for Statistical Computing},
+    address = {Vienna, Austria},
+    year = {2019},
+    url = {https://www.R-project.org/},
+  }
+
 @article{Rees,
     author = {Rees, Helen C. and Maddison, Ben C. and Middleditch, David J. and Patmore, James R.M. and Gough, Kevin C.},
     title = {The detection of aquatic animal species using environmental DNA -- a review of eDNA as a survey tool in ecology},
@@ -122,6 +132,31 @@ pages = {368 - 380}
     pages = {1450 - 1459},
     year = {2014},
     doi = {10.1111/1365-2664.12306}
+}
+
+@Manual{rjags,
+    title = {rjags: Bayesian Graphical Models using MCMC},
+    author = {Martyn Plummer},
+    year = {2019},
+    note = {R package version 4-10},
+    url = {https://CRAN.R-project.org/package=rjags},
+}
+
+@Manual{RMark,
+    title = {{RMark}: An R Interface for Analysis of Capture-Recapture Data with {MARK}},
+    number = {2013-01},
+    author = {J.L. Laake},
+    year = {2013},
+    pages = {25},
+    institution = {Alaska Fish. Sci. Cent., {NOAA}, Natl. Mar. Fish. Serv.}
+}
+
+@Manual{rstan,
+    title = {{RStan}: the {R} interface to {Stan}},
+    author = {{Stan Development Team}},
+    note = {R package version 2.19.2},
+    year = {2019},
+    url = {http://mc-stan.org/},
 }
 
 @article{Schmelzle, 
@@ -146,9 +181,23 @@ pages = {368 - 380}
    doi = {10.3391/mbi.2019.10.2.09}
 }
 
+@Manual{Stratton,
+    title = {msocc: Package for Fitting and Analyzing Computationally Efficient Multi-scale Occupancy Models},
+    author = {Christian Stratton},
+    year = {2020},
+    note = {R package version 1.1.0},
+}
 
-
-
+@Manual{unmarked,
+    title = {{unmarked}: An {R} Package for Fitting Hierarchical Models of Wildlife Occurrence and Abundance},
+    author = {Ian Fiske and Richard Chandler},
+    journal = {Journal of Statistical Software},
+    year = {2011},
+    volume = {43},
+    number = {10},
+    pages = {1-23},
+    url = {http://www.jstatsoft.org/v43/i10/},
+}
 
 
 

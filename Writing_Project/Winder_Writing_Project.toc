@@ -5,12 +5,18 @@
 \contentsline {subsection}{\numberline {2.2}Plankton Tow Survey Data}{11}
 \contentsline {section}{\numberline {3}Methods}{12}
 \contentsline {subsection}{\numberline {3.1}Bayesian Modeling Background}{12}
-\contentsline {subsection}{\numberline {3.2}Occupancy Models}{12}
-\contentsline {subsection}{\numberline {3.3}Implementation}{16}
-\contentsline {section}{\numberline {4}Analysis}{16}
-\contentsline {subsection}{\numberline {4.1}Analysis of eDNA Data}{16}
-\contentsline {subsection}{\numberline {4.2}Analysis of Plankton Tow Data}{22}
-\contentsline {section}{\numberline {5}Discussion}{22}
-\contentsline {subsection}{\numberline {5.1}Further Investigations}{22}
-\contentsline {section}{\numberline {6}References}{23}
-\contentsline {section}{\numberline {7}Appendix - R Code}{25}
+\contentsline {subsubsection}{\numberline {3.1.1}Gibbs Sampler}{14}
+\contentsline {subsubsection}{\numberline {3.1.2}Metropolis-Hastings Algorithm}{15}
+\contentsline {subsubsection}{\numberline {3.1.3}Bayesian Hierarchical Modeling}{17}
+\contentsline {subsection}{\numberline {3.2}Occupancy Models}{17}
+\contentsline {subsection}{\numberline {3.3}Implementation}{21}
+\contentsline {subsubsection}{\numberline {3.3.1}\texttt {msocc} package}{21}
+\contentsline {subsubsection}{\numberline {3.3.2}**implementation method for plankton tow**}{22}
+\contentsline {subsubsection}{\numberline {3.3.3}Alternative Options}{22}
+\contentsline {section}{\numberline {4}Analysis}{23}
+\contentsline {subsection}{\numberline {4.1}Analysis of eDNA Data}{23}
+\contentsline {subsection}{\numberline {4.2}Analysis of Plankton Tow Data}{28}
+\contentsline {section}{\numberline {5}Discussion}{28}
+\contentsline {subsection}{\numberline {5.1}Further Investigations}{28}
+\contentsline {section}{\numberline {6}References}{29}
+\contentsline {section}{\numberline {7}Appendix - R Code}{32}

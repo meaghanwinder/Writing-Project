@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2020.1.16)  22 MAR 2020 22:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2020.1.16)  30 MAR 2020 20:32
 entering extended mode
 **./Winder_Writing_Project.tex
 (Winder_Writing_Project.tex
@@ -1338,7 +1338,7 @@ Overfull \hbox (31.48502pt too wide) in paragraph at lines 224--229
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 271.
 
-<eDNA.png, id=41, 438.438pt x 277.9986pt>
+<eDNA.png, id=42, 438.438pt x 277.9986pt>
 File: eDNA.png Graphic file (type png)
 <use eDNA.png>
 Package pdftex.def Info: eDNA.png  used on input line 273.
@@ -1350,291 +1350,315 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [8 <./eDNA.png>] [9]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 309.
+               Default added (so using `tbp') on input line 310.
 
-Package color Info: Redefining color shadecolor on input line 311.
-<figure/eDNA_visualization_droplets-1.pdf, id=49, 686.565pt x 325.215pt>
+Package color Info: Redefining color shadecolor on input line 312.
+<figure/eDNA_visualization_droplets-1.pdf, id=50, 686.565pt x 325.215pt>
 File: figure/eDNA_visualization_droplets-1.pdf Graphic file (type pdf)
 <use figure/eDNA_visualization_droplets-1.pdf>
 Package pdftex.def Info: figure/eDNA_visualization_droplets-1.pdf  used on inpu
-t line 313.
+t line 314.
 (pdftex.def)             Requested size: 390.0pt x 184.73433pt.
+[10 <./figure/eDNA_visualization_droplets-1.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 326.
+               Default added (so using `tbp') on input line 327.
 
-Package color Info: Redefining color shadecolor on input line 328.
-<figure/eDNA_visualization_temp-1.pdf, id=50, 686.565pt x 325.215pt>
+Package color Info: Redefining color shadecolor on input line 329.
+<figure/eDNA_visualization_temp-1.pdf, id=59, 686.565pt x 361.35pt>
 File: figure/eDNA_visualization_temp-1.pdf Graphic file (type pdf)
 <use figure/eDNA_visualization_temp-1.pdf>
 Package pdftex.def Info: figure/eDNA_visualization_temp-1.pdf  used on input li
-ne 330.
-(pdftex.def)             Requested size: 390.0pt x 184.73433pt.
-[10 <./figure/eDNA_visualization_droplets-1.pdf>]
+ne 331.
+(pdftex.def)             Requested size: 390.0pt x 205.26036pt.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 350.
-
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
+) [11 <./figure/eDNA_visualization_temp-1.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 358.
 
-<planktontow.png, id=59, 319.4334pt x 218.2554pt>
+<planktontow.png, id=71, 319.4334pt x 218.2554pt>
 File: planktontow.png Graphic file (type png)
 <use planktontow.png>
 Package pdftex.def Info: planktontow.png  used on input line 360.
 (pdftex.def)             Requested size: 223.60184pt x 152.77773pt.
-[11 <./figure/eDNA_visualization_temp-1.pdf>] [12 <./planktontow.png>]
+[12 <./planktontow.png>] [13]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 397.
 
-LaTeX Warning: Citation `MacKenzie' on page 13 undefined on input line 377.
+Underfull \hbox (badness 10000) in paragraph at lines 401--403
 
-[13] [14] [15]
-Package color Info: Redefining color shadecolor on input line 452.
- [16]
+ []
+
+[14]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 416.
+ [15] [16] [17] [18]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 441.
+
+<ssocc.png, id=104, 418.6842pt x 104.0688pt>
+File: ssocc.png Graphic file (type png)
+<use ssocc.png>
+Package pdftex.def Info: ssocc.png  used on input line 443.
+(pdftex.def)             Requested size: 293.07693pt x 72.84766pt.
+[19 <./ssocc.png>] [20]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 454.
+ [21]
+! Undefined control sequence.
+l.462 ...ss its functionalities through the \textt
+                                                  {R} package \texttt{RMark}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Overfull \hbox (17.5502pt too wide) in paragraph at lines 455--455
+Package color Info: Redefining color shadecolor on input line 473.
+[22]
+Overfull \hbox (17.5502pt too wide) in paragraph at lines 476--476
 []                     []\OT1/cmtt/m/n/12 site[] []=[] []list[][]([][]model[] [
 ]=[] []~[] []1[][],[] []cov_tbl[] []= site.cov),[][] 
  []
 
 
-Overfull \hbox (42.25021pt too wide) in paragraph at lines 456--456
+Overfull \hbox (42.25021pt too wide) in paragraph at lines 477--477
 []                     []\OT1/cmtt/m/n/12 sample[] []=[] []list[][]([][]model[]
  []=[] []~[] []1[][],[] []cov_tbl[] []= sample.cov),[][] 
  []
 
 
-Overfull \hbox (5.2002pt too wide) in paragraph at lines 457--457
+Overfull \hbox (5.2002pt too wide) in paragraph at lines 478--478
 []                     []\OT1/cmtt/m/n/12 rep[] []=[] []list[][]([][]model[] []
 =[] []~[] []1[][],[] []cov_tbl[] []= rep.cov),[][] 
  []
 
 
-Overfull \hbox (21.57956pt too wide) in paragraph at lines 463--463
+Overfull \hbox (21.57956pt too wide) in paragraph at lines 484--484
 [][]\OT1/cmtt/m/it/12 ## posterior_summary function does not work b/c matrix to
 o large [][] 
  []
 
 
-Overfull \hbox (17.83139pt too wide) in paragraph at lines 467--467
+Overfull \hbox (17.83139pt too wide) in paragraph at lines 488--488
 [][]\OT1/cmtt/m/n/12 plot[][](psi.post_m1,[] []type[] []=[] []"l"[][])[] []\OT1
 /cmtt/m/it/12 # REDO THIS IN GGPLOT IF KEEPING IT[][] 
  []
 
 
-Overfull \hbox (15.27962pt too wide) in paragraph at lines 470--470
+Overfull \hbox (15.27962pt too wide) in paragraph at lines 491--491
 [][]\OT1/cmtt/m/it/12 ## posterior_summary function does not work b/c matrix to
 o large[][] 
  []
 
 
-Overfull \hbox (30.1814pt too wide) in paragraph at lines 474--474
+Overfull \hbox (30.1814pt too wide) in paragraph at lines 495--495
 [][]\OT1/cmtt/m/n/12 plot[][](theta.post_m1,[] []type[] []=[] []"l"[][])[] []\O
 T1/cmtt/m/it/12 # REDO THIS IN GGPLOT IF KEEPING IT[][] 
  []
 
 
-Overfull \hbox (15.27962pt too wide) in paragraph at lines 477--477
+Overfull \hbox (15.27962pt too wide) in paragraph at lines 498--498
 [][]\OT1/cmtt/m/it/12 ## posterior_summary function does not work b/c matrix to
 o large[][] 
  []
 
 
-Overfull \hbox (5.48138pt too wide) in paragraph at lines 481--481
+Overfull \hbox (5.48138pt too wide) in paragraph at lines 502--502
 [][]\OT1/cmtt/m/n/12 plot[][](p.post_m1,[] []type[] []=[] []"l"[][])[] []\OT1/c
 mtt/m/it/12 # REDO THIS IN GGPLOT IF KEEPING IT[][] 
  []
 
+[23]
+Package color Info: Redefining color shadecolor on input line 508.
 
-Underfull \vbox (badness 10000) detected at line 483
- []
-
-
-Overfull \vbox (2.4446pt too high) detected at line 483
- []
-
-[17]
-Package color Info: Redefining color shadecolor on input line 487.
-
-Overfull \hbox (36.07521pt too wide) in paragraph at lines 490--490
+Overfull \hbox (36.07521pt too wide) in paragraph at lines 511--511
 []                     []\OT1/cmtt/m/n/12 site[] []=[] []list[][]([][]model[] [
 ]=[] []~[] []lake,[] []cov_tbl[] []= site.cov),[][] 
  []
 
 
-Overfull \hbox (60.77522pt too wide) in paragraph at lines 491--491
+Overfull \hbox (60.77522pt too wide) in paragraph at lines 512--512
 []                     []\OT1/cmtt/m/n/12 sample[] []=[] []list[][]([][]model[]
  []=[] []~[] []date,[] []cov_tbl[] []= sample.cov),[][] 
  []
 
 
-Overfull \hbox (5.2002pt too wide) in paragraph at lines 492--492
+Overfull \hbox (5.2002pt too wide) in paragraph at lines 513--513
 []                     []\OT1/cmtt/m/n/12 rep[] []=[] []list[][]([][]model[] []
 =[] []~[] []1[][],[] []cov_tbl[] []= rep.cov),[][] 
  []
 
 
-Overfull \hbox (15.27962pt too wide) in paragraph at lines 500--500
+Overfull \hbox (15.27962pt too wide) in paragraph at lines 519--519
 [][]\OT1/cmtt/m/it/12 ## posterior_summary function does not work b/c matrix to
 o large[][] 
  []
 
 
-Overfull \hbox (17.5502pt too wide) in paragraph at lines 511--511
+Overfull \hbox (17.5502pt too wide) in paragraph at lines 530--530
 [][]\OT1/cmtt/m/n/12 quantiles[] []<-[] []apply[][](psi.mcmc,[] []2[][], quanti
 le,[] []probs[] []=[] []c[][]([][]0.025[][],[] []0.975[][]))[][] 
  []
 
 
-Overfull \hbox (15.27962pt too wide) in paragraph at lines 522--522
+Overfull \hbox (15.27962pt too wide) in paragraph at lines 541--541
 [][]\OT1/cmtt/m/it/12 ## posterior_summary function does not work b/c matrix to
 o large[][] 
  []
 
 
-Overfull \hbox (29.9002pt too wide) in paragraph at lines 534--534
+Overfull \hbox (29.9002pt too wide) in paragraph at lines 553--553
 [][]\OT1/cmtt/m/n/12 quantiles[] []<-[] []apply[][](theta.mcmc,[] []2[][], quan
 tile,[] []probs[] []=[] []c[][]([][]0.025[][],[] []0.975[][]))[][] 
  []
 
 
-Overfull \hbox (15.27962pt too wide) in paragraph at lines 544--544
+Overfull \hbox (15.27962pt too wide) in paragraph at lines 563--563
 [][]\OT1/cmtt/m/it/12 ## posterior_summary function does not work b/c matrix to
 o large[][] 
  []
 
 
-Overfull \hbox (5.48138pt too wide) in paragraph at lines 548--548
+Overfull \hbox (5.48138pt too wide) in paragraph at lines 567--567
 [][]\OT1/cmtt/m/n/12 plot[][](p.post_m2,[] []type[] []=[] []"l"[][])[] []\OT1/c
 mtt/m/it/12 # REDO THIS IN GGPLOT IF KEEPING IT[][] 
  []
 
-[18]
-Underfull \vbox (badness 10000) detected at line 550
+[24]
+Underfull \vbox (badness 10000) detected at line 569
  []
 
 
-Underfull \vbox (badness 10000) detected at line 550
+Underfull \vbox (badness 10000) detected at line 569
  []
 
-[19]
-Package color Info: Redefining color shadecolor on input line 554.
-
-Overfull \hbox (36.07521pt too wide) in paragraph at lines 557--557
+[25]
+Package color Info: Redefining color shadecolor on input line 573.
+ [26]
+Overfull \hbox (36.07521pt too wide) in paragraph at lines 576--576
 []                     []\OT1/cmtt/m/n/12 site[] []=[] []list[][]([][]model[] [
 ]=[] []~[] []site,[] []cov_tbl[] []= site.cov),[][] 
  []
 
 
-Overfull \hbox (42.25021pt too wide) in paragraph at lines 558--558
+Overfull \hbox (42.25021pt too wide) in paragraph at lines 577--577
 []                     []\OT1/cmtt/m/n/12 sample[] []=[] []list[][]([][]model[]
  []=[] []~[] []1[][],[] []cov_tbl[] []= sample.cov),[][] 
  []
 
 
-Overfull \hbox (5.2002pt too wide) in paragraph at lines 559--559
+Overfull \hbox (5.2002pt too wide) in paragraph at lines 578--578
 []                     []\OT1/cmtt/m/n/12 rep[] []=[] []list[][]([][]model[] []
 =[] []~[] []1[][],[] []cov_tbl[] []= rep.cov),[][] 
  []
 
 
-Overfull \hbox (15.27962pt too wide) in paragraph at lines 567--567
+Overfull \hbox (15.27962pt too wide) in paragraph at lines 586--586
 [][]\OT1/cmtt/m/it/12 ## posterior_summary function does not work b/c matrix to
 o large[][] 
  []
 
 
-Overfull \hbox (17.5502pt too wide) in paragraph at lines 578--578
+Overfull \hbox (17.5502pt too wide) in paragraph at lines 597--597
 [][]\OT1/cmtt/m/n/12 quantiles[] []<-[] []apply[][](psi.mcmc,[] []2[][], quanti
 le,[] []probs[] []=[] []c[][]([][]0.025[][],[] []0.975[][]))[][] 
  []
 
-[20]
-Underfull \vbox (badness 10000) detected at line 588
+
+Underfull \vbox (badness 10000) detected at line 607
  []
 
 
-Overfull \vbox (2.44458pt too high) detected at line 588
+Overfull \vbox (2.44458pt too high) detected at line 607
  []
 
-[21] [22] (Winder_Writing_Project.bbl
+[27] [28] (Winder_Writing_Project.bbl
 Overfull \hbox (87.36383pt too wide) in paragraph at lines 4--10
 \OT1/cmtt/m/n/12 city-[]spends-[]4-[]million-[]on-[]liquid-[]compound-[]to-[]st
 op-[]spread-[]of-[]zebra-[]mussels$\OT1/cmr/m/n/12 . 
  []
 
-[23]) [24] [25]
+[29] [30]) [31]
 Package color Info: Redefining color shadecolor on input line 642.
 
-Overfull \hbox (104.00024pt too wide) in paragraph at lines 750--750
-[]             \OT1/cmtt/m/n/12 caption = "\\label{tab:eDNA_data}10 sample rows
- of the eDNA data.",[] 
+Overfull \hbox (5.2002pt too wide) in paragraph at lines 833--833
+[]                           \OT1/cmtt/m/n/12 "Water Temperature", "Concentrati
+on",[] 
  []
 
 
-Overfull \hbox (110.17525pt too wide) in paragraph at lines 750--750
-[]             \OT1/cmtt/m/n/12 col.names = c("Lake", "Site", "Sample", "Date",
- "Water Temperature",[] 
- []
-
-
-Overfull \hbox (36.07521pt too wide) in paragraph at lines 750--750
-[]                           \OT1/cmtt/m/n/12 "Concentration", "Positive Drople
-ts")) %>%[] 
- []
-
-
-Overfull \hbox (11.3752pt too wide) in paragraph at lines 750--750
+Overfull \hbox (11.3752pt too wide) in paragraph at lines 833--833
 []  \OT1/cmtt/m/n/12 labs(title = Proportion of Positive ddPCR Replicates by S
 ite,[] 
  []
 
-[26]
-Underfull \vbox (badness 10000) detected at line 751
+
+Overfull \hbox (5.2002pt too wide) in paragraph at lines 833--833
+[]\OT1/cmtt/m/n/12 est.water.temp <- as.numeric(eDNA$Date.Collected == "10/21/2
+019"[] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 751
+Overfull \hbox (66.95023pt too wide) in paragraph at lines 833--833
+[]\OT1/cmtt/m/n/12 ## water temp too but there are missing values, so need to i
+mpute... later[] 
  []
 
-[27] [28] (Winder_Writing_Project.aux)
 
-LaTeX Warning: There were undefined references.
+Overfull \hbox (66.95023pt too wide) in paragraph at lines 833--833
+[]\OT1/cmtt/m/n/12 ## water temp too but there are missing values, so need to i
+mpute... later[] 
+ []
 
- ) 
+[32] [33] [34] [35]
+Underfull \vbox (badness 10000) detected at line 834
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 834
+ []
+
+[36] [37] (Winder_Writing_Project.aux) ) 
 Here is how much of TeX's memory you used:
- 18335 strings out of 493305
- 327395 string characters out of 3138874
- 664936 words of memory out of 3000000
- 21661 multiletter control sequences out of 15000+200000
+ 18352 strings out of 493305
+ 327587 string characters out of 3138874
+ 674936 words of memory out of 3000000
+ 21677 multiletter control sequences out of 15000+200000
  547384 words of font info for 75 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,9n,63p,2095b,321s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\mwind\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-tcrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmmib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmtt12.pfb>
-Output written on Winder_Writing_Project.pdf (30 pages, 526824 bytes).
+ 48i,9n,63p,3613b,367s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\mwind\AppData\Local\MiKTeX\2
+.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmitt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Winder_Writing_Project.pdf (39 pages, 589247 bytes).
 PDF statistics:
- 194 PDF objects out of 1000 (max. 8388607)
+ 239 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

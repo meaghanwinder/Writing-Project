@@ -14,17 +14,39 @@ Bontke, J. (2020).
 \newblock \url{https://www.usbr.gov/mussels/index.html}.
 \newblock Date accessed: Feburary 11, 2020.
 
-\bibitem[Dorazio and Erickson, 2017]{Dorazio_Erickson}
-Dorazio, R.~M. and Erickson, R.~A. (2017).
-\newblock \texttt{ednaoccupancy}: {A}n \texttt{R} package for multiscale
+\bibitem[Dorazio and Erickson, 2018]{Dorazio_Erickson}
+Dorazio, R.~M. and Erickson, R.~A. (2018).
+\newblock \texttt{eDNAoccupancy}: {A}n \texttt{R} package for multiscale
   occupancy modelling of environmental {DNA} data.
 \newblock {\em Molecular Ecology Resources}, 18(2):368 -- 380.
+
+\bibitem[Fiske and Chandler, 2011]{unmarked}
+Fiske, I. and Chandler, R. (2011).
+\newblock {\em {unmarked}: An {R} Package for Fitting Hierarchical Models of
+  Wildlife Occurrence and Abundance}.
+
+\bibitem[Holser, 2011]{Holser:detection}
+Holser, D.~M. (2011).
+\newblock Early detection of dreissenid species: {Zebra/Quagga} mussels in
+  water systems.
+\newblock {\em Aquatic Invasions}, 8(2):217 -- 222.
 
 \bibitem[Holser, 2017]{Holser:body}
 Holser, D.~M. (2017).
 \newblock Where is the body? {Dreissenid mussels}, raw water testing, and the
   real value of environmental {DNA}.
 \newblock {\em Management of Biological Invasions}, 8(3):335 -- 341.
+
+\bibitem[Laake, 2013]{RMark}
+Laake, J. (2013).
+\newblock {\em {RMark}: An R Interface for Analysis of Capture-Recapture Data
+  with {MARK}}.
+
+\bibitem[MacKenzie et~al., 2018]{MacKenzie}
+MacKenzie, D.~I., Nichols, J.~D., Royle, J.~A., and Pollock, K.~H. (2018).
+\newblock {\em Occupancy estimation and modeling: inferring patterns and
+  dynamics of species occurrence}.
+\newblock Academic Press.
 
 \bibitem[McMahon, 1996]{McMahon}
 McMahon, R.~F. (1996).
@@ -46,6 +68,23 @@ Nichols, S.~J. (1996).
   in {Europe, Russia, and North America}.
 \newblock {\em American Zoologist}, 36(3):311 -- 325.
 
+\bibitem[Plummer, 2019]{rjags}
+Plummer, M. (2019).
+\newblock {\em rjags: Bayesian Graphical Models using MCMC}.
+\newblock R package version 4-10.
+
+\bibitem[Polson et~al., 2013]{Polson}
+Polson, N.~G., Scott, J.~G., and Windle, J. (2013).
+\newblock Bayesian inference for logistic models using pólya–gamma latent
+  variables.
+\newblock {\em Journal of the American Statistical Association},
+  108(504):1339--1349.
+
+\bibitem[{R Core Team}, 2019]{R}
+{R Core Team} (2019).
+\newblock {\em R: A Language and Environment for Statistical Computing}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria.
+
 \bibitem[Rees et~al., 2014]{Rees}
 Rees, H.~C., Maddison, B.~C., Middleditch, D.~J., Patmore, J.~R., and Gough,
   K.~C. (2014).
@@ -65,6 +104,17 @@ Sepulveda, A.~J., Amberg, J.~J., and Hanson, E. (2019).
 \newblock Using environmental {DNA} to extend the window of early detection for
   dreissenid mussels.
 \newblock {\em Managment of Biological Invasions}, 10(2):342 -- 358.
+
+\bibitem[{Stan Development Team}, 2019]{rstan}
+{Stan Development Team} (2019).
+\newblock {\em {RStan}: the {R} interface to {Stan}}.
+\newblock R package version 2.19.2.
+
+\bibitem[Stratton, 2020]{Stratton}
+Stratton, C. (2020).
+\newblock {\em msocc: Package for Fitting and Analyzing Computationally
+  Efficient Multi-scale Occupancy Models}.
+\newblock R package version 1.1.0.
 
 \bibitem[{U.S. National Park Service}, 2017]{NPS}
 {U.S. National Park Service} (2017).
