@@ -14,6 +14,12 @@ Bontke, J. (2020).
 \newblock \url{https://www.usbr.gov/mussels/index.html}.
 \newblock Date accessed: Feburary 11, 2020.
 
+\bibitem[Clark, 2018]{Rcppocc}
+Clark, A. (2018).
+\newblock {\em Rcppocc: Fits various Bayesian occupancy models assuming all
+  regression effects uses a logit link function}.
+\newblock R package version 1.0.
+
 \bibitem[Dorazio and Erickson, 2018]{Dorazio_Erickson}
 Dorazio, R.~M. and Erickson, R.~A. (2018).
 \newblock \texttt{eDNAoccupancy}: {A}n \texttt{R} package for multiscale
@@ -61,6 +67,12 @@ Mills, E.~L., Rosenberg, G., Spidle, A.~P., Ludyanskiy, M., Pligin, Y., and
   (\textit{Dreissena bugensis}), a second species of freshwater dreissenid
   introduced to {North America}.
 \newblock {\em American Zoologist}, 36(3):271 -- 286.
+
+\bibitem[Nelson, 2019]{MT}
+Nelson, N.~M. (2019).
+\newblock Conservation and resource development.
+\newblock url{http://dnrc.mt.gov/divisions/cardd}.
+\newblock Date Accessed: February 15, 2020.
 
 \bibitem[Nichols, 1996]{Nichols}
 Nichols, S.~J. (1996).
