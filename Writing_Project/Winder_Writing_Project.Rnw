@@ -119,7 +119,7 @@ library(Rcppocc)
 %----------------------------------------------------------------------------------------
 
 \HRule \\[0.4cm]
-{ \LARGE \bfseries Occupancy Modeling of ddPCR Data for the Early Detection of Dreissenid Mussels using Environmental DNA Surveys}\\[0.4cm] % Title of document
+{ \LARGE \bfseries Occupancy Modeling of ddPCR Data for the Early Detection of Dreissenid Mussels using Environmental DNA}\\[0.4cm] % Title of document
 \HRule \\[1.5cm]
  
 %----------------------------------------------------------------------------------------
