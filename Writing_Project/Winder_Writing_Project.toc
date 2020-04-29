@@ -1,22 +1,22 @@
 \babel@toc {english}{}
-\contentsline {section}{\numberline {1}Introduction}{2}
-\contentsline {section}{\numberline {2}Data}{7}
-\contentsline {section}{\numberline {3}Methods}{13}
-\contentsline {subsection}{\numberline {3.1}Bayesian Modeling Background}{13}
-\contentsline {subsubsection}{\numberline {3.1.1}Gibbs Sampler}{16}
-\contentsline {subsubsection}{\numberline {3.1.2}Metropolis-Hastings Algorithm}{18}
-\contentsline {subsubsection}{\numberline {3.1.3}Bayesian Hierarchical Modeling}{19}
-\contentsline {subsection}{\numberline {3.2}Occupancy Models}{20}
-\contentsline {subsubsection}{\numberline {3.2.1}Multi-scale Occupancy Models}{22}
-\contentsline {subsection}{\numberline {3.3}Implementation}{24}
-\contentsline {subsubsection}{\numberline {3.3.1}\texttt {msocc} package}{25}
-\contentsline {subsubsection}{\numberline {3.3.2}*implementation for traditional occupancy model*}{25}
-\contentsline {subsubsection}{\numberline {3.3.3}Alternative Options}{25}
-\contentsline {section}{\numberline {4}Analysis}{26}
-\contentsline {section}{\numberline {5}Results}{34}
+\contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {section}{\numberline {2}Data}{9}
+\contentsline {section}{\numberline {3}Methods}{16}
+\contentsline {subsection}{\numberline {3.1}Bayesian Modeling Background}{16}
+\contentsline {subsubsection}{\numberline {3.1.1}Gibbs Sampler}{19}
+\contentsline {subsubsection}{\numberline {3.1.2}Metropolis-Hastings Algorithm}{21}
+\contentsline {subsubsection}{\numberline {3.1.3}Bayesian Hierarchical Modeling}{22}
+\contentsline {subsection}{\numberline {3.2}Occupancy Models}{23}
+\contentsline {subsubsection}{\numberline {3.2.1}Multi-scale Occupancy Models}{26}
+\contentsline {subsection}{\numberline {3.3}Implementation}{28}
+\contentsline {subsubsection}{\numberline {3.3.1}\texttt {Rcppocc} Package for Fitting Occupancy Models}{28}
+\contentsline {subsubsection}{\numberline {3.3.2}\texttt {msocc} Package for Fitting Multi-scale Occupancy Models}{29}
+\contentsline {subsubsection}{\numberline {3.3.3}Alternative Options}{30}
+\contentsline {section}{\numberline {4}Analysis}{30}
+\contentsline {section}{\numberline {5}Results}{33}
 \contentsline {subsection}{\numberline {5.1}Ecological Implications}{34}
 \contentsline {subsection}{\numberline {5.2}Sampling Recommendations}{35}
-\contentsline {section}{\numberline {6}Future Work}{35}
-\contentsline {section}{\numberline {7}Acknowledgements}{35}
-\contentsline {section}{\numberline {8}References}{36}
-\contentsline {section}{\numberline {9}Appendix - R Code}{40}
+\contentsline {section}{\numberline {6}Future Work}{39}
+\contentsline {section}{\numberline {7}Acknowledgements}{43}
+\contentsline {section}{\numberline {8}References}{44}
+\contentsline {section}{\numberline {9}Appendix - R Code}{48}

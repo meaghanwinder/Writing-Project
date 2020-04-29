@@ -1,5 +1,12 @@
 \begin{thebibliography}{}
 
+\bibitem[Benson et~al., 2020]{ZM_facts}
+Benson, A.~J., Raikow, D., Larson, J., Fusaro, A., Bogdanoff, A.~K., and Elgin,
+  A. (2020).
+\newblock \textit{Dreissena polymorpha} fact sheet.
+\newblock \url{https://nas.er.usgs.gov/queries/FactSheet.aspx?speciesID=5}.
+\newblock Date Accessed: April 28, 2020.
+
 \bibitem[Bontke, 2020]{CBS:Austin}
 Bontke, J. (2020).
 \newblock City spends \$4 million on liquid compound to stop spread of zebra
@@ -25,6 +32,12 @@ Dorazio, R.~M. and Erickson, R.~A. (2018).
 \newblock \texttt{eDNAoccupancy}: {A}n \texttt{R} package for multiscale
   occupancy modelling of environmental {DNA} data.
 \newblock {\em Molecular Ecology Resources}, 18(2):368 -- 380.
+
+\bibitem[Ferguson et~al., 2015]{Ferguson}
+Ferguson, P.~F., Conroy, M.~J., and Hepinstall‐Cymerman, J. (2015).
+\newblock Occupancy models for data with false positive and false negative
+  errors and heterogeneity across sites and surveys.
+\newblock {\em Methods in Ecology and Evolution}, 6(12):1395–1406.
 
 \bibitem[Fiske and Chandler, 2011]{unmarked}
 Fiske, I. and Chandler, R. (2011).
@@ -53,6 +66,12 @@ MacKenzie, D.~I., Nichols, J.~D., Royle, J.~A., and Pollock, K.~H. (2018).
 \newblock {\em Occupancy estimation and modeling: inferring patterns and
   dynamics of species occurrence}.
 \newblock Academic Press.
+
+\bibitem[McClintock et~al., 2010]{McClintock}
+McClintock, B.~T., Bailey, L.~L., Pollock, K.~H., and Simons, T.~R. (2010).
+\newblock Unmodeled observation error induces bias when inferring patterns and
+  dynamics of species occurrence via aural detections.
+\newblock {\em Ecology}, 91(8):2446–2454.
 
 \bibitem[McMahon, 1996]{McMahon}
 McMahon, R.~F. (1996).
@@ -103,6 +122,12 @@ Rees, H.~C., Maddison, B.~C., Middleditch, D.~J., Patmore, J.~R., and Gough,
 \newblock The detection of aquatic animal species using environmental dna -- a
   review of edna as a survey tool in ecology.
 \newblock {\em Journal of Applied Ecology}, 51:1450 -- 1459.
+
+\bibitem[Royle and Link, 2006]{Royle_Link}
+Royle, J.~A. and Link, W.~A. (2006).
+\newblock Generalized site occupancy models allowing for false positive and
+  false negative errors.
+\newblock {\em Ecology}, 87(4):835–841.
 
 \bibitem[Schmelzle and Kinziger, 2016]{Schmelzle}
 Schmelzle, M.~C. and Kinziger, A.~P. (2016).
