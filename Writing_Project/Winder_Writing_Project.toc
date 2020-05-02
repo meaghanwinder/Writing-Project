@@ -1,22 +1,22 @@
 \babel@toc {english}{}
 \contentsline {section}{\numberline {1}Introduction}{3}
 \contentsline {section}{\numberline {2}Data}{9}
-\contentsline {section}{\numberline {3}Methods}{16}
-\contentsline {subsection}{\numberline {3.1}Bayesian Modeling Background}{16}
-\contentsline {subsubsection}{\numberline {3.1.1}Gibbs Sampler}{19}
-\contentsline {subsubsection}{\numberline {3.1.2}Metropolis-Hastings Algorithm}{21}
-\contentsline {subsubsection}{\numberline {3.1.3}Bayesian Hierarchical Modeling}{22}
-\contentsline {subsection}{\numberline {3.2}Occupancy Models}{23}
-\contentsline {subsubsection}{\numberline {3.2.1}Multi-scale Occupancy Models}{26}
-\contentsline {subsection}{\numberline {3.3}Implementation}{28}
-\contentsline {subsubsection}{\numberline {3.3.1}\texttt {Rcppocc} Package for Fitting Occupancy Models}{28}
-\contentsline {subsubsection}{\numberline {3.3.2}\texttt {msocc} Package for Fitting Multi-scale Occupancy Models}{29}
-\contentsline {subsubsection}{\numberline {3.3.3}Alternative Options}{30}
-\contentsline {section}{\numberline {4}Analysis}{30}
-\contentsline {section}{\numberline {5}Results}{33}
-\contentsline {subsection}{\numberline {5.1}Ecological Implications}{34}
-\contentsline {subsection}{\numberline {5.2}Sampling Recommendations}{35}
-\contentsline {section}{\numberline {6}Future Work}{39}
-\contentsline {section}{\numberline {7}Acknowledgements}{43}
-\contentsline {section}{\numberline {8}References}{44}
-\contentsline {section}{\numberline {9}Appendix - R Code}{48}
+\contentsline {section}{\numberline {3}Methods}{18}
+\contentsline {subsection}{\numberline {3.1}Bayesian Modeling Background}{18}
+\contentsline {subsubsection}{\numberline {3.1.1}Gibbs Sampler}{20}
+\contentsline {subsubsection}{\numberline {3.1.2}Metropolis-Hastings Algorithm}{22}
+\contentsline {subsubsection}{\numberline {3.1.3}Bayesian Hierarchical Modeling}{23}
+\contentsline {subsection}{\numberline {3.2}Occupancy Models}{24}
+\contentsline {subsubsection}{\numberline {3.2.1}Multi-scale Occupancy Models}{27}
+\contentsline {subsection}{\numberline {3.3}Implementation}{29}
+\contentsline {subsubsection}{\numberline {3.3.1}\texttt {Rcppocc} Package for Fitting Occupancy Models}{30}
+\contentsline {subsubsection}{\numberline {3.3.2}\texttt {msocc} Package for Fitting Multi-scale Occupancy Models}{30}
+\contentsline {subsubsection}{\numberline {3.3.3}Alternative Options}{31}
+\contentsline {section}{\numberline {4}Analysis}{32}
+\contentsline {section}{\numberline {5}Results}{35}
+\contentsline {subsection}{\numberline {5.1}Ecological Implications}{36}
+\contentsline {subsection}{\numberline {5.2}Sampling Recommendations}{39}
+\contentsline {section}{\numberline {6}Future Work}{42}
+\contentsline {section}{\numberline {7}Acknowledgements}{45}
+\contentsline {section}{\numberline {8}References}{46}
+\contentsline {section}{\numberline {9}Appendix - R Code}{51}

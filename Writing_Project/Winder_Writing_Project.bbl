@@ -44,6 +44,13 @@ Fiske, I. and Chandler, R. (2011).
 \newblock {\em {unmarked}: An {R} Package for Fitting Hierarchical Models of
   Wildlife Occurrence and Abundance}.
 
+\bibitem[Gingera et~al., 2017]{Gingera}
+Gingera, T., Bajno, R., Docker, M., and Reist, J. (2017).
+\newblock Environmental {DNA} as a detection tool for zebra mussels
+  \texit{Dreissena polymorpha} (pallas, 1771) at the forefront of an invasion
+  event in {Lake Winnipeg, Manitoba, Canada}.
+\newblock {\em Management of Biological Invasions}, 8(3):287–300.
+
 \bibitem[Holser, 2011]{Holser:detection}
 Holser, D.~M. (2011).
 \newblock Early detection of dreissenid species: {Zebra/Quagga} mussels in
@@ -135,6 +142,11 @@ Schmelzle, M.~C. and Kinziger, A.~P. (2016).
   traditional field methods for regional-scale monitoring of an endangered
   aquatic species.
 \newblock 16:1 -- 14.
+
+\bibitem[Seaman et~al., 2012]{Seaman}
+Seaman, J. W.~I., Seaman, J. W.~J., and Stamey, J.~D. (2012).
+\newblock Hidden {Dangers of Specifying Noninformative Priors}.
+\newblock {\em The American Statistician}, 66(2):77–84.
 
 \bibitem[Sepulveda et~al., 2019]{Sepulveda:eDNA}
 Sepulveda, A.~J., Amberg, J.~J., and Hanson, E. (2019).
