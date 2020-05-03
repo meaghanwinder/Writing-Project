@@ -8,15 +8,15 @@
 \contentsline {subsubsection}{\numberline {3.1.3}Bayesian Hierarchical Modeling}{23}
 \contentsline {subsection}{\numberline {3.2}Occupancy Models}{24}
 \contentsline {subsubsection}{\numberline {3.2.1}Multi-scale Occupancy Models}{27}
-\contentsline {subsection}{\numberline {3.3}Implementation}{29}
-\contentsline {subsubsection}{\numberline {3.3.1}\texttt {Rcppocc} Package for Fitting Occupancy Models}{30}
-\contentsline {subsubsection}{\numberline {3.3.2}\texttt {msocc} Package for Fitting Multi-scale Occupancy Models}{30}
-\contentsline {subsubsection}{\numberline {3.3.3}Alternative Options}{31}
-\contentsline {section}{\numberline {4}Analysis}{32}
-\contentsline {section}{\numberline {5}Results}{35}
-\contentsline {subsection}{\numberline {5.1}Ecological Implications}{36}
+\contentsline {subsection}{\numberline {3.3}Implementation}{31}
+\contentsline {subsubsection}{\numberline {3.3.1}\texttt {Rcppocc} Package for Fitting Occupancy Models}{31}
+\contentsline {subsubsection}{\numberline {3.3.2}\texttt {msocc} Package for Fitting Multi-scale Occupancy Models}{32}
+\contentsline {subsubsection}{\numberline {3.3.3}Alternative Options}{32}
+\contentsline {section}{\numberline {4}Analysis}{33}
+\contentsline {section}{\numberline {5}Results}{36}
+\contentsline {subsection}{\numberline {5.1}Ecological Implications}{37}
 \contentsline {subsection}{\numberline {5.2}Sampling Recommendations}{39}
 \contentsline {section}{\numberline {6}Future Work}{42}
-\contentsline {section}{\numberline {7}Acknowledgements}{45}
-\contentsline {section}{\numberline {8}References}{46}
-\contentsline {section}{\numberline {9}Appendix - R Code}{51}
+\contentsline {section}{\numberline {7}Acknowledgements}{46}
+\contentsline {section}{\numberline {8}References}{47}
+\contentsline {section}{\numberline {9}Appendix - R Code}{52}

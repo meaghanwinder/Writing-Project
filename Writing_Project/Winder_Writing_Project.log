@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2020.1.16)  1 MAY 2020 22:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2020.1.16)  3 MAY 2020 13:33
 entering extended mode
 **./Winder_Writing_Project.tex
 (Winder_Writing_Project.tex
@@ -1475,43 +1475,42 @@ ion_concentration-1.pdf>] [14 <./images/amplitude.png> <./images/amplitude2.png
 >] [15]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 376.
+               Default added (so using `tbp') on input line 375.
 
-Package color Info: Redefining color shadecolor on input line 378.
+Package color Info: Redefining color shadecolor on input line 377.
 <figure/eDNA_visualization_sample-1.pdf, id=88, 686.565pt x 563.10374pt>
 File: figure/eDNA_visualization_sample-1.pdf Graphic file (type pdf)
 <use figure/eDNA_visualization_sample-1.pdf>
 Package pdftex.def Info: figure/eDNA_visualization_sample-1.pdf  used on input 
-line 380.
+line 379.
 (pdftex.def)             Requested size: 390.0pt x 319.86406pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 393.
+               Default added (so using `tbp') on input line 392.
 
-Package color Info: Redefining color shadecolor on input line 395.
+Package color Info: Redefining color shadecolor on input line 394.
 <figure/eDNA_visualization_temp-1.pdf, id=89, 686.565pt x 361.35pt>
 File: figure/eDNA_visualization_temp-1.pdf Graphic file (type pdf)
 <use figure/eDNA_visualization_temp-1.pdf>
 Package pdftex.def Info: figure/eDNA_visualization_temp-1.pdf  used on input li
-ne 397.
+ne 396.
 (pdftex.def)             Requested size: 390.0pt x 205.26036pt.
 [16] [17 <./figure/eDNA_visualization_sample-1.pdf>] [18 <./figure/eDNA_visuali
 zation_temp-1.pdf>] [19] [20]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 438.
+(mdframed)              on input line 436.
 
-Underfull \hbox (badness 10000) in paragraph at lines 442--444
+Underfull \hbox (badness 10000) in paragraph at lines 440--442
 
  []
 
-Package mdframed Info: Not enough space on this page on input line 446.
 [21]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 457.
+(mdframed)              on input line 455.
  [22]
-Overfull \hbox (16.1449pt too wide) in paragraph at lines 470--471
+Overfull \hbox (16.1449pt too wide) in paragraph at lines 468--469
 \OT1/cmr/m/n/12 rithm in which the pro-posal dis-tri-bu-tion is sym-met-ric, me
 an-ing that $\OML/cmm/m/it/12 J\OT1/cmr/m/n/12 (\OML/cmm/b/it/12 []\OMS/cmsy/m
 /n/12 j\OML/cmm/b/it/12 []\OT1/cmr/m/n/12 ) =
@@ -1520,19 +1519,19 @@ an-ing that $\OML/cmm/m/it/12 J\OT1/cmr/m/n/12 (\OML/cmm/b/it/12 []\OMS/cmsy/m
 [23] [24] [25]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 482.
+               Default added (so using `tbp') on input line 488.
 
 <images/ssocc.png, id=141, 418.6842pt x 104.0688pt>
 File: images/ssocc.png Graphic file (type png)
 <use images/ssocc.png>
-Package pdftex.def Info: images/ssocc.png  used on input line 484.
+Package pdftex.def Info: images/ssocc.png  used on input line 490.
 (pdftex.def)             Requested size: 293.07693pt x 72.84766pt.
-[26 <./images/ssocc.png>] [27] [28] [29]
+[26 <./images/ssocc.png>] [27] [28] [29] [30]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 501.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 515.
 
 ! Undefined control sequence.
-l.503 ...nction from the \texttt{R} package \textt
+l.517 ...nction from the \texttt{R} package \textt
                                                   {Rcppocc} \cite{Rcppocc}; ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1540,9 +1539,9 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[30]
+[31]
 ! Undefined control sequence.
-l.511 ...ss its functionalities through the \textt
+l.525 ...ss its functionalities through the \textt
                                                   {R} package \texttt{RMark}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1550,29 +1549,25 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[31] [32] [33] [34]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[35]
-Package color Info: Redefining color shadecolor on input line 622.
-<figure/m5_psi-1.pdf, id=176, 505.89pt x 289.08pt>
+[32] [33] [34] [35] [36] [37]
+Package color Info: Redefining color shadecolor on input line 642.
+<figure/m5_psi-1.pdf, id=182, 505.89pt x 289.08pt>
 File: figure/m5_psi-1.pdf Graphic file (type pdf)
 <use figure/m5_psi-1.pdf>
-Package pdftex.def Info: figure/m5_psi-1.pdf  used on input line 623.
+Package pdftex.def Info: figure/m5_psi-1.pdf  used on input line 643.
 (pdftex.def)             Requested size: 390.0pt x 222.86134pt.
- [36]
-Package color Info: Redefining color shadecolor on input line 634.
-<figure/m5_p-1.pdf, id=180, 433.62pt x 361.35pt>
+ [38 <./figure/m5_psi-1.pdf>]
+Package color Info: Redefining color shadecolor on input line 654.
+<figure/m5_p-1.pdf, id=192, 433.62pt x 361.35pt>
 File: figure/m5_p-1.pdf Graphic file (type pdf)
 <use figure/m5_p-1.pdf>
-Package pdftex.def Info: figure/m5_p-1.pdf  used on input line 635.
+Package pdftex.def Info: figure/m5_p-1.pdf  used on input line 655.
 (pdftex.def)             Requested size: 390.0pt x 325.0135pt.
 
 ! Missing { inserted.
 <to be read again> 
                    \begingroup 
-l.645 ...n 10/20/2019 are denoted with $^\bm{*}$.}
+l.665 ...n 10/20/2019 are denoted with $^\bm{*}$.}
                                                   
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -1582,7 +1577,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.645 ...n 10/20/2019 are denoted with $^\bm{*}$.}
+l.665 ...n 10/20/2019 are denoted with $^\bm{*}$.}
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1593,7 +1588,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing { inserted.
 <to be read again> 
                    \begingroup 
-l.645 ...n 10/20/2019 are denoted with $^\bm{*}$.}
+l.665 ...n 10/20/2019 are denoted with $^\bm{*}$.}
                                                   
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -1603,7 +1598,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.645 ...n 10/20/2019 are denoted with $^\bm{*}$.}
+l.665 ...n 10/20/2019 are denoted with $^\bm{*}$.}
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1614,7 +1609,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra alignment tab has been changed to \cr.
 <template> \unskip \hfil }\endtemplate 
                                        
-l.650 ...ater \\ Temp. ($^\circ$C) &\end{tabular}}
+l.670 ...ater \\ Temp. ($^\circ$C) &\end{tabular}}
                                                    & \multicolumn{1}{c}{Mean...
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
@@ -1623,8 +1618,8 @@ So I'll assume that you meant to type \cr instead.
 ! Missing { inserted.
 <to be read again> 
                    \begingroup 
-l.654 BOM1 & 10/21/2019 & 14$^\bm{*}
-                                    $ & 0.60530 & 0.44990 & 0.74902 \\
+l.674 BOM1 & 10/21/2019 & 14$^\bm{*}
+                                    $ & 0.605 & 0.450 & 0.749 \\
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
 so that I will find a matching right brace soon.
@@ -1633,8 +1628,8 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.654 BOM1 & 10/21/2019 & 14$^\bm{*}$
-                                      & 0.60530 & 0.44990 & 0.74902 \\
+l.674 BOM1 & 10/21/2019 & 14$^\bm{*}$
+                                      & 0.605 & 0.450 & 0.749 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1644,8 +1639,8 @@ my insertion and my current dilemma will both disappear.
 ! Missing { inserted.
 <to be read again> 
                    \begingroup 
-l.657 BOM2 & 10/21/2019 & 14$^\bm{*}
-                                    $ & 0.60530 & 0.44990 & 0.74902 \\
+l.677 BOM2 & 10/21/2019 & 14$^\bm{*}
+                                    $ & 0.605 & 0.450 & 0.749 \\
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
 so that I will find a matching right brace soon.
@@ -1654,8 +1649,8 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.657 BOM2 & 10/21/2019 & 14$^\bm{*}$
-                                      & 0.60530 & 0.44990 & 0.74902 \\
+l.677 BOM2 & 10/21/2019 & 14$^\bm{*}$
+                                      & 0.605 & 0.450 & 0.749 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1665,8 +1660,8 @@ my insertion and my current dilemma will both disappear.
 ! Missing { inserted.
 <to be read again> 
                    \begingroup 
-l.660 BOM3 & 10/21/2019 & 14$^\bm{*}
-                                    $ & 0.60530 & 0.44990 & 0.74902 \\
+l.680 BOM3 & 10/21/2019 & 14$^\bm{*}
+                                    $ & 0.605 & 0.450 & 0.749 \\
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
 so that I will find a matching right brace soon.
@@ -1675,8 +1670,8 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.660 BOM3 & 10/21/2019 & 14$^\bm{*}$
-                                      & 0.60530 & 0.44990 & 0.74902 \\
+l.680 BOM3 & 10/21/2019 & 14$^\bm{*}$
+                                      & 0.605 & 0.450 & 0.749 \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1686,11 +1681,7 @@ my insertion and my current dilemma will both disappear.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[37 <./figure/m5_psi-1.pdf>] [38 <./figure/m5_p-1.pdf>] [39]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[40] [41] [42]
+[39 <./figure/m5_p-1.pdf>] [40] [41] [42] [43]
 
 ! LaTeX Error: Environment subfigure undefined.
 
@@ -1698,25 +1689,25 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.722 \begin{subfigure}
+l.742 \begin{subfigure}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<images/LG_negative.png, id=212, 479.54156pt x 301.8778pt>
+<images/LG_negative.png, id=215, 479.54156pt x 301.8778pt>
 File: images/LG_negative.png Graphic file (type png)
 <use images/LG_negative.png>
-Package pdftex.def Info: images/LG_negative.png  used on input line 723.
+Package pdftex.def Info: images/LG_negative.png  used on input line 743.
 (pdftex.def)             Requested size: 287.72716pt x 181.12807pt.
 
-! LaTeX Error: \begin{figure} on input line 719 ended by \end{subfigure}.
+! LaTeX Error: \begin{figure} on input line 739 ended by \end{subfigure}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.724 \end{subfigure}
+l.744 \end{subfigure}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1729,38 +1720,38 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.725 \begin{subfigure}
+l.745 \begin{subfigure}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<images/LG_positive.png, id=213, 479.54156pt x 301.8778pt>
+<images/LG_positive.png, id=216, 479.54156pt x 301.8778pt>
 File: images/LG_positive.png Graphic file (type png)
 <use images/LG_positive.png>
-Package pdftex.def Info: images/LG_positive.png  used on input line 726.
+Package pdftex.def Info: images/LG_positive.png  used on input line 746.
 (pdftex.def)             Requested size: 287.72716pt x 181.12807pt.
 
-! LaTeX Error: \begin{figure} on input line 719 ended by \end{subfigure}.
+! LaTeX Error: \begin{figure} on input line 739 ended by \end{subfigure}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.727 \end{subfigure}
+l.747 \end{subfigure}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[43] [44 <./images/LG_negative.png> <./images/LG_positive.png>] [45]
+[44] [45 <./images/LG_negative.png> <./images/LG_positive.png>] [46]
 (Winder_Writing_Project.bbl
 Overfull \hbox (87.36383pt too wide) in paragraph at lines 11--17
 \OT1/cmtt/m/n/12 city-[]spends-[]4-[]million-[]on-[]liquid-[]compound-[]to-[]st
 op-[]spread-[]of-[]zebra-[]mussels$\OT1/cmr/m/n/12 . 
  []
 
-[46]
+[47]
 ! Undefined control sequence.
 l.50   \texit
              {Dreissena polymorpha} (pallas, 1771) at the forefront of an in...
@@ -1770,134 +1761,134 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[47] [48] [49]) [50]
-Package color Info: Redefining color shadecolor on input line 766.
+[48] [49] [50]) [51]
+Package color Info: Redefining color shadecolor on input line 786.
 
-Overfull \hbox (0.91077pt too wide) in paragraph at lines 1305--1305
+Overfull \hbox (0.91077pt too wide) in paragraph at lines 1325--1325
 []    \OT1/cmtt/m/n/10.95 } else if(eDNA$Site[k] == Site.names[i] & eDNA$Detect
 3[k] == 0){[] 
  []
 
 
-Overfull \hbox (0.91077pt too wide) in paragraph at lines 1305--1305
+Overfull \hbox (0.91077pt too wide) in paragraph at lines 1325--1325
 []    \OT1/cmtt/m/n/10.95 W2[i, 1:J[i]] <- eDNA$Date.Collected[eDNA$Site == Sit
 e.names[i]][] 
  []
 
 
-Overfull \hbox (6.65945pt too wide) in paragraph at lines 1305--1305
+Overfull \hbox (6.65945pt too wide) in paragraph at lines 1325--1325
 []    \OT1/cmtt/m/n/10.95 cred.plot <- ggplot(df, aes(x = eDNA$Date.Collected, 
 y = mean)) +[] 
  []
 
 
-Overfull \hbox (0.91077pt too wide) in paragraph at lines 1305--1305
+Overfull \hbox (0.91077pt too wide) in paragraph at lines 1325--1325
 []\OT1/cmtt/m/n/10.95 m5.p.mcmc <- exp(model.matrix(~as.numeric(data$W$W1)) %*%
  m5.alpha)/[] 
  []
 
-[51]
-Underfull \vbox (badness 10000) detected at line 1306
- []
-
-
-Underfull \vbox (badness 10000) detected at line 1306
- []
-
 [52]
-Underfull \vbox (badness 10000) detected at line 1306
+Underfull \vbox (badness 10000) detected at line 1326
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1306
+Underfull \vbox (badness 10000) detected at line 1326
  []
 
 [53]
-Underfull \vbox (badness 10000) detected at line 1306
+Underfull \vbox (badness 10000) detected at line 1326
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1306
+Underfull \vbox (badness 10000) detected at line 1326
  []
 
 [54]
-Underfull \vbox (badness 10000) detected at line 1306
+Underfull \vbox (badness 10000) detected at line 1326
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1306
+Underfull \vbox (badness 10000) detected at line 1326
  []
 
 [55]
-Underfull \vbox (badness 10000) detected at line 1306
+Underfull \vbox (badness 10000) detected at line 1326
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1306
+Underfull \vbox (badness 10000) detected at line 1326
  []
 
 [56]
-Underfull \vbox (badness 10000) detected at line 1306
+Underfull \vbox (badness 10000) detected at line 1326
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1306
+Underfull \vbox (badness 10000) detected at line 1326
  []
 
 [57]
-Underfull \vbox (badness 10000) detected at line 1306
+Underfull \vbox (badness 10000) detected at line 1326
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1306
+Underfull \vbox (badness 10000) detected at line 1326
  []
 
 [58]
-Underfull \vbox (badness 10000) detected at line 1306
+Underfull \vbox (badness 10000) detected at line 1326
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1306
+Underfull \vbox (badness 10000) detected at line 1326
  []
 
 [59]
-Underfull \vbox (badness 10000) detected at line 1306
+Underfull \vbox (badness 10000) detected at line 1326
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1306
+Underfull \vbox (badness 10000) detected at line 1326
  []
 
 [60]
-Underfull \vbox (badness 10000) detected at line 1306
+Underfull \vbox (badness 10000) detected at line 1326
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1306
+Underfull \vbox (badness 10000) detected at line 1326
  []
 
 [61]
-Underfull \vbox (badness 10000) detected at line 1306
+Underfull \vbox (badness 10000) detected at line 1326
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1306
+Underfull \vbox (badness 10000) detected at line 1326
  []
 
 [62]
-Underfull \vbox (badness 10000) detected at line 1306
+Underfull \vbox (badness 10000) detected at line 1326
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1306
+Underfull \vbox (badness 10000) detected at line 1326
  []
 
 [63]
+Underfull \vbox (badness 10000) detected at line 1326
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1326
+ []
+
+[64]
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 359.
 See the caption package documentation for explanation.
 
-[64] (Winder_Writing_Project.aux) ) 
+[65] (Winder_Writing_Project.aux) ) 
 Here is how much of TeX's memory you used:
  18562 strings out of 493305
  331597 string characters out of 3138874
@@ -1905,7 +1896,7 @@ Here is how much of TeX's memory you used:
  21873 multiletter control sequences out of 15000+200000
  549484 words of font info for 82 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,15n,63p,3596b,369s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,15n,63p,2364b,369s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\mwind\AppData\Local\MiKTeX\2.9\fo
 nts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk> <C:\Users\mwind\AppData\Local\MiK
 TeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm0600.pk><C:/Program Files/MiKTeX
@@ -1930,9 +1921,9 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmtt12.pfb>
-Output written on Winder_Writing_Project.pdf (66 pages, 798318 bytes).
+Output written on Winder_Writing_Project.pdf (67 pages, 800146 bytes).
 PDF statistics:
- 366 PDF objects out of 1000 (max. 8388607)
+ 370 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
